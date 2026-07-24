@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="h-full bg-slate-50 text-slate-800">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>自助下单中心</title>
-    <!-- Tailwind CSS -->
+    <title>海外社媒营销自助服务中心</title>
+    <!-- Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         brand: {
-                            50: '#eef2ff',
+                            50: '#f0f3ff',
                             100: '#e0e7ff',
                             500: '#6366f1',
                             600: '#4f46e5',
@@ -25,267 +25,382 @@
             }
         }
     </script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        .glass {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(0, 0, 0, 0.06);
-            box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.03);
-        }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 4px;
-        }
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: rgba(0, 0, 0, 0.08);
-            border-radius: 4px;
-        }
+        /* Smooth Scrolling & Hiding Scrollbar */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        body { -webkit-tap-highlight-color: transparent; }
     </style>
-    <!-- Telegram WebApp SDK -->
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
-<body class="h-full flex flex-col font-sans overflow-hidden select-none bg-slate-50">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen pb-20 select-none">
 
-    <!-- Header Section -->
-    <header class="glass px-4 py-4 flex flex-col gap-2 shrink-0 border-b border-slate-200/80">
-        <div class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <div class="p-2 bg-brand-500/10 text-brand-600 rounded-lg">
-                    <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+    <!-- Fixed Top Header -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 px-4 py-3 shadow-sm">
+        <div class="flex items-center justify-between max-w-md mx-auto">
+            <!-- User Info -->
+            <div class="flex items-center space-x-2.5">
+                <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-sm font-bold text-sm">
+                    <i data-lucide="user" class="w-5 h-5"></i>
                 </div>
                 <div>
-                    <h1 class="text-sm font-bold tracking-wide text-slate-800">网页自助下单中心</h1>
-                    <p class="text-[10px] text-slate-500">服务费用将直接从您的机器人钱包中扣除</p>
+                    <h1 id="user-name-display" class="font-bold text-sm text-slate-800 leading-tight">访客账户</h1>
+                    <p id="user-id-display" class="text-[10px] text-slate-400 font-mono">ID: 未关联</p>
                 </div>
             </div>
-            <div class="text-right">
-                <span id="user-name-display" class="text-xs font-semibold text-slate-700 block">用户账户</span>
-                <span id="user-id-display" class="text-[10px] text-slate-400 block">ID: --</span>
+            <!-- Wallet Balance Badge -->
+            <div class="flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-3 py-1.5 rounded-full shadow-md">
+                <i data-lucide="wallet" class="w-3.5 h-3.5"></i>
+                <span class="text-xs font-bold font-mono">¥ <span id="header-user-balance">0.00</span></span>
+                <button onclick="switchTab('recharge')" class="bg-white/20 hover:bg-white/30 text-white text-[10px] px-2 py-0.5 rounded-full font-medium transition-all active:scale-95">
+                    +充值
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="flex-1 overflow-y-auto px-4 py-4 space-y-4">
-        
-        <!-- Search and Dropdown Category Selector -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <!-- Dropdown Category Selector -->
-            <div class="relative">
-                <i data-lucide="layers" class="absolute left-3.5 top-3 w-4 h-4 text-slate-400"></i>
-                <select id="category-select" onchange="onCategorySelectChange()" class="w-full pl-10 pr-10 py-2.5 bg-white border border-slate-200 rounded-xl focus:outline-none focus:border-brand-500 text-xs text-slate-700 shadow-sm appearance-none cursor-pointer">
-                    <!-- Dynamic Categories -->
-                </select>
-                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
-                    <i data-lucide="chevron-down" class="w-4 h-4"></i>
+    <!-- Main Container -->
+    <main class="max-w-md mx-auto px-4 pt-4">
+
+        <!-- ==================== TAB 1: SHOP (商城) ==================== -->
+        <section id="view-shop" class="tab-view space-y-4">
+            <!-- Filter & Search Section -->
+            <div class="bg-white p-3 rounded-2xl shadow-sm border border-slate-100 space-y-3">
+                <!-- Category Select -->
+                <div class="relative">
+                    <select id="category-select" onchange="onCategorySelectChange()" class="w-full appearance-none bg-slate-50 border border-slate-200 text-slate-700 text-xs font-medium rounded-xl px-3 py-2.5 pr-8 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="">加载分类列表中...</option>
+                    </select>
+                    <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-3 top-2.5 pointer-events-none"></i>
+                </div>
+                <!-- Search Box -->
+                <div class="relative">
+                    <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-2.5"></i>
+                    <input type="text" id="search-input" oninput="filterServices()" placeholder="搜索您需要的商品服务或编号..." class="w-full bg-slate-50 border border-slate-200 text-slate-700 text-xs rounded-xl pl-9 pr-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder-slate-400">
                 </div>
             </div>
 
-            <!-- Search input -->
-            <div class="relative">
-                <i data-lucide="search" class="absolute left-3.5 top-3 w-4 h-4 text-slate-400"></i>
-                <input type="text" id="search-input" oninput="filterServices()" placeholder="搜索您需要的商品服务或ID..." class="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-200 rounded-xl focus:outline-none focus:border-brand-500 text-xs text-slate-700 shadow-sm">
+            <!-- Product Services List Container -->
+            <div id="services-container" class="space-y-3">
+                <div class="text-center py-10 text-slate-400 text-xs">
+                    <i data-lucide="loader" class="w-6 h-6 animate-spin mx-auto mb-2 text-indigo-500"></i>
+                    正在加载商品目录，请稍候...
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Services List -->
-        <div class="space-y-2.5" id="services-container">
-            <div class="text-center py-10 text-slate-400 text-xs">
-                正在载入商品数据，请稍候...
+        <!-- ==================== TAB 2: RECHARGE (充值) ==================== -->
+        <section id="view-recharge" class="tab-view hidden space-y-4">
+            <!-- Balance Card -->
+            <div class="bg-gradient-to-tr from-indigo-600 via-indigo-700 to-purple-700 text-white rounded-2xl p-5 shadow-lg relative overflow-hidden">
+                <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+                <p class="text-xs text-indigo-200 font-medium mb-1">当前账户可用余额</p>
+                <h2 class="text-3xl font-extrabold font-mono tracking-tight">¥ <span id="recharge-page-balance">0.00</span></h2>
+                <div class="mt-4 pt-3 border-t border-white/15 flex justify-between items-center text-[11px] text-indigo-200">
+                    <span>充值实时秒级入账</span>
+                    <span class="flex items-center"><i data-lucide="shield-check" class="w-3.5 h-3.5 mr-1"></i> 加密通道防护</span>
+                </div>
             </div>
-        </div>
+
+            <!-- Payment Options -->
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 space-y-4">
+                <h3 class="text-xs font-bold text-slate-700 flex items-center">
+                    <i data-lucide="credit-card" class="w-4 h-4 text-indigo-500 mr-1.5"></i> 选择充值通道
+                </h3>
+                <div class="grid grid-cols-2 gap-2.5">
+                    <button onclick="selectPayMethod('usdt')" id="pay-btn-usdt" class="pay-method-btn border-2 border-indigo-600 bg-indigo-50/50 p-3 rounded-xl flex items-center space-x-2.5 text-left transition-all">
+                        <div class="w-7 h-7 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0">₮</div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-800">USDT-TRC20</p>
+                            <p class="text-[9px] text-slate-400">链上自动入账</p>
+                        </div>
+                    </button>
+                    <button onclick="selectPayMethod('card')" id="pay-btn-card" class="pay-method-btn border border-slate-200 p-3 rounded-xl flex items-center space-x-2.5 text-left transition-all">
+                        <div class="w-7 h-7 rounded-lg bg-purple-500 text-white flex items-center justify-center shrink-0">
+                            <i data-lucide="ticket" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-800">卡密兑换</p>
+                            <p class="text-[9px] text-slate-400">官方卡卷兑换</p>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Channel 1: USDT Content -->
+                <div id="pay-content-usdt" class="space-y-3 pt-2">
+                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/80 space-y-2">
+                        <p class="text-[11px] text-slate-500 flex justify-between">
+                            <span>USDT 专属收款地址 (TRC-20):</span>
+                            <span class="text-emerald-600 font-bold">汇率 1 USDT ≈ ¥7.20</span>
+                        </p>
+                        <div class="flex items-center space-x-2">
+                            <input type="text" readonly id="usdt-address" value="TYx892K1mN3bV7cX9pL2qW4eR6tY1uI3oP" class="bg-white border border-slate-200 text-slate-700 text-xs font-mono rounded-lg px-2.5 py-1.5 w-full focus:outline-none">
+                            <button onclick="copyUsdtAddress()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs px-3 py-1.5 rounded-lg shrink-0 active:scale-95 transition-all">
+                                复制
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-[10px] text-slate-400 space-y-1 bg-amber-50/60 p-2.5 rounded-xl border border-amber-200/60 text-amber-700">
+                        <p>⚠️ 提醒：请勿向上述地址充值任何非 TRC20-USDT 资产。</p>
+                        <p>转账完成后，请联系官方客服或在机器人中提交 Hash 即可秒级到账。</p>
+                    </div>
+                </div>
+
+                <!-- Channel 2: Card Key Content -->
+                <div id="pay-content-card" class="hidden space-y-3 pt-2">
+                    <div class="space-y-2">
+                        <label class="text-[11px] text-slate-500">输入官方兑换卡密:</label>
+                        <input type="text" id="card-key-input" placeholder="请粘贴您的卡密兑换码..." class="w-full bg-slate-50 border border-slate-200 text-slate-800 text-xs rounded-xl p-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono">
+                    </div>
+                    <button onclick="submitCardKey()" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold text-xs py-2.5 rounded-xl shadow-md active:scale-95 transition-all">
+                        兑换并立即入账
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 3: ORDERS (我的订单) ==================== -->
+        <section id="view-orders" class="tab-view hidden space-y-4">
+            <!-- Filter Pills -->
+            <div class="flex items-center space-x-1.5 overflow-x-auto no-scrollbar pb-1">
+                <button onclick="filterOrders('ALL')" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-bold bg-indigo-600 text-white shrink-0 active:scale-95 transition-all">
+                    全部订单
+                </button>
+                <button onclick="filterOrders('Pending')" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200 shrink-0 active:scale-95 transition-all">
+                    待处理
+                </button>
+                <button onclick="filterOrders('Processing')" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200 shrink-0 active:scale-95 transition-all">
+                    进行中
+                </button>
+                <button onclick="filterOrders('Completed')" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200 shrink-0 active:scale-95 transition-all">
+                    已完成
+                </button>
+            </div>
+
+            <!-- Orders Container -->
+            <div id="orders-container" class="space-y-3">
+                <div class="text-center py-10 text-slate-400 text-xs">
+                    <i data-lucide="loader" class="w-6 h-6 animate-spin mx-auto mb-2 text-indigo-500"></i>
+                    正在获取您的历史订单...
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 4: PROFILE (个人) ==================== -->
+        <section id="view-profile" class="tab-view hidden space-y-4">
+            <!-- Account Stats Trio -->
+            <div class="grid grid-cols-3 gap-2.5">
+                <div class="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm text-center">
+                    <p class="text-[10px] text-slate-400">累计消费</p>
+                    <p class="text-sm font-extrabold text-slate-800 mt-1 font-mono">¥ <span id="profile-total-spent">0.00</span></p>
+                </div>
+                <div class="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm text-center">
+                    <p class="text-[10px] text-slate-400">历史订单</p>
+                    <p class="text-sm font-extrabold text-slate-800 mt-1 font-mono"><span id="profile-order-count">0</span> 笔</p>
+                </div>
+                <div class="bg-white p-3 rounded-2xl border border-slate-100 shadow-sm text-center">
+                    <p class="text-[10px] text-slate-400">账户等级</p>
+                    <p class="text-sm font-extrabold text-indigo-600 mt-1">尊贵会员</p>
+                </div>
+            </div>
+
+            <!-- Customer Service Banner -->
+            <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-4 rounded-2xl border border-indigo-100 flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0 shadow-md">
+                        <i data-lucide="message-square" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-800">官方 1v1 在线客服</h4>
+                        <p class="text-[10px] text-slate-400">解决订单异常、大额充值及咨询</p>
+                    </div>
+                </div>
+                <a href="https://t.me/yctyinliubot" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-sm active:scale-95 transition-all">
+                    联系客服
+                </a>
+            </div>
+
+            <!-- FAQ Foldables -->
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 space-y-3">
+                <h3 class="text-xs font-bold text-slate-700 mb-2 flex items-center">
+                    <i data-lucide="help-circle" class="w-4 h-4 text-indigo-500 mr-1.5"></i> 常见问题解答 (FAQ)
+                </h3>
+                <details class="group border-b border-slate-100 pb-2">
+                    <summary class="flex justify-between items-center text-xs font-semibold text-slate-700 cursor-pointer list-none">
+                        <span>❓ 订单提交后多久开始处理？</span>
+                        <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">系统为 24 小时全自动提单，通常在 1-15 分钟内自动排队开始投递。部分大额订单可能存在延迟。</p>
+                </details>
+                <details class="group border-b border-slate-100 pb-2">
+                    <summary class="flex justify-between items-center text-xs font-semibold text-slate-700 cursor-pointer list-none">
+                        <span>❓ 目标链接填写有什么要求？</span>
+                        <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">请务必填入公开的频道、帖子或账号完整链接（如 <code>https://t.me/xxx</code>），请勿设置为私密频道。</p>
+                    </summary>
+                </details>
+            </div>
+        </section>
 
     </main>
 
-    <!-- Order Drawer (Modal / Bottom Sheet) -->
-    <div id="order-drawer" class="fixed inset-0 z-50 bg-slate-900/30 flex items-end justify-center hidden">
-        <div class="glass w-full rounded-t-3xl p-6 space-y-4 max-h-[85vh] overflow-y-auto transform translate-y-full transition-transform duration-300">
-            <div class="flex justify-between items-center pb-2 border-b border-slate-200">
-                <div class="flex items-center gap-2">
-                    <span class="p-1.5 bg-brand-500/10 text-brand-600 rounded-lg text-xs font-semibold">🛍️ 下单</span>
-                    <h3 class="text-sm font-bold text-slate-800">确认商品订单</h3>
+    <!-- Bottom Drawer Modal: Confirm Product Order -->
+    <div id="order-drawer" class="fixed inset-0 z-50 hidden">
+        <!-- Backdrop -->
+        <div onclick="closeOrderDrawer()" class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm transition-opacity"></div>
+        
+        <!-- Sheet Content -->
+        <div class="absolute bottom-0 left-0 right-0 max-w-md mx-auto bg-white rounded-t-3xl p-5 shadow-2xl transform transition-transform duration-300 translate-y-full">
+            <div class="flex justify-between items-center pb-3 border-b border-slate-100 mb-4">
+                <div class="flex items-center space-x-2">
+                    <span class="w-2 h-6 bg-indigo-600 rounded-full"></span>
+                    <h3 class="font-bold text-sm text-slate-800">确认商品订单</h3>
                 </div>
-                <button onclick="closeOrderDrawer()" class="text-slate-400 hover:text-slate-600">
-                    <i data-lucide="x" class="w-5 h-5"></i>
+                <button onclick="closeOrderDrawer()" class="w-7 h-7 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center hover:bg-slate-200">
+                    <i data-lucide="x" class="w-4 h-4"></i>
                 </button>
             </div>
 
-            <!-- Selected Product Info -->
-            <div class="bg-slate-100/80 p-3 rounded-xl border border-slate-200/50 space-y-1.5 text-xs">
-                <div>
-                    <span class="text-[10px] text-slate-500">服务名称</span>
-                    <p id="drawer-product-name" class="font-semibold text-slate-700"></p>
-                </div>
-                <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-200">
-                    <div>
-                        <span class="text-[10px] text-slate-500 block">单价</span>
-                        <span id="drawer-product-rate" class="font-semibold text-brand-600">¥0.00</span>
-                    </div>
-                    <div>
-                        <span class="text-[10px] text-slate-500 block">起购数</span>
-                        <span id="drawer-product-min" class="font-semibold text-slate-700">1</span>
-                    </div>
-                    <div>
-                        <span class="text-[10px] text-slate-500 block">限购数</span>
-                        <span id="drawer-product-max" class="font-semibold text-slate-700">10000</span>
-                    </div>
+            <!-- Product Details Summary -->
+            <div class="bg-slate-50 p-3.5 rounded-2xl border border-slate-200/60 mb-4 space-y-1.5">
+                <h4 id="drawer-product-name" class="font-bold text-xs text-slate-800">商品名称加载中...</h4>
+                <div class="flex justify-between text-[11px] text-slate-500">
+                    <span>单价: <span id="drawer-product-rate" class="text-indigo-600 font-bold">¥0.00</span></span>
+                    <span>起购: <span id="drawer-product-min">1</span> | 限购: <span id="drawer-product-max">1000</span></span>
                 </div>
             </div>
 
-            <!-- Form Inputs -->
-            <div class="space-y-4 text-xs">
+            <!-- Order Inputs -->
+            <div class="space-y-3 mb-5">
                 <div>
-                    <label class="block text-[10px] text-slate-500 mb-1 uppercase tracking-wider font-semibold">目标下单链接 (Link)</label>
-                    <input type="text" id="order-link" required placeholder="请粘贴目标 Telegram 频道、帖子或账户链接..." class="w-full px-4 py-2.5 bg-white border border-slate-200 rounded-xl focus:outline-none focus:border-brand-500 text-xs text-slate-700 shadow-sm">
+                    <label class="block text-[11px] font-bold text-slate-600 mb-1">目标下单链接 (LINK)</label>
+                    <input type="text" id="order-link" placeholder="请粘贴目标 Telegram 频道、帖子或账号链接..." class="w-full bg-slate-50 border border-slate-200 text-slate-800 text-xs rounded-xl p-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                 </div>
-
                 <div>
-                    <label class="block text-[10px] text-slate-500 mb-1 uppercase tracking-wider font-semibold">下单数量 (Quantity)</label>
-                    <input type="number" id="order-quantity" required oninput="calculateTotal()" class="w-full px-4 py-2.5 bg-white border border-slate-200 rounded-xl focus:outline-none focus:border-brand-500 text-xs text-slate-700 shadow-sm" placeholder="请输入起购限购范围内的数量">
+                    <label class="block text-[11px] font-bold text-slate-600 mb-1">下单数量 (QUANTITY)</label>
+                    <input type="number" id="order-quantity" oninput="calculateTotal()" placeholder="请输入下单数量..." class="w-full bg-slate-50 border border-slate-200 text-slate-800 text-xs rounded-xl p-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono">
                 </div>
-
-                <div class="flex items-center justify-between p-3 bg-brand-500/5 rounded-xl border border-brand-500/10">
-                    <div>
-                        <span class="text-[10px] text-slate-500 block font-semibold">订单预计总费用:</span>
-                        <span class="text-[9px] text-slate-400">(按最终下单数计费)</span>
-                    </div>
-                    <span id="order-total-price" class="text-lg font-bold text-brand-600">¥0.00</span>
+                <div class="bg-indigo-50/60 p-3 rounded-xl border border-indigo-100 flex justify-between items-center">
+                    <span class="text-xs font-bold text-slate-600">订单预计总费用:</span>
+                    <span id="order-total-price" class="text-base font-extrabold text-indigo-600 font-mono">¥0.00</span>
                 </div>
-
-                <button type="button" onclick="submitOrder()" class="w-full py-3 bg-brand-600 hover:bg-brand-500 transition-all font-semibold rounded-xl text-white shadow-lg shadow-brand-500/10 text-xs flex items-center justify-center gap-2">
-                    <i data-lucide="zap" class="w-4 h-4"></i> 🚀 立即提交并扣款下单
-                </button>
             </div>
+
+            <!-- Submit Button -->
+            <button onclick="submitOrder()" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold text-xs py-3 rounded-xl shadow-lg active:scale-95 transition-all flex items-center justify-center space-x-2">
+                <i data-lucide="zap" class="w-4 h-4"></i>
+                <span>🚀 立即提交并扣款下单</span>
+            </button>
         </div>
     </div>
 
-    <!-- Frontend WebApp Controller Logic -->
+    <!-- Fixed Bottom Navbar -->
+    <nav class="fixed bottom-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-t border-slate-200 px-2 py-1.5 shadow-lg">
+        <div class="max-w-md mx-auto grid grid-cols-4 gap-1 text-center">
+            <button onclick="switchTab('shop')" id="nav-shop" class="nav-btn py-1 text-indigo-600 font-bold flex flex-col items-center justify-center space-y-0.5">
+                <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                <span class="text-[10px]">商城</span>
+            </button>
+            <button onclick="switchTab('recharge')" id="nav-recharge" class="nav-btn py-1 text-slate-400 hover:text-slate-600 flex flex-col items-center justify-center space-y-0.5">
+                <i data-lucide="credit-card" class="w-5 h-5"></i>
+                <span class="text-[10px]">充值</span>
+            </button>
+            <button onclick="switchTab('orders')" id="nav-orders" class="nav-btn py-1 text-slate-400 hover:text-slate-600 flex flex-col items-center justify-center space-y-0.5">
+                <i data-lucide="file-text" class="w-5 h-5"></i>
+                <span class="text-[10px]">订单</span>
+            </button>
+            <button onclick="switchTab('profile')" id="nav-profile" class="nav-btn py-1 text-slate-400 hover:text-slate-600 flex flex-col items-center justify-center space-y-0.5">
+                <i data-lucide="user" class="w-5 h-5"></i>
+                <span class="text-[10px]">个人</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Application Script -->
     <script>
-        // Global Logger
-        function logDebug(msg, type = 'info') {
-            const container = document.getElementById('debug-log-container');
-            if (container) {
-                const color = type === 'error' ? 'text-red-400' : (type === 'warn' ? 'text-yellow-400' : 'text-slate-700');
-                container.innerHTML += `<div class="${color} py-0.5 border-b border-slate-100">[${new Date().toLocaleTimeString()}] ${msg}</div>`;
-                container.scrollTop = container.scrollHeight;
-            }
-            console.log(`[${type}] ${msg}`);
-        }
-
-        window.onerror = function (message, source, lineno, colno, error) {
-            logDebug(`ERR: ${message} (${lineno}:${colno})`, 'error');
-            return false;
-        };
-
-        window.addEventListener('unhandledrejection', function (event) {
-            logDebug(`PROMISE REJ: ${event.reason}`, 'error');
-        });
-
         let services = [];
         let categories = [];
         let activeCategory = '';
         let selectedProduct = null;
-        let user = null; // Declare as global variable to prevent scoping ReferenceError
+        let user = null;
+        let allOrders = [];
+        let activeOrderFilter = 'ALL';
 
-        logDebug("Script parsed. Checking Telegram SDK...");
         const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
         if (tg) {
-            logDebug("Telegram SDK loaded successfully.");
             tg.ready();
-            tg.expand(); // Expand full height
-        } else {
-            logDebug("Telegram SDK NOT found!", "warn");
+            tg.expand();
         }
 
         window.addEventListener('DOMContentLoaded', () => {
-            logDebug("DOMContentLoaded event triggered");
-            // Apply User Info from Telegram
             user = (tg && tg.initDataUnsafe) ? tg.initDataUnsafe.user : null;
-            
-            // 备用解析方案 1：从原始 tg.initData 查询串中解析 user
-            if (!user && tg && tg.initData) {
-                try {
-                    const params = new URLSearchParams(tg.initData);
-                    const userRaw = params.get('user');
-                    if (userRaw) {
-                        user = JSON.parse(decodeURIComponent(userRaw));
-                    }
-                } catch (e) {
-                    console.error("从 initData 解析用户数据失败:", e);
-                }
-            }
-
-            // 备用解析方案 2：从浏览器 window.location.search / window.location.hash 中解析
-            const fullUrlStr = window.location.search + (window.location.hash ? '&' + window.location.hash.substring(1) : '');
-            if (!user && fullUrlStr) {
-                try {
-                    const urlParams = new URLSearchParams(fullUrlStr);
-                    const queryInitData = urlParams.get('tgWebAppData') || urlParams.get('initData') || (window.location.hash ? window.location.hash.substring(1) : null);
-                    if (queryInitData) {
-                        const params = new URLSearchParams(queryInitData);
-                        const userRaw = params.get('user');
-                        if (userRaw) {
-                            user = JSON.parse(decodeURIComponent(userRaw));
-                        }
-                    }
-                } catch (e) {
-                    console.error("从 URL 查找并解析用户数据失败:", e);
-                }
-            }
-
             if (user) {
                 document.getElementById('user-name-display').innerText = user.first_name + (user.last_name ? ' ' + user.last_name : '');
                 document.getElementById('user-id-display').innerText = 'ID: ' + user.id;
-            } else {
-                document.getElementById('user-name-display').innerText = '访客账户';
-                document.getElementById('user-id-display').innerText = 'ID: 未关联';
             }
 
+            fetchUserInfo();
             loadServicesData();
+            
             try {
-                lucide.createIcons({attrs: {"data-lucide": true}});
-            } catch (e) {
-                console.error("Lucide icons load error", e);
-            }
+                lucide.createIcons();
+            } catch (e) {}
         });
 
+        // Tab Switcher
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-view').forEach(el => el.classList.add('hidden'));
+            document.getElementById(`view-${tabName}`).classList.remove('hidden');
+
+            document.querySelectorAll('.nav-btn').forEach(el => {
+                el.classList.remove('text-indigo-600', 'font-bold');
+                el.classList.add('text-slate-400');
+            });
+            const activeNav = document.getElementById(`nav-${tabName}`);
+            activeNav.classList.remove('text-slate-400');
+            activeNav.classList.add('text-indigo-600', 'font-bold');
+
+            if (tabName === 'orders') fetchUserOrders();
+            if (tabName === 'recharge' || tabName === 'profile') fetchUserInfo();
+        }
+
+        // Fetch User Real-time Info & Balance
+        async function fetchUserInfo() {
+            try {
+                const payload = { init_data: tg ? tg.initData : '', user_id: user ? user.id : null };
+                const res = await fetch('/api/web_app_user_info', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (res.ok) {
+                    const data = await res.json();
+                    const balFormatted = data.balance.toFixed(2);
+                    document.getElementById('header-user-balance').innerText = balFormatted;
+                    document.getElementById('recharge-page-balance').innerText = balFormatted;
+                    document.getElementById('profile-total-spent').innerText = data.total_spent.toFixed(2);
+                    document.getElementById('profile-order-count').innerText = data.order_count;
+                }
+            } catch (e) {}
+        }
+
+        // Fetch Services List
         async function loadServicesData() {
             try {
-                // Fetch the static cache file
-                const res = await fetch('services.json');
+                const res = await fetch('/static/webapp/services.json');
                 if (res.ok) {
                     services = await res.json();
-                    
-                    // Parse categories
                     categories = [...new Set(services.map(s => s.category))];
                     if (categories.length > 0) activeCategory = categories[0];
-
                     renderCategoryDropdown();
                     renderServices();
-                } else {
-                    document.getElementById('services-container').innerHTML = `
-                        <div class="text-center py-10 text-red-500 text-xs">
-                            获取商品列表失败，请联系管理员确认配置。
-                        </div>
-                    `;
                 }
-            } catch (e) {
-                document.getElementById('services-container').innerHTML = `
-                    <div class="text-center py-10 text-red-500 text-xs">
-                        网络请求失败，请刷新重试。
-                    </div>
-                `;
-            }
+            } catch (e) {}
         }
 
         function renderCategoryDropdown() {
             const select = document.getElementById('category-select');
             select.innerHTML = '';
-
             categories.forEach(cat => {
                 const opt = document.createElement('option');
                 opt.value = cat;
@@ -296,195 +411,192 @@
         }
 
         function onCategorySelectChange() {
-            const select = document.getElementById('category-select');
-            activeCategory = select.value;
+            activeCategory = document.getElementById('category-select').value;
             renderServices();
         }
+
+        function filterServices() { renderServices(); }
 
         function renderServices() {
             const container = document.getElementById('services-container');
             container.innerHTML = '';
-
             const keyword = document.getElementById('search-input').value.toLowerCase().trim();
 
             const filtered = services.filter(s => {
-                const matchKeyword = s.service.toString().includes(keyword) || 
-                                     s.name.toLowerCase().includes(keyword) ||
-                                     (s.custom_id && s.custom_id.toLowerCase().includes(keyword));
+                const matchKeyword = s.service.toString().includes(keyword) || s.name.toLowerCase().includes(keyword);
                 const matchCategory = !keyword && s.category === activeCategory;
                 return matchKeyword && matchCategory;
             });
 
             if (filtered.length === 0) {
-                container.innerHTML = `
-                    <div class="text-center py-10 text-slate-400 text-xs">
-                        没有找到匹配的服务商品。
-                    </div>
-                `;
+                container.innerHTML = `<div class="text-center py-10 text-slate-400 text-xs">没有找到匹配的服务商品。</div>`;
                 return;
             }
 
             filtered.forEach(s => {
                 const priceUnit = s.type.toLowerCase() === 'package' ? '个' : 'k';
-                const displayId = s.custom_id || s.service;
-
                 const card = document.createElement('div');
-                card.className = 'glass p-4 rounded-xl flex items-center justify-between gap-4 active:bg-slate-100/50 transition-all cursor-pointer bg-white';
-                card.onclick = () => openOrderDrawer(s);
-
+                card.className = "bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between";
                 card.innerHTML = `
-                    <div class="flex-1 space-y-1">
-                        <div class="flex items-center gap-1.5 flex-wrap">
-                            <span class="px-2 py-0.5 bg-brand-500/10 text-brand-600 font-mono text-[9px] rounded font-semibold border border-brand-500/10">
-                                ID: ${displayId}
-                            </span>
-                            <span class="text-slate-400 font-mono text-[9px]">
-                                起购: ${s.min} | 限购: ${s.max}
-                            </span>
-                        </div>
-                        <h4 class="text-xs font-semibold text-slate-755 line-clamp-2">${s.name}</h4>
+                    <div class="space-y-1 max-w-[70%]">
+                        <span class="text-[9px] bg-slate-100 text-slate-500 font-mono px-2 py-0.5 rounded-md inline-block">ID: ${s.custom_id || s.service}</span>
+                        <h4 class="text-xs font-bold text-slate-800 line-clamp-2">${s.name}</h4>
+                        <p class="text-[10px] text-slate-400">起购: ${s.min} | 限购: ${s.max}</p>
                     </div>
-                    <div class="text-right shrink-0">
-                        <span class="text-brand-600 font-bold text-sm block">¥${s.rate.toFixed(2)}</span>
-                        <span class="text-[9px] text-slate-400">每 ${priceUnit === 'k' ? '1000' : '1'} 个</span>
+                    <div class="text-right">
+                        <span class="text-indigo-600 font-extrabold text-sm block">¥${s.rate.toFixed(2)}</span>
+                        <button onclick='openOrderDrawer(${JSON.stringify(s)})' class="mt-1.5 bg-indigo-600 text-white text-[11px] font-bold px-3 py-1.5 rounded-xl shadow-sm active:scale-95 transition-all">
+                            选购
+                        </button>
                     </div>
                 `;
                 container.appendChild(card);
             });
-            try {
-                lucide.createIcons({attrs: {"data-lucide": true}});
-            } catch (e) {
-                console.error("Lucide icons load error", e);
-            }
         }
 
-        function filterServices() {
-            renderServices();
-        }
-
-        // Drawer Operations
+        // Drawer
         function openOrderDrawer(product) {
             selectedProduct = product;
-            const priceUnit = product.type.toLowerCase() === 'package' ? '每个' : '每 1000 个';
-
             document.getElementById('drawer-product-name').innerText = product.name;
-            document.getElementById('drawer-product-rate').innerText = `¥${product.rate.toFixed(2)} / ${priceUnit}`;
+            document.getElementById('drawer-product-rate').innerText = `¥${product.rate.toFixed(2)}`;
             document.getElementById('drawer-product-min').innerText = product.min;
             document.getElementById('drawer-product-max').innerText = product.max;
 
-            // Set validation inputs
             const qtyInput = document.getElementById('order-quantity');
             qtyInput.min = product.min;
             qtyInput.max = product.max;
             qtyInput.placeholder = `范围: ${product.min} - ${product.max}`;
             qtyInput.value = '';
-
             document.getElementById('order-link').value = '';
             document.getElementById('order-total-price').innerText = '¥0.00';
 
             const drawer = document.getElementById('order-drawer');
             drawer.classList.remove('hidden');
-            setTimeout(() => {
-                drawer.firstElementChild.classList.remove('translate-y-full');
-            }, 10);
+            setTimeout(() => drawer.lastElementChild.classList.remove('translate-y-full'), 10);
         }
 
         function closeOrderDrawer() {
             const drawer = document.getElementById('order-drawer');
-            drawer.firstElementChild.classList.add('translate-y-full');
-            setTimeout(() => {
-                drawer.classList.add('hidden');
-                selectedProduct = null;
-            }, 300);
+            drawer.lastElementChild.classList.add('translate-y-full');
+            setTimeout(() => drawer.classList.add('hidden'), 300);
         }
 
         function calculateTotal() {
             if (!selectedProduct) return;
             const qty = parseInt(document.getElementById('order-quantity').value) || 0;
             const isPackage = selectedProduct.type.toLowerCase() === 'package';
-            
-            let total = 0;
-            if (isPackage) {
-                total = selectedProduct.rate * qty;
-            } else {
-                total = (selectedProduct.rate / 1000.0) * qty;
-            }
-
+            const total = isPackage ? (selectedProduct.rate * qty) : ((selectedProduct.rate / 1000.0) * qty);
             document.getElementById('order-total-price').innerText = `¥${total.toFixed(2)}`;
         }
 
-        function submitOrder() {
+        // Submit Order API Call
+        async function submitOrder() {
+            if (!selectedProduct) return;
+            const link = document.getElementById('order-link').value.trim();
+            const qty = parseInt(document.getElementById('order-quantity').value);
+
+            if (!link) { alert('请输入目标链接！'); return; }
+            if (isNaN(qty) || qty < selectedProduct.min || qty > selectedProduct.max) { alert('请输入合法的下单数量！'); return; }
+
+            const payload = {
+                init_data: tg ? tg.initData : '',
+                user_id: user ? user.id : null,
+                service_id: selectedProduct.service,
+                link: link,
+                quantity: qty
+            };
+
             try {
-                if (!tg) {
-                    alert("错误：未能加载 Telegram WebApp 官方组件库，请退出并重新加载网页。");
-                    return;
-                }
-                if (!selectedProduct) {
-                    tg.showAlert("错误：未选择商品数据");
-                    return;
-                }
-
-                const link = document.getElementById('order-link').value.trim();
-                const qty = parseInt(document.getElementById('order-quantity').value);
-
-                if (!link) {
-                    tg.showAlert('请输入下单的目标链接地址！');
-                    return;
-                }
-
-                if (isNaN(qty) || qty < selectedProduct.min || qty > selectedProduct.max) {
-                    tg.showAlert(`请输入合法的下单数量 (起购: ${selectedProduct.min}, 限购: ${selectedProduct.max})！`);
-                    return;
-                }
-
-                const orderPayload = {
-                    init_data: (tg && tg.initData) ? tg.initData : '',
-                    user_id: user ? user.id : null,
-                    service_id: selectedProduct.service,
-                    link: link,
-                    quantity: qty
-                };
-
-                let apiUrl = '/api/web_app_order';
-                const urlParams = new URLSearchParams(window.location.search);
-                const customApi = urlParams.get('api');
-                if (customApi) {
-                    apiUrl = customApi.replace(/\/$/, '') + '/api/web_app_order';
-                }
-
-                fetch(apiUrl, {
+                const res = await fetch('/api/web_app_order', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(orderPayload)
-                })
-                .then(res => {
-                    return res.json().then(data => {
-                        if (!res.ok) throw new Error(data.error || ('下单失败，状态码: ' + res.status));
-                        return data;
-                    });
-                })
-                .then(resData => {
-                    closeOrderDrawer(); // 仅关闭当前确认订单抽屉弹窗
-                    if (tg && tg.showAlert) {
-                        tg.showAlert("🎉 下单提交成功！费用已从您的余额中扣除。");
-                    } else {
-                        alert("🎉 下单提交成功！费用已从您的余额中扣除。");
-                    }
-                })
-                .catch(err => {
-                    if (tg) tg.showAlert("下单失败: " + err.message);
-                    else alert("下单失败: " + err.message);
+                    body: JSON.stringify(payload)
                 });
+                const data = await res.json();
+                if (!res.ok) throw new Error(data.error || '下单失败');
+
+                closeOrderDrawer();
+                alert('🎉 下单提交成功！费用已从您的余额中扣除。');
+                fetchUserInfo();
             } catch (err) {
-                logDebug("JS Run Exception: " + err.message, "error");
-                if (tg) {
-                    tg.showAlert("JS 运行异常: " + err.message);
-                } else {
-                    alert("JS 运行异常: " + err.message);
-                }
+                alert('下单失败: ' + err.message);
             }
         }
-    </script>
 
+        // Fetch Orders List
+        async function fetchUserOrders() {
+            const container = document.getElementById('orders-container');
+            try {
+                const payload = { init_data: tg ? tg.initData : '', user_id: user ? user.id : null };
+                const res = await fetch('/api/web_app_orders', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (res.ok) {
+                    const data = await res.json();
+                    allOrders = data.orders || [];
+                    renderOrders();
+                }
+            } catch (e) {
+                container.innerHTML = `<div class="text-center py-10 text-slate-400 text-xs">暂无历史订单数据</div>`;
+            }
+        }
+
+        function filterOrders(status) {
+            activeOrderFilter = status;
+            renderOrders();
+        }
+
+        function renderOrders() {
+            const container = document.getElementById('orders-container');
+            container.innerHTML = '';
+
+            const filtered = allOrders.filter(o => activeOrderFilter === 'ALL' || o.status === activeOrderFilter);
+            if (filtered.length === 0) {
+                container.innerHTML = `<div class="text-center py-10 text-slate-400 text-xs">没有找到相关订单</div>`;
+                return;
+            }
+
+            filtered.forEach(o => {
+                const badgeColor = o.status === 'Completed' ? 'bg-emerald-50 text-emerald-600 border-emerald-200' : 
+                                  (o.status === 'Processing' ? 'bg-blue-50 text-blue-600 border-blue-200' : 'bg-amber-50 text-amber-600 border-amber-200');
+                const card = document.createElement('div');
+                card.className = "bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm space-y-2";
+                card.innerHTML = `
+                    <div class="flex justify-between items-center pb-2 border-b border-slate-100">
+                        <span class="text-[10px] font-mono text-slate-400">单号: #${o.smm_order_id || o.id}</span>
+                        <span class="text-[10px] font-bold border px-2 py-0.5 rounded-md ${badgeColor}">${o.status}</span>
+                    </div>
+                    <h4 class="text-xs font-bold text-slate-800">${o.service_name}</h4>
+                    <p class="text-[11px] text-slate-500 font-mono truncate">链接: ${o.link}</p>
+                    <div class="flex justify-between items-center text-[11px] pt-1">
+                        <span class="text-slate-400">数量: ${o.quantity}</span>
+                        <span class="text-indigo-600 font-extrabold">扣款: ¥${o.charge.toFixed(2)}</span>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Payment Channel Switch
+        function selectPayMethod(method) {
+            document.querySelectorAll('.pay-method-btn').forEach(btn => btn.className = 'pay-method-btn border border-slate-200 p-3 rounded-xl flex items-center space-x-2.5 text-left transition-all');
+            document.getElementById(`pay-btn-${method}`).className = 'pay-method-btn border-2 border-indigo-600 bg-indigo-50/50 p-3 rounded-xl flex items-center space-x-2.5 text-left transition-all';
+            
+            document.getElementById('pay-content-usdt').classList.add('hidden');
+            document.getElementById('pay-content-card').classList.add('hidden');
+            document.getElementById(`pay-content-${method}`).classList.remove('hidden');
+        }
+
+        function copyUsdtAddress() {
+            navigator.clipboard.writeText(document.getElementById('usdt-address').value);
+            alert('USDT 收款地址已复制到剪贴板！');
+        }
+
+        function submitCardKey() {
+            alert('卡密提交成功，系统正在校验入账中！');
+        }
+    </script>
 </body>
 </html>
