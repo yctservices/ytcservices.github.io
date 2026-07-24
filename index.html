@@ -172,11 +172,43 @@
 
         // Initialize Telegram WebApp SDK
         const tg = window.Telegram.WebApp;
+        tg.ready();
         tg.expand(); // Expand full height
 
         window.addEventListener('DOMContentLoaded', () => {
             // Apply User Info from Telegram
-            const user = tg.initDataUnsafe?.user;
+            let user = tg.initDataUnsafe?.user;
+            
+            // 备用解析方案 1：从原始 tg.initData 查询串中解析 user
+            if (!user && tg.initData) {
+                try {
+                    const params = new URLSearchParams(tg.initData);
+                    const userRaw = params.get('user');
+                    if (userRaw) {
+                        user = JSON.parse(decodeURIComponent(userRaw));
+                    }
+                } catch (e) {
+                    console.error("从 initData 解析用户数据失败:", e);
+                }
+            }
+
+            // 备用解析方案 2：从浏览器 window.location.search 中解析
+            if (!user && window.location.search) {
+                try {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const queryInitData = urlParams.get('tgWebAppData') || urlParams.get('initData');
+                    if (queryInitData) {
+                        const params = new URLSearchParams(queryInitData);
+                        const userRaw = params.get('user');
+                        if (userRaw) {
+                            user = JSON.parse(decodeURIComponent(userRaw));
+                        }
+                    }
+                } catch (e) {
+                    console.error("从 URL 查找并解析用户数据失败:", e);
+                }
+            }
+
             if (user) {
                 document.getElementById('user-name-display').innerText = user.first_name + (user.last_name ? ' ' + user.last_name : '');
                 document.getElementById('user-id-display').innerText = 'ID: ' + user.id;
@@ -369,7 +401,11 @@
                 quantity: qty
             };
 
-            tg.sendData(JSON.stringify(orderPayload));
+            try {
+                tg.sendData(JSON.stringify(orderPayload));
+            } catch (err) {
+                tg.showAlert("提交出错 (tg.sendData Error): " + err.message);
+            }
         }
     </script>
 </body>
