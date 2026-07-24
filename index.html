@@ -165,21 +165,43 @@
 
     <!-- Frontend WebApp Controller Logic -->
     <script>
+        // Global Logger
+        function logDebug(msg, type = 'info') {
+            const container = document.getElementById('debug-log-container');
+            if (container) {
+                const color = type === 'error' ? 'text-red-400' : (type === 'warn' ? 'text-yellow-400' : 'text-slate-700');
+                container.innerHTML += `<div class="${color} py-0.5 border-b border-slate-100">[${new Date().toLocaleTimeString()}] ${msg}</div>`;
+                container.scrollTop = container.scrollHeight;
+            }
+            console.log(`[${type}] ${msg}`);
+        }
+
+        window.onerror = function (message, source, lineno, colno, error) {
+            logDebug(`ERR: ${message} (${lineno}:${colno})`, 'error');
+            return false;
+        };
+
+        window.addEventListener('unhandledrejection', function (event) {
+            logDebug(`PROMISE REJ: ${event.reason}`, 'error');
+        });
+
         let services = [];
         let categories = [];
         let activeCategory = '';
         let selectedProduct = null;
 
-        // Initialize Telegram WebApp SDK safely
+        logDebug("Script parsed. Checking Telegram SDK...");
         const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
         if (tg) {
+            logDebug("Telegram SDK loaded successfully.");
             tg.ready();
             tg.expand(); // Expand full height
         } else {
-            console.warn("Telegram WebApp SDK not found or failed to load");
+            logDebug("Telegram SDK NOT found!", "warn");
         }
 
         window.addEventListener('DOMContentLoaded', () => {
+            logDebug("DOMContentLoaded event triggered");
             // Apply User Info from Telegram
             let user = (tg && tg.initDataUnsafe) ? tg.initDataUnsafe.user : null;
             
@@ -420,11 +442,28 @@
                     quantity: qty
                 };
 
-                tg.sendData(JSON.stringify(orderPayload));
+                logDebug("orderPayload prepared: " + JSON.stringify(orderPayload));
+                if (tg) {
+                    logDebug("Invoking tg.sendData...");
+                    tg.sendData(JSON.stringify(orderPayload));
+                    logDebug("tg.sendData invoked.");
+                } else {
+                    logDebug("Cannot send data: Telegram SDK not available!", "error");
+                }
             } catch (err) {
+                logDebug("JS Run Exception: " + err.message, "error");
                 tg.showAlert("JS 运行异常: " + err.message);
             }
         }
     </script>
+
+    <!-- Collapsible Debug Console Panel -->
+    <div id="debug-panel" class="fixed bottom-0 left-0 right-0 z-[100] bg-white text-slate-700 font-mono text-[9px] p-2 max-h-[25vh] overflow-y-auto border-t border-slate-200 shadow-lg">
+        <div class="flex justify-between items-center mb-1 text-slate-800 border-b border-slate-200 pb-1 font-semibold">
+            <span>⚙️ 网页控制台日志 (调试用)</span>
+            <button onclick="document.getElementById('debug-log-container').innerHTML=''" class="text-red-500 underline">清空</button>
+        </div>
+        <div id="debug-log-container" class="space-y-1"></div>
+    </div>
 </body>
 </html>
