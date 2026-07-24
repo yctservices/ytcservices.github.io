@@ -36,6 +36,14 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen pb-20 select-none">
 
+    <!-- Global Custom Toast Notification Component (Solution B: 0% Domain Display) -->
+    <div id="toast-container" class="fixed top-5 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 transform -translate-y-12 opacity-0 pointer-events-none w-auto max-w-[90%]">
+        <div id="toast-pill" class="flex items-center space-x-2 bg-slate-900/90 text-white px-4 py-2.5 rounded-full shadow-2xl backdrop-blur-md border border-white/10 text-xs font-semibold">
+            <i id="toast-icon" data-lucide="check-circle" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+            <span id="toast-message">提示信息</span>
+        </div>
+    </div>
+
     <!-- Fixed Top Header -->
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 px-4 py-3 shadow-sm">
         <div class="flex items-center justify-between max-w-md mx-auto">
@@ -489,14 +497,43 @@
             document.getElementById('order-total-price').innerText = `¥${total.toFixed(2)}`;
         }
 
+        // Global Toast Component Handler (Solution B: 0% Domain Display)
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            const icon = document.getElementById('toast-icon');
+            const msg = document.getElementById('toast-message');
+
+            msg.innerText = message;
+            if (type === 'error') {
+                icon.setAttribute('data-lucide', 'alert-circle');
+                icon.className = 'w-4 h-4 text-rose-400 shrink-0';
+            } else if (type === 'warn') {
+                icon.setAttribute('data-lucide', 'alert-triangle');
+                icon.className = 'w-4 h-4 text-amber-400 shrink-0';
+            } else {
+                icon.setAttribute('data-lucide', 'check-circle');
+                icon.className = 'w-4 h-4 text-emerald-400 shrink-0';
+            }
+            try { lucide.createIcons(); } catch(e) {}
+
+            container.classList.remove('-translate-y-12', 'opacity-0', 'pointer-events-none');
+            container.classList.add('translate-y-0', 'opacity-100');
+
+            if (window.toastTimer) clearTimeout(window.toastTimer);
+            window.toastTimer = setTimeout(() => {
+                container.classList.remove('translate-y-0', 'opacity-100');
+                container.classList.add('-translate-y-12', 'opacity-0', 'pointer-events-none');
+            }, 2600);
+        }
+
         // Submit Order API Call
         async function submitOrder() {
             if (!selectedProduct) return;
             const link = document.getElementById('order-link').value.trim();
             const qty = parseInt(document.getElementById('order-quantity').value);
 
-            if (!link) { alert('请输入目标链接！'); return; }
-            if (isNaN(qty) || qty < selectedProduct.min || qty > selectedProduct.max) { alert('请输入合法的下单数量！'); return; }
+            if (!link) { showToast('请输入目标链接！', 'warn'); return; }
+            if (isNaN(qty) || qty < selectedProduct.min || qty > selectedProduct.max) { showToast('请输入合法的下单数量！', 'warn'); return; }
 
             const payload = {
                 init_data: tg ? tg.initData : '',
@@ -516,10 +553,10 @@
                 if (!res.ok) throw new Error(data.error || '下单失败');
 
                 closeOrderDrawer();
-                alert('🎉 下单提交成功！费用已从您的余额中扣除。');
+                showToast('🎉 下单提交成功！费用已从您的余额中扣除。');
                 fetchUserInfo();
             } catch (err) {
-                alert('下单失败: ' + err.message);
+                showToast('下单失败: ' + err.message, 'error');
             }
         }
 
@@ -591,11 +628,11 @@
 
         function copyUsdtAddress() {
             navigator.clipboard.writeText(document.getElementById('usdt-address').value);
-            alert('USDT 收款地址已复制到剪贴板！');
+            showToast('USDT 收款地址已复制到剪贴板！');
         }
 
         function submitCardKey() {
-            alert('卡密提交成功，系统正在校验入账中！');
+            showToast('卡密提交成功，系统正在校验入账中！');
         }
     </script>
 </body>
