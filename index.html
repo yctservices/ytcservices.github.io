@@ -437,20 +437,27 @@
                     return;
                 }
 
-                // WebApp Magic closed-loop transfer!
-                const orderPayload = {
-                    service_id: selectedProduct.service,
-                    link: link,
-                    quantity: qty
-                };
+                // Helper to encode string to base64url safely for Telegram start param
+                let cleanLink = link.trim();
+                let b64link = "";
+                try {
+                    b64link = btoa(unescape(encodeURIComponent(cleanLink)))
+                        .replace(/\+/g, '-')
+                        .replace(/\//g, '_')
+                        .replace(/=+$/, '');
+                } catch(e) {
+                    b64link = cleanLink.replace(/[^a-zA-Z0-9_-]/g, '');
+                }
 
-                logDebug("orderPayload prepared: " + JSON.stringify(orderPayload));
-                if (tg) {
-                    logDebug("Invoking tg.sendData...");
-                    tg.sendData(JSON.stringify(orderPayload));
-                    logDebug("tg.sendData invoked.");
+                const startParam = `ord_${selectedProduct.service}_${qty}_${b64link}`;
+                const targetBot = "yctyinliubot";
+                const deepLink = `https://t.me/${targetBot}?start=${startParam}`;
+
+                if (tg && tg.openTelegramLink) {
+                    tg.openTelegramLink(deepLink);
+                    tg.close();
                 } else {
-                    logDebug("Cannot send data: Telegram SDK not available!", "error");
+                    window.location.href = deepLink;
                 }
             } catch (err) {
                 logDebug("JS Run Exception: " + err.message, "error");
