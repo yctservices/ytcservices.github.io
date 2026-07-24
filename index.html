@@ -436,47 +436,21 @@
                     return;
                 }
 
-                // WebApp Magic HTTP REST API closed-loop transfer!
+                // WebApp Magic closed-loop transfer!
                 const orderPayload = {
-                    user_id: user ? user.id : null,
                     service_id: selectedProduct.service,
                     link: link,
                     quantity: qty
                 };
 
                 logDebug("orderPayload prepared: " + JSON.stringify(orderPayload));
-                logDebug("Sending POST request to http://localhost:8080/api/web_app_order ...");
-                
-                fetch('http://localhost:8080/api/web_app_order', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(orderPayload)
-                })
-                .then(res => {
-                    logDebug("Response status: " + res.status);
-                    return res.json().then(data => {
-                        if (!res.ok) throw new Error(data.error || 'Server returned error ' + res.status);
-                        return data;
-                    });
-                })
-                .then(resData => {
-                    logDebug("API order success. Closing WebApp...");
-                    if (tg) {
-                        tg.close();
-                    } else {
-                        alert("下单成功，网页已完成处理！");
-                    }
-                })
-                .catch(err => {
-                    logDebug("API order failed: " + err.message, "error");
-                    if (tg) {
-                        tg.showAlert("下单失败: " + err.message);
-                    } else {
-                        alert("下单失败: " + err.message);
-                    }
-                });
+                if (tg) {
+                    logDebug("Invoking tg.sendData...");
+                    tg.sendData(JSON.stringify(orderPayload));
+                    logDebug("tg.sendData invoked.");
+                } else {
+                    logDebug("Cannot send data: Telegram SDK not available!", "error");
+                }
             } catch (err) {
                 logDebug("JS Run Exception: " + err.message, "error");
                 if (tg) {
