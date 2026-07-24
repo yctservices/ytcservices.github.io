@@ -218,7 +218,11 @@
             }
 
             loadServicesData();
-            lucide.createIcons({attrs: {"data-lucide": true}});
+            try {
+                lucide.createIcons({attrs: {"data-lucide": true}});
+            } catch (e) {
+                console.error("Lucide icons load error", e);
+            }
         });
 
         async function loadServicesData() {
@@ -319,7 +323,11 @@
                 `;
                 container.appendChild(card);
             });
-            lucide.createIcons({attrs: {"data-lucide": true}});
+            try {
+                lucide.createIcons({attrs: {"data-lucide": true}});
+            } catch (e) {
+                console.error("Lucide icons load error", e);
+            }
         }
 
         function filterServices() {
@@ -380,7 +388,7 @@
         function submitOrder() {
             try {
                 if (!selectedProduct) {
-                    alert("错误：未选择商品数据");
+                    tg.showAlert("错误：未选择商品数据");
                     return;
                 }
 
@@ -388,12 +396,12 @@
                 const qty = parseInt(document.getElementById('order-quantity').value);
 
                 if (!link) {
-                    alert('请输入下单的目标链接地址！');
+                    tg.showAlert('请输入下单的目标链接地址！');
                     return;
                 }
 
                 if (isNaN(qty) || qty < selectedProduct.min || qty > selectedProduct.max) {
-                    alert(`请输入合法的下单数量 (起购: ${selectedProduct.min}, 限购: ${selectedProduct.max})！`);
+                    tg.showAlert(`请输入合法的下单数量 (起购: ${selectedProduct.min}, 限购: ${selectedProduct.max})！`);
                     return;
                 }
 
@@ -406,7 +414,7 @@
 
                 tg.sendData(JSON.stringify(orderPayload));
             } catch (err) {
-                alert("JS 运行异常: " + err.message);
+                tg.showAlert("JS 运行异常: " + err.message);
             }
         }
     </script>
