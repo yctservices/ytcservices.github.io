@@ -219,11 +219,12 @@
                 }
             }
 
-            // 备用解析方案 2：从浏览器 window.location.search 中解析
-            if (!user && window.location.search) {
+            // 备用解析方案 2：从浏览器 window.location.search / window.location.hash 中解析
+            const fullUrlStr = window.location.search + (window.location.hash ? '&' + window.location.hash.substring(1) : '');
+            if (!user && fullUrlStr) {
                 try {
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const queryInitData = urlParams.get('tgWebAppData') || urlParams.get('initData');
+                    const urlParams = new URLSearchParams(fullUrlStr);
+                    const queryInitData = urlParams.get('tgWebAppData') || urlParams.get('initData') || (window.location.hash ? window.location.hash.substring(1) : null);
                     if (queryInitData) {
                         const params = new URLSearchParams(queryInitData);
                         const userRaw = params.get('user');
