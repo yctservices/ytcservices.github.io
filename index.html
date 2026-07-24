@@ -156,7 +156,7 @@
                     <span id="order-total-price" class="text-lg font-bold text-brand-600">¥0.00</span>
                 </div>
 
-                <button type="button" onclick="submitOrder(event)" class="w-full py-3 bg-brand-600 hover:bg-brand-500 transition-all font-semibold rounded-xl text-white shadow-lg shadow-brand-500/10 text-xs flex items-center justify-center gap-2">
+                <button type="button" onclick="submitOrder()" class="w-full py-3 bg-brand-600 hover:bg-brand-500 transition-all font-semibold rounded-xl text-white shadow-lg shadow-brand-500/10 text-xs flex items-center justify-center gap-2">
                     <i data-lucide="zap" class="w-4 h-4"></i> 🚀 立即提交并扣款下单
                 </button>
             </div>
@@ -377,34 +377,36 @@
             document.getElementById('order-total-price').innerText = `¥${total.toFixed(2)}`;
         }
 
-        function submitOrder(event) {
-            event.preventDefault();
-            if (!selectedProduct) return;
-
-            const link = document.getElementById('order-link').value.trim();
-            const qty = parseInt(document.getElementById('order-quantity').value);
-
-            if (!link) {
-                tg.showAlert('请输入下单的目标链接地址！');
-                return;
-            }
-
-            if (isNaN(qty) || qty < selectedProduct.min || qty > selectedProduct.max) {
-                tg.showAlert(`请输入合法的下单数量 (起购: ${selectedProduct.min}, 限购: ${selectedProduct.max})！`);
-                return;
-            }
-
-            // WebApp Magic closed-loop transfer!
-            const orderPayload = {
-                service_id: selectedProduct.service,
-                link: link,
-                quantity: qty
-            };
-
+        function submitOrder() {
             try {
+                if (!selectedProduct) {
+                    alert("错误：未选择商品数据");
+                    return;
+                }
+
+                const link = document.getElementById('order-link').value.trim();
+                const qty = parseInt(document.getElementById('order-quantity').value);
+
+                if (!link) {
+                    alert('请输入下单的目标链接地址！');
+                    return;
+                }
+
+                if (isNaN(qty) || qty < selectedProduct.min || qty > selectedProduct.max) {
+                    alert(`请输入合法的下单数量 (起购: ${selectedProduct.min}, 限购: ${selectedProduct.max})！`);
+                    return;
+                }
+
+                // WebApp Magic closed-loop transfer!
+                const orderPayload = {
+                    service_id: selectedProduct.service,
+                    link: link,
+                    quantity: qty
+                };
+
                 tg.sendData(JSON.stringify(orderPayload));
             } catch (err) {
-                tg.showAlert("提交出错 (tg.sendData Error): " + err.message);
+                alert("JS 运行异常: " + err.message);
             }
         }
     </script>
