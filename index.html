@@ -437,24 +437,43 @@
                     return;
                 }
 
-                // Clean link and strictly enforce Telegram's 64-character start param limit!
-                let cleanLink = link.trim().replace(/^https?:\/\/(t\.me\/)?/, '').replace(/^@/, '');
-                let safeLink = cleanLink.replace(/[^a-zA-Z0-9_-]/g, '_');
+                const orderPayload = {
+                    user_id: user ? user.id : null,
+                    service_id: selectedProduct.service,
+                    link: link,
+                    quantity: qty
+                };
 
-                let startParam = `ord_${selectedProduct.service}_${qty}_${safeLink}`;
-                if (startParam.length > 64) {
-                    startParam = startParam.slice(0, 64);
+                let apiUrl = '/api/web_app_order';
+                const urlParams = new URLSearchParams(window.location.search);
+                const customApi = urlParams.get('api');
+                if (customApi) {
+                    apiUrl = customApi.replace(/\/$/, '') + '/api/web_app_order';
                 }
 
-                const targetBot = "yctyinliubot";
-                const deepLink = `https://t.me/${targetBot}?start=${startParam}`;
-
-                if (tg && tg.openTelegramLink) {
-                    tg.openTelegramLink(deepLink);
-                    tg.close();
-                } else {
-                    window.location.href = deepLink;
-                }
+                fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(orderPayload)
+                })
+                .then(res => {
+                    return res.json().then(data => {
+                        if (!res.ok) throw new Error(data.error || ('下单失败，状态码: ' + res.status));
+                        return data;
+                    });
+                })
+                .then(resData => {
+                    closeOrderDrawer(); // 仅关闭当前确认订单抽屉弹窗
+                    if (tg && tg.showAlert) {
+                        tg.showAlert("🎉 下单提交成功！费用已从您的余额中扣除。");
+                    } else {
+                        alert("🎉 下单提交成功！费用已从您的余额中扣除。");
+                    }
+                })
+                .catch(err => {
+                    if (tg) tg.showAlert("下单失败: " + err.message);
+                    else alert("下单失败: " + err.message);
+                });
             } catch (err) {
                 logDebug("JS Run Exception: " + err.message, "error");
                 if (tg) {
