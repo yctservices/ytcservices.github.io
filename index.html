@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="h-full bg-slate-950 text-slate-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>自助下单中心</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            950: '#090d16',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.45);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+    </style>
+    <!-- Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body class="h-full flex flex-col font-sans overflow-hidden select-none">
+
+    <!-- Header Section -->
+    <header class="glass px-4 py-4 flex flex-col gap-2 shrink-0 border-b border-slate-800/40">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="p-2 bg-brand-500/10 text-brand-500 rounded-lg">
+                    <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h1 class="text-base font-bold tracking-wide">网页自助下单中心</h1>
+                    <p class="text-[10px] text-slate-400">服务费用将直接从您的机器人钱包中扣除</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <span id="user-name-display" class="text-xs font-semibold text-slate-300 block">用户账户</span>
+                <span id="user-id-display" class="text-[10px] text-slate-500 block">ID: --</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 overflow-y-auto px-4 py-4 space-y-4">
+        
+        <!-- Search and Filter Bar -->
+        <div class="relative">
+            <i data-lucide="search" class="absolute left-3.5 top-3 w-4 h-4 text-slate-500"></i>
+            <input type="text" id="search-input" oninput="filterServices()" placeholder="搜索您需要的商品服务或ID..." class="w-full pl-10 pr-4 py-2.5 bg-slate-900/60 border border-slate-800 rounded-xl focus:outline-none focus:border-brand-500 text-xs text-slate-300">
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="flex gap-2 overflow-x-auto pb-2 shrink-0 select-none whitespace-nowrap" id="category-tabs">
+            <!-- Dynamic Category Buttons -->
+        </div>
+
+        <!-- Services List -->
+        <div class="space-y-2.5" id="services-container">
+            <div class="text-center py-10 text-slate-500 text-xs">
+                正在载入商品数据，请稍候...
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Order Drawer (Modal / Bottom Sheet) -->
+    <div id="order-drawer" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-sm flex items-end justify-center hidden">
+        <div class="glass w-full rounded-t-3xl p-6 space-y-4 max-h-[85vh] overflow-y-auto transform translate-y-full transition-transform duration-300">
+            <div class="flex justify-between items-center pb-2 border-b border-slate-800">
+                <div class="flex items-center gap-2">
+                    <span class="p-1.5 bg-brand-500/10 text-brand-500 rounded-lg text-xs">🛍️ 下单</span>
+                    <h3 class="text-sm font-bold text-slate-200">确认商品订单</h3>
+                </div>
+                <button onclick="closeOrderDrawer()" class="text-slate-500 hover:text-slate-300">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <!-- Selected Product Info -->
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800/40 space-y-1.5 text-xs">
+                <div>
+                    <span class="text-[10px] text-slate-500">服务名称</span>
+                    <p id="drawer-product-name" class="font-medium text-slate-300"></p>
+                </div>
+                <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-800/30">
+                    <div>
+                        <span class="text-[10px] text-slate-500 block">单价</span>
+                        <span id="drawer-product-rate" class="font-semibold text-brand-400">¥0.00</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-slate-500 block">起购数</span>
+                        <span id="drawer-product-min" class="font-semibold text-slate-300">1</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-slate-500 block">限购数</span>
+                        <span id="drawer-product-max" class="font-semibold text-slate-300">10000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Inputs -->
+            <form onsubmit="submitOrder(event)" class="space-y-4 text-xs">
+                <div>
+                    <label class="block text-[10px] text-slate-400 mb-1 uppercase tracking-wider">目标下单链接 (Link)</label>
+                    <input type="text" id="order-link" required placeholder="请粘贴目标 Telegram 频道、帖子或账户链接..." class="w-full px-4 py-2.5 bg-slate-900 border border-slate-800 rounded-xl focus:outline-none focus:border-brand-500 text-xs text-slate-200">
+                </div>
+
+                <div>
+                    <label class="block text-[10px] text-slate-400 mb-1 uppercase tracking-wider">下单数量 (Quantity)</label>
+                    <input type="number" id="order-quantity" required oninput="calculateTotal()" class="w-full px-4 py-2.5 bg-slate-900 border border-slate-800 rounded-xl focus:outline-none focus:border-brand-500 text-xs text-slate-200" placeholder="请输入起购限购范围内的数量">
+                </div>
+
+                <div class="flex items-center justify-between p-3 bg-brand-500/5 rounded-xl border border-brand-500/10">
+                    <div>
+                        <span class="text-[10px] text-slate-400 block">订单预计总费用:</span>
+                        <span class="text-xs text-slate-500">(按最终下单数计费)</span>
+                    </div>
+                    <span id="order-total-price" class="text-lg font-bold text-brand-400">¥0.00</span>
+                </div>
+
+                <button type="submit" class="w-full py-3 bg-brand-600 hover:bg-brand-500 transition-all font-semibold rounded-xl text-white shadow-lg shadow-brand-500/10 text-xs flex items-center justify-center gap-2">
+                    <i data-lucide="zap" class="w-4 h-4"></i> 🚀 立即提交并扣款下单
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Frontend WebApp Controller Logic -->
+    <script>
+        let services = [];
+        let categories = [];
+        let activeCategory = '';
+        let selectedProduct = null;
+
+        // Initialize Telegram WebApp SDK
+        const tg = window.Telegram.WebApp;
+        tg.expand(); // Expand full height
+
+        window.addEventListener('DOMContentLoaded', () => {
+            // Apply User Info from Telegram
+            const user = tg.initDataUnsafe?.user;
+            if (user) {
+                document.getElementById('user-name-display').innerText = user.first_name + (user.last_name ? ' ' + user.last_name : '');
+                document.getElementById('user-id-display').innerText = 'ID: ' + user.id;
+            } else {
+                document.getElementById('user-name-display').innerText = '访客账户';
+                document.getElementById('user-id-display').innerText = 'ID: 未关联';
+            }
+
+            loadServicesData();
+            lucide.createIcons({attrs: {"data-lucide": true}});
+        });
+
+        async function loadServicesData() {
+            try {
+                // Fetch the static cache file
+                const res = await fetch('services.json');
+                if (res.ok) {
+                    services = await res.json();
+                    
+                    // Parse categories
+                    categories = [...new Set(services.map(s => s.category))];
+                    if (categories.length > 0) activeCategory = categories[0];
+
+                    renderCategoryTabs();
+                    renderServices();
+                } else {
+                    document.getElementById('services-container').innerHTML = `
+                        <div class="text-center py-10 text-red-400 text-xs">
+                            获取商品列表失败，请联系管理员确认配置。
+                        </div>
+                    `;
+                }
+            } catch (e) {
+                document.getElementById('services-container').innerHTML = `
+                    <div class="text-center py-10 text-red-400 text-xs">
+                        网络请求失败，请刷新重试。
+                    </div>
+                `;
+            }
+        }
+
+        function renderCategoryTabs() {
+            const container = document.getElementById('category-tabs');
+            container.innerHTML = '';
+
+            categories.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = `px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
+                    activeCategory === cat 
+                    ? 'bg-brand-500 text-white shadow-lg shadow-brand-500/20' 
+                    : 'bg-slate-900 text-slate-400 hover:bg-slate-800'
+                }`;
+                btn.innerText = cat;
+                btn.onclick = () => {
+                    activeCategory = cat;
+                    renderCategoryTabs();
+                    renderServices();
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        function renderServices() {
+            const container = document.getElementById('services-container');
+            container.innerHTML = '';
+
+            const keyword = document.getElementById('search-input').value.toLowerCase().trim();
+
+            const filtered = services.filter(s => {
+                const matchKeyword = s.service.toString().includes(keyword) || 
+                                     s.name.toLowerCase().includes(keyword) ||
+                                     (s.custom_id && s.custom_id.toLowerCase().includes(keyword));
+                const matchCategory = !keyword && s.category === activeCategory;
+                return matchKeyword && matchCategory;
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-10 text-slate-500 text-xs">
+                        没有找到匹配的服务商品。
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(s => {
+                const priceUnit = s.type.toLowerCase() === 'package' ? '个' : 'k';
+                const displayId = s.custom_id || s.service;
+
+                const card = document.createElement('div');
+                card.className = 'glass p-4 rounded-xl flex items-center justify-between gap-4 active:bg-slate-900/60 transition-all cursor-pointer';
+                card.onclick = () => openOrderDrawer(s);
+
+                card.innerHTML = `
+                    <div class="flex-1 space-y-1">
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                            <span class="px-2 py-0.5 bg-brand-500/10 text-brand-400 font-mono text-[9px] rounded font-semibold border border-brand-500/10">
+                                ID: ${displayId}
+                            </span>
+                            <span class="text-slate-500 font-mono text-[9px]">
+                                起购: ${s.min} | 限购: ${s.max}
+                            </span>
+                        </div>
+                        <h4 class="text-xs font-semibold text-slate-200 line-clamp-2">${s.name}</h4>
+                    </div>
+                    <div class="text-right shrink-0">
+                        <span class="text-brand-400 font-bold text-sm block">¥${s.rate.toFixed(2)}</span>
+                        <span class="text-[9px] text-slate-500">每 ${priceUnit === 'k' ? '1000' : '1'} 个</span>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            lucide.createIcons({attrs: {"data-lucide": true}});
+        }
+
+        function filterServices() {
+            renderServices();
+        }
+
+        // Drawer Operations
+        function openOrderDrawer(product) {
+            selectedProduct = product;
+            const priceUnit = product.type.toLowerCase() === 'package' ? '每个' : '每 1000 个';
+
+            document.getElementById('drawer-product-name').innerText = product.name;
+            document.getElementById('drawer-product-rate').innerText = `¥${product.rate.toFixed(2)} / ${priceUnit}`;
+            document.getElementById('drawer-product-min').innerText = product.min;
+            document.getElementById('drawer-product-max').innerText = product.max;
+
+            // Set validation inputs
+            const qtyInput = document.getElementById('order-quantity');
+            qtyInput.min = product.min;
+            qtyInput.max = product.max;
+            qtyInput.placeholder = `范围: ${product.min} - ${product.max}`;
+            qtyInput.value = '';
+
+            document.getElementById('order-link').value = '';
+            document.getElementById('order-total-price').innerText = '¥0.00';
+
+            const drawer = document.getElementById('order-drawer');
+            drawer.classList.remove('hidden');
+            setTimeout(() => {
+                drawer.firstElementChild.classList.remove('translate-y-full');
+            }, 10);
+        }
+
+        function closeOrderDrawer() {
+            const drawer = document.getElementById('order-drawer');
+            drawer.firstElementChild.classList.add('translate-y-full');
+            setTimeout(() => {
+                drawer.classList.add('hidden');
+                selectedProduct = null;
+            }, 300);
+        }
+
+        function calculateTotal() {
+            if (!selectedProduct) return;
+            const qty = parseInt(document.getElementById('order-quantity').value) || 0;
+            const isPackage = selectedProduct.type.toLowerCase() === 'package';
+            
+            let total = 0;
+            if (isPackage) {
+                total = selectedProduct.rate * qty;
+            } else {
+                total = (selectedProduct.rate / 1000.0) * qty;
+            }
+
+            document.getElementById('order-total-price').innerText = `¥${total.toFixed(2)}`;
+        }
+
+        function submitOrder(event) {
+            event.preventDefault();
+            if (!selectedProduct) return;
+
+            const link = document.getElementById('order-link').value.trim();
+            const qty = parseInt(document.getElementById('order-quantity').value);
+
+            if (!link) {
+                tg.showAlert('请输入下单的目标链接地址！');
+                return;
+            }
+
+            if (isNaN(qty) || qty < selectedProduct.min || qty > selectedProduct.max) {
+                tg.showAlert(`请输入合法的下单数量 (起购: ${selectedProduct.min}, 限购: ${selectedProduct.max})！`);
+                return;
+            }
+
+            // WebApp Magic closed-loop transfer!
+            const orderPayload = {
+                service_id: selectedProduct.service,
+                link: link,
+                quantity: qty
+            };
+
+            tg.sendData(JSON.stringify(orderPayload));
+        }
+    </script>
+</body>
+</html>

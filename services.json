@@ -1,0 +1,6782 @@
+[
+  {
+    "service": 428,
+    "name": "Telegram会员|3个月|提供用户名开通",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 96.0,
+    "min": 1,
+    "max": 1,
+    "type": "Package",
+    "custom_id": "TG0001"
+  },
+  {
+    "service": 4386,
+    "name": "Telegram会员|6个月|提供用户名开通",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 129.6,
+    "min": 1,
+    "max": 1,
+    "type": "Package",
+    "custom_id": null
+  },
+  {
+    "service": 4387,
+    "name": "Telegram会员|12个月|提供用户名开通",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 237.6,
+    "min": 1,
+    "max": 1,
+    "type": "Package",
+    "custom_id": null
+  },
+  {
+    "service": 4431,
+    "name": "Telegram会员|3个月|领取激活码开通",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 96.0,
+    "min": 1,
+    "max": 1,
+    "type": "Package",
+    "custom_id": null
+  },
+  {
+    "service": 4432,
+    "name": "Telegram会员|6个月|领取激活码开通",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 129.6,
+    "min": 1,
+    "max": 1,
+    "type": "Package",
+    "custom_id": null
+  },
+  {
+    "service": 4433,
+    "name": "Telegram会员|12个月|领取激活码开通",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 234.0,
+    "min": 1,
+    "max": 1,
+    "type": "Package",
+    "custom_id": null
+  },
+  {
+    "service": 3788,
+    "name": "代开X会员|提供用户名开通",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 567.0,
+    "min": 525,
+    "max": 525,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3525,
+    "name": "Telegram群组在线成员|一个月在线|100%在线|不掉落",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 252.0,
+    "min": 200,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 760,
+    "name": "Telegram老频道|2016-2021年",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 1200.0,
+    "min": 10,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 755,
+    "name": "Telegram 2016-2021年老频道 （发送过帖子，可编辑历史消息） 25元/年份📣",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 1200.0,
+    "min": 15,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 440,
+    "name": "Telegram 群管机器人定制 🤖",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 240.0,
+    "min": 1,
+    "max": 1,
+    "type": "Package",
+    "custom_id": null
+  },
+  {
+    "service": 751,
+    "name": "独家服务 🔰银河官方护卫🔰 远离封禁 90元/月",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 108.0,
+    "min": 1000,
+    "max": 1000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 432,
+    "name": "Telegram 封禁群组/封禁频道/封禁用户/封禁机器人/贴诈骗标签 800元/个",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 960.0,
+    "min": 1,
+    "max": 1,
+    "type": "Package",
+    "custom_id": null
+  },
+  {
+    "service": 433,
+    "name": "Teleram 协议/拉人/炒群/群发/私发 软件1000元/月",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 1200.0,
+    "min": 1,
+    "max": 1,
+    "type": "Package",
+    "custom_id": null
+  },
+  {
+    "service": 435,
+    "name": "Telegram 电报账号",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 1200.0,
+    "min": 10,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 795,
+    "name": "补差价专用",
+    "category": "⭐⭐⭐综合服务⭐⭐⭐",
+    "rate": 1200.0,
+    "min": 1,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4096,
+    "name": "Telegram 助推 [30天] ⭐⚡",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 720.0,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4448,
+    "name": "Telegram 助推 [1天] ⭐",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 120.0,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4427,
+    "name": "Telegram 助推 [180天] ⭐",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 2880.0,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4449,
+    "name": "Telegram 助推 [7天] ⭐",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 216.0,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4450,
+    "name": "Telegram 助推 [14天] ⭐",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 420.0,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4428,
+    "name": "Telegram 助推 [90天] ⭐",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 1680.0,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3727,
+    "name": "Telegram 助推 1天",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 130.224,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3889,
+    "name": "Telegram 助推 7天",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 303.864,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3890,
+    "name": "Telegram 助推 14天",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 651.12,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3901,
+    "name": "Telegram 助推 30天",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 1302.228,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4169,
+    "name": "Telegram 助推 20-30天",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 1452.18,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3740,
+    "name": "Telegram Story 浏览量",
+    "category": "Telegram 频道/群助力推广 优化排名 解锁专属特权和高级功能",
+    "rate": 1.74,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3725,
+    "name": "Telegram｜随机昵称｜3万/天｜3个月售后｜快速⚡",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.616,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4519,
+    "name": "Telegram｜特惠｜2万/天｜3个月不掉｜慢速🎯",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.136,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4213,
+    "name": "Telegram｜英文｜3万/天｜3个月售后｜快速⚡",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.664,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4516,
+    "name": "Telegram｜英文｜3万/天｜3个月售后｜快速⚡",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 3.9359999999999995,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4517,
+    "name": "Telegram｜特惠｜3万/天｜3个月不掉｜慢速🎯",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.376,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3505,
+    "name": "Telegram｜中国｜10万/天｜3个月售后｜优化排名",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 6.215999999999999,
+    "min": 500,
+    "max": 150000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4518,
+    "name": "Telegram｜特惠｜2万/天｜1个月不掉｜慢速🎯",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 1.776,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4379,
+    "name": "Telegram｜特惠｜3万/天｜1个月不掉｜慢速｜新🆕",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 1.776,
+    "min": 500,
+    "max": 60000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4361,
+    "name": "Telegram｜特惠｜3万/天｜1个月不掉｜慢速｜新🆕",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.016,
+    "min": 500,
+    "max": 150000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4360,
+    "name": "Telegram｜特惠｜3万/天｜1个月不掉｜慢速｜新🆕",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.976,
+    "min": 500,
+    "max": 70000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4363,
+    "name": "Telegram｜特惠｜3万/天｜3个月不掉｜慢速｜新🆕",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 4.056,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4362,
+    "name": "Telegram｜特惠｜3万/天｜3个月不掉｜慢速｜新🆕",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 5.015999999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4378,
+    "name": "Telegram｜特惠｜3万/天｜6个月不掉｜慢速｜新🆕",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 7.656,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4177,
+    "name": "Telegram｜高质量｜5万/天｜3个月不掉｜ 超快速度",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 6.336,
+    "min": 500,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4176,
+    "name": "Telegram｜高质量｜5万/天｜2个月不掉",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 5.856,
+    "min": 500,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4185,
+    "name": "Telegram｜高质量｜5万/天｜3个月不掉",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 8.136,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4186,
+    "name": "Telegram｜高质量｜10万/天｜3个月不掉",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 9.696,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4187,
+    "name": "Telegram｜高质量｜10万/天｜3个月不掉",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 13.056000000000001,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3793,
+    "name": "Telegram｜6万/天｜10万/天｜30天不掉｜英文｜运行6年老服务 💧",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 7.536,
+    "min": 100,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4216,
+    "name": "Telegram｜高质量｜5万/天｜1个月不掉｜乌兹别克斯坦",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 5.4959999999999996,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4215,
+    "name": "Telegram｜高质量｜5万/天｜1个月不掉｜俄罗斯",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 5.4959999999999996,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3532,
+    "name": "Telegram｜高质量｜5万/天｜随机昵称｜ 2个月售后｜运行6年老服务 💧",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 12.0,
+    "min": 500,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 748,
+    "name": "Telegram｜高质量｜0退群｜5万/天｜印文｜3月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 6.864,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4278,
+    "name": "Telegram｜特惠｜5万/天｜3个月不掉｜速度慢｜ 🆕🔥",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 4.212,
+    "min": 200,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4188,
+    "name": "Telegram｜特惠｜5万/天｜1个月不掉｜ 🆕",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 5.616,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3504,
+    "name": "Telegram｜高质量｜0退群｜5万/天/中文/英文｜2月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 3.396,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4194,
+    "name": "Telegram｜高质量｜3万/天｜1个月不掉｜超快速度💧",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 4.524,
+    "min": 500,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4189,
+    "name": "Telegram｜特惠｜5万/天｜2个月不掉｜ 💧",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 5.976,
+    "min": 100,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4190,
+    "name": "Telegram｜特惠｜5万/天｜3个月不掉｜ 🆕",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 6.336,
+    "min": 200,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4192,
+    "name": "Telegram｜特惠｜5万/天｜3个月不掉｜ 🆕",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 8.256,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4238,
+    "name": "Telegram｜特惠｜5万/天｜1个月售后｜会掉落",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.7239999999999998,
+    "min": 500,
+    "max": 800000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4175,
+    "name": "Telegram｜高质量｜5万/天｜1个月不掉｜ 🆕",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 5.76,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3795,
+    "name": "Telegram｜高质量｜0退群｜5万/天｜中文｜2月售后 💧",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 11.52,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4280,
+    "name": "Telegram｜｜5万/天｜2个月不掉｜ 05.8.17更新",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.316,
+    "min": 100,
+    "max": 40000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4146,
+    "name": "Telegram‐30天售后补充 ‐ 高掉落 - 非即时补充②",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.136,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4168,
+    "name": "Telegram｜1万/天｜30天不掉｜英文",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.052,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4151,
+    "name": "Telegram｜混合成员｜2万/天｜90天不掉",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.316,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4097,
+    "name": "Telegram｜5万/天｜30天不掉｜英文",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 7.4399999999999995,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 782,
+    "name": "Telegram｜高质量｜5万/天｜随机昵称｜1月售后｜",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 11.856,
+    "min": 500,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3488,
+    "name": "Telegram｜高质量｜0退群｜5万/天/中文/英文｜1月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.388,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3480,
+    "name": "Telegram｜高质量｜0退群｜5万/天｜俄文｜1月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 7.823999999999999,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3789,
+    "name": "Telegram｜高质量｜0退群｜5万/天｜1月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 3.48,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3797,
+    "name": "Telegram｜高质量｜0退群｜5万/天｜1月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 4.524,
+    "min": 500,
+    "max": 30000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3794,
+    "name": "Telegram｜高质量｜0退群｜5万/天｜欧洲账号｜2月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 4.176,
+    "min": 500,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3495,
+    "name": "Telegram｜高质量｜0退群｜5万/天｜1月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 4.776,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3481,
+    "name": "Telegram｜高质量｜0退群｜5万/天｜1月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.304,
+    "min": 500,
+    "max": 400000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3464,
+    "name": "Telegram｜高质量｜0退群｜5万/天｜3月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 7.8,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 1374,
+    "name": "Telegram 群/频道粉丝 不退群 3万/天 即时启动 3个月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 5.124,
+    "min": 500,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 468,
+    "name": "Telegram 群/频道粉丝 不退群 10万/天 即时启动 2个月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.172,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3477,
+    "name": "Telegram｜6万/天｜30天不掉｜",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 7.632,
+    "min": 500,
+    "max": 60000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 789,
+    "name": "Telegram ｜群/频道成员｜30K/天 ｜自动取消按钮｜60天售后｜🔥🔥⛔♻️",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 12.96,
+    "min": 500,
+    "max": 150000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3516,
+    "name": "TG 群/频道粉丝 ⑮ 即时启动 30天保障🚀🚀",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 5.124,
+    "min": 500,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3493,
+    "name": "TG 群/频道粉丝 0退群🚀",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 7.823999999999999,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3496,
+    "name": "TG 群/频道粉丝 ㉓ [Nitro] 0退群 90天保障",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 7.8,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3498,
+    "name": "TG 群/频道粉丝 ㉕ 0退群 60天保障 🚀🚀🚀",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 2.544,
+    "min": 500,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3507,
+    "name": "Telegram｜高质量｜0退群｜5万/天/中文/英文｜2月售后",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 4.296,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3518,
+    "name": "Telegram｜高质量｜5万/天｜随机昵称｜1月售后｜",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 12.719999999999999,
+    "min": 500,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4317,
+    "name": "Telegram｜｜5万/天｜6个月不掉｜ 💧 💧 💧",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 5.22,
+    "min": 10,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4323,
+    "name": "Telegram｜特惠｜5万/天｜6个月不掉｜ 💧 💧 💧",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 4.632,
+    "min": 10,
+    "max": 5000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4324,
+    "name": "Telegram｜1万/天｜1个月不掉｜ 💧 💧 💧",
+    "category": "Telegram｜ 群/频道粉丝",
+    "rate": 4.464,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4521,
+    "name": "Telegram｜随机昵称｜3万/天｜30天售后｜慢速🎯",
+    "category": "Telegram｜ 群/频道粉丝 30天售后",
+    "rate": 1.764,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4520,
+    "name": "Telegram｜随机昵称｜3万/天｜90天售后｜快速⚡",
+    "category": "Telegram｜ 群/频道粉丝 90天售后",
+    "rate": 2.196,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4522,
+    "name": "Telegram｜特惠｜2万/天｜90天售后｜慢速🎯",
+    "category": "Telegram｜ 群/频道粉丝 90天售后",
+    "rate": 2.124,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4523,
+    "name": "Telegram｜特惠｜2万/天｜90天售后",
+    "category": "Telegram｜ 群/频道粉丝 90天售后",
+    "rate": 5.484,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4528,
+    "name": "Telegram｜随机昵称｜1万/天｜90天售后",
+    "category": "Telegram｜ 群/频道粉丝 90天售后",
+    "rate": 1.608,
+    "min": 1000,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4526,
+    "name": "Telegram｜特惠｜3万/天｜180天售后",
+    "category": "Telegram｜ 群/频道粉丝 180天不掉",
+    "rate": 4.524,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4524,
+    "name": "Telegram｜特惠｜3万/天｜180天售后",
+    "category": "Telegram｜ 群/频道粉丝 180天不掉",
+    "rate": 8.088,
+    "min": 100,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4527,
+    "name": "Telegram｜特惠｜3万/天｜360天售后",
+    "category": "Telegram｜ 群/频道粉丝 360天不掉",
+    "rate": 5.22,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4525,
+    "name": "Telegram｜特惠｜3万/天｜360天售后",
+    "category": "Telegram｜ 群/频道粉丝 360天不掉",
+    "rate": 9.324,
+    "min": 100,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4549,
+    "name": "Telegram 🌍 全球高级会员👑⚡｜30天",
+    "category": "Telegram 🌍 全球高级会员👑⚡｜排名优化 📈｜稳定",
+    "rate": 33.455999999999996,
+    "min": 500,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4567,
+    "name": "Telegram 🌍 全球高级会员👑⚡｜90-180天｜永久不主动退出",
+    "category": "Telegram 🌍 全球高级会员👑⚡｜排名优化 📈｜稳定",
+    "rate": 136.65599999999998,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4451,
+    "name": "Telegram 🌍 全球高级会员👑｜7天",
+    "category": "Telegram 🌍 全球高级会员👑⚡｜排名优化 📈｜稳定",
+    "rate": 22.656,
+    "min": 200,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4452,
+    "name": "Telegram 🌍全球高级会员👑｜14天",
+    "category": "Telegram 🌍 全球高级会员👑⚡｜排名优化 📈｜稳定",
+    "rate": 31.055999999999997,
+    "min": 200,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4453,
+    "name": "Telegram 🌍全球高级会员👑｜30天",
+    "category": "Telegram 🌍 全球高级会员👑⚡｜排名优化 📈｜稳定",
+    "rate": 43.056000000000004,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4529,
+    "name": "Telegram 🌍全球高级会员⚡｜30天",
+    "category": "Telegram 🌍 全球高级会员👑⚡｜排名优化 📈｜稳定",
+    "rate": 45.456,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4530,
+    "name": "Telegram 🌍全球高级会员⚡｜30天",
+    "category": "Telegram 🌍 全球高级会员👑⚡｜排名优化 📈｜稳定",
+    "rate": 62.256,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4454,
+    "name": "Telegram 🌍全球高级会员👑｜60天",
+    "category": "Telegram 🌍 全球高级会员👑⚡｜排名优化 📈｜稳定",
+    "rate": 79.056,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4455,
+    "name": "Telegram 🌍全球高级会员👑｜90天",
+    "category": "Telegram 🌍 全球高级会员👑⚡｜排名优化 📈｜稳定",
+    "rate": 104.25599999999999,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4456,
+    "name": "Telegram 🌍全球高级会员👑｜120天",
+    "category": "Telegram 🌍 全球高级会员👑⚡｜排名优化 📈｜稳定",
+    "rate": 130.65599999999998,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4229,
+    "name": "Telegram 🌍 高级会员👑📈｜20天",
+    "category": "Telegram｜高级会员👑｜排名优化 📈｜稳定",
+    "rate": 28.055999999999997,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4230,
+    "name": "Telegram 🌍 高级会员👑📈｜30天",
+    "category": "Telegram｜高级会员👑｜排名优化 📈｜稳定",
+    "rate": 37.416,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4231,
+    "name": "Telegram 🌍 高级会员👑📈｜45天",
+    "category": "Telegram｜高级会员👑｜排名优化 📈｜稳定",
+    "rate": 56.256,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4232,
+    "name": "Telegram 🌍 高级会员👑📈｜60天",
+    "category": "Telegram｜高级会员👑｜排名优化 📈｜稳定",
+    "rate": 93.45599999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4233,
+    "name": "Telegram 🌍 高级会员👑📈｜90天",
+    "category": "Telegram｜高级会员👑｜排名优化 📈｜稳定",
+    "rate": 118.65599999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4234,
+    "name": "Telegram 🌍 高级会员👑📈｜180天",
+    "category": "Telegram｜高级会员👑｜排名优化 📈｜稳定",
+    "rate": 154.65599999999998,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4235,
+    "name": "Telegram 🌍 高级会员👑📈｜360天",
+    "category": "Telegram｜高级会员👑｜排名优化 📈｜稳定",
+    "rate": 170.256,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4479,
+    "name": "Telegram 🇨🇳 中国 高级会员 👑｜7天",
+    "category": "Telegram 🇨🇳 中国 高级会员 👑⚡",
+    "rate": 22.656,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4480,
+    "name": "Telegram 🇨🇳 中国 高级会员 👑｜14天",
+    "category": "Telegram 🇨🇳 中国 高级会员 👑⚡",
+    "rate": 31.055999999999997,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4481,
+    "name": "Telegram 🇨🇳 中国 高级会员 👑｜30天",
+    "category": "Telegram 🇨🇳 中国 高级会员 👑⚡",
+    "rate": 43.056000000000004,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4482,
+    "name": "Telegram 🇨🇳 中国 高级会员 👑｜60天",
+    "category": "Telegram 🇨🇳 中国 高级会员 👑⚡",
+    "rate": 79.056,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4483,
+    "name": "Telegram 🇨🇳 中国 高级会员 👑｜90天",
+    "category": "Telegram 🇨🇳 中国 高级会员 👑⚡",
+    "rate": 104.25599999999999,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4484,
+    "name": "Telegram 🇨🇳 中国 高级会员 👑｜120天",
+    "category": "Telegram 🇨🇳 中国 高级会员 👑⚡",
+    "rate": 130.65599999999998,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4422,
+    "name": "Telegram｜高级会员粉丝💎｜全球混合｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜高级会员粉丝💎｜Ai 模型｜通过搜索关键词加入｜优化全局排名",
+    "rate": 52.656,
+    "min": 500,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4413,
+    "name": "Telegram｜高级会员粉丝💎｜全球混合｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜高级会员粉丝💎｜Ai 模型｜通过搜索关键词加入｜优化全局排名",
+    "rate": 80.25599999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4414,
+    "name": "Telegram｜高级会员粉丝💎｜中国｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜高级会员粉丝💎｜Ai 模型｜通过搜索关键词加入｜优化全局排名",
+    "rate": 106.65599999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4415,
+    "name": "Telegram｜高级会员粉丝💎｜印度｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜高级会员粉丝💎｜Ai 模型｜通过搜索关键词加入｜优化全局排名",
+    "rate": 106.65599999999999,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4416,
+    "name": "Telegram｜高级会员粉丝💎｜土耳其｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜高级会员粉丝💎｜Ai 模型｜通过搜索关键词加入｜优化全局排名",
+    "rate": 106.65599999999999,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4417,
+    "name": "Telegram｜高级会员粉丝💎｜乌克兰｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜高级会员粉丝💎｜Ai 模型｜通过搜索关键词加入｜优化全局排名",
+    "rate": 106.65599999999999,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4418,
+    "name": "Telegram｜高级会员粉丝💎｜乌兹别克斯坦｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜高级会员粉丝💎｜Ai 模型｜通过搜索关键词加入｜优化全局排名",
+    "rate": 106.65599999999999,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4419,
+    "name": "Telegram｜高级会员粉丝💎｜阿拉伯｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜高级会员粉丝💎｜Ai 模型｜通过搜索关键词加入｜优化全局排名",
+    "rate": 106.65599999999999,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4420,
+    "name": "Telegram｜高级会员粉丝💎｜以色列｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜高级会员粉丝💎｜Ai 模型｜通过搜索关键词加入｜优化全局排名",
+    "rate": 106.65599999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4421,
+    "name": "Telegram｜高级会员粉丝💎｜俄罗斯｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜高级会员粉丝💎｜Ai 模型｜通过搜索关键词加入｜优化全局排名",
+    "rate": 123.45599999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4566,
+    "name": "Telegram 🌍 全球高级会员👑⚡｜90-180天｜永久不主动退出",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 136.65599999999998,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3719,
+    "name": "Telegram 🌍 全球高级会员 30天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 57.599999999999994,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3738,
+    "name": "Telegram 🌍 全球高级会员 20-30天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 130.65599999999998,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3714,
+    "name": "Telegram 🌍 全球高级会员 45-90天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 224.256,
+    "min": 100,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4210,
+    "name": "Telegram 🌍 印度高级会员 30-90天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 130.65599999999998,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4222,
+    "name": "Telegram 🌍 乌克兰高级会员 30-90天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 130.65599999999998,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4147,
+    "name": "Telegram 🌍 中国高级会员 15-30天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 57.599999999999994,
+    "min": 100,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4218,
+    "name": "Telegram 🌍 以色列高级会员 15-30天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 57.599999999999994,
+    "min": 100,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4217,
+    "name": "Telegram 🌍 乌兹别克高级会员 15-30天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 57.599999999999994,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3685,
+    "name": "Telegram 🌍俄罗斯高级会员 30-90天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 236.25599999999997,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4219,
+    "name": "Telegram 🌍美国高级会员 20-30天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 57.599999999999994,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4220,
+    "name": "Telegram 🌍土耳其高级会员15-30天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 57.599999999999994,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4170,
+    "name": "Telegram 🌍 全球高级会员 7-14天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 28.055999999999997,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3674,
+    "name": "Telegram 🌍全球混合高级会员 60-180天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 473.856,
+    "min": 100,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3733,
+    "name": "Telegram 中国高级会员频道帖子分享转发 12个月 可查统计数据",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 94.65599999999999,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3734,
+    "name": "Telegram 中国高级会员启动机器人 12个月 可查统计数据",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 94.65599999999999,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3876,
+    "name": "Telegram 随机国家高级会员粉丝 通过链接加入 1个月 （会掉落，需邀请链接订购）",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 78.86399999999999,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3736,
+    "name": "Telegram 🌍中国高级会员 90-360天 👑 通过全局搜索窗口",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 460.656,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3739,
+    "name": "Telegram 随机国家高级会员粉丝 1个月 通过链接加入 【先看说明】 【会掉落】",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 77.11200000000001,
+    "min": 100,
+    "max": 45000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3823,
+    "name": "Telegram 🌍全球混合高级会员 30-90天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 246.23999999999998,
+    "min": 100,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3618,
+    "name": "Telegram 🌍全球混合高级会员 90-360天 👑⚡",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 935.856,
+    "min": 100,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3718,
+    "name": "Telegram 随机国家高级会员粉丝 1个月 通过链接加入 【先看说明】",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 97.056,
+    "min": 100,
+    "max": 30000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3721,
+    "name": "Telegram 随机国家高级会员粉丝 1个月 通过链接加入🚀",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 73.28399999999999,
+    "min": 500,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3677,
+    "name": "Telegram 随机国家高级会员粉丝 12个月 通过链接加入➕浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 117.13199999999999,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3676,
+    "name": "Telegram 随机国家高级会员粉丝 12个月 粉丝通过全局搜索窗加入",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 90.85199999999999,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3675,
+    "name": "Telegram 随机国家高级会员粉丝 12个月 粉丝模拟真人通过全局搜索窗加入➕浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 63.696,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3693,
+    "name": "Telegram 美国高级会员粉丝 3个月 通过链接加入",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 117.13199999999999,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3692,
+    "name": "Telegram 美国高级会员粉丝 通过链接加入➕浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 90.85199999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3691,
+    "name": "Telegram 美国高级会员粉丝 30天 粉丝通过全局搜索窗加入",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 64.656,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3690,
+    "name": "Telegram 美国高级会员粉丝 12个月 粉丝模拟真人通过全局搜索窗加入➕浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 117.13199999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3681,
+    "name": "Telegram 以色列高级会员粉丝 12个月 通过链接加入",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 117.13199999999999,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3680,
+    "name": "Telegram 以色列高级会员粉丝 12个月 通过链接加入➕浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 90.85199999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3679,
+    "name": "Telegram以色列高级会员粉丝 12个月 粉丝通过全局搜索窗加入",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 64.572,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3678,
+    "name": "Telegram 以色列高级会员粉丝 12个月 粉丝模拟真人通过全局搜索窗加入➕浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 117.13199999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3684,
+    "name": "Telegram 以色列高级会员粉丝 12个月 通过链接加入➕浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 90.85199999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3682,
+    "name": "Telegram 俄罗斯高级会员粉丝 12个月 粉丝模拟真人通过全局搜索窗加入➕浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 117.13199999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3683,
+    "name": "Telegram 俄罗斯高级会员粉丝 12个月 粉丝通过全局搜索窗加入",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 64.572,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3731,
+    "name": "Telegram 中国高级会员粉丝 12个月 通过链接加入",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 920.256,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3730,
+    "name": "Telegram 中国高级会员粉丝 12个月 通过链接加入➕浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 1102.656,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3729,
+    "name": "Telegram 中国高级会员粉丝 12个月 粉丝通过全局搜索窗加入",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 1378.6560000000002,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3728,
+    "name": "Telegram 中国高级会员粉丝 12个月 粉丝模拟真人通过全局搜索窗加入➕浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 1834.6560000000002,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3735,
+    "name": "Telegram 中国高级会员频道帖子评论 12个月",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 3667.056,
+    "min": 10,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3732,
+    "name": "Telegram 中国高级会员浏览帖子 12个月 通过全局搜索窗口浏览频道帖子",
+    "category": "Telegram 💎高级会员服务 优化全局排名",
+    "rate": 94.65599999999999,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4473,
+    "name": "Telegram 🇮🇳 印度 高级会员 👑｜7天",
+    "category": "Telegram 🇮🇳 印度 高级会员 👑⚡",
+    "rate": 22.656,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4474,
+    "name": "Telegram 🇮🇳 印度 高级会员 👑｜14天",
+    "category": "Telegram 🇮🇳 印度 高级会员 👑⚡",
+    "rate": 31.055999999999997,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4475,
+    "name": "Telegram 🇮🇳 印度 高级会员 👑｜30天",
+    "category": "Telegram 🇮🇳 印度 高级会员 👑⚡",
+    "rate": 43.056000000000004,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4476,
+    "name": "Telegram 🇮🇳 印度 高级会员 👑｜60天",
+    "category": "Telegram 🇮🇳 印度 高级会员 👑⚡",
+    "rate": 79.056,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4477,
+    "name": "Telegram 🇮🇳 印度 高级会员 👑｜90天",
+    "category": "Telegram 🇮🇳 印度 高级会员 👑⚡",
+    "rate": 104.25599999999999,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4478,
+    "name": "Telegram 🇮🇳 印度 高级会员 👑｜120天",
+    "category": "Telegram 🇮🇳 印度 高级会员 👑⚡",
+    "rate": 130.65599999999998,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4504,
+    "name": "Telegram 🇺🇸 美国高级会员 👑 ｜7天",
+    "category": "Telegram 🇺🇸 美国 高级会员👑⚡",
+    "rate": 22.656,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4505,
+    "name": "Telegram 🇺🇸 美国高级会员 👑 ｜14天",
+    "category": "Telegram 🇺🇸 美国 高级会员👑⚡",
+    "rate": 31.055999999999997,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4506,
+    "name": "Telegram 🇺🇸 美国高级会员 👑 ｜30天",
+    "category": "Telegram 🇺🇸 美国 高级会员👑⚡",
+    "rate": 43.056000000000004,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4507,
+    "name": "Telegram 🇺🇸 美国高级会员 👑 ｜60天",
+    "category": "Telegram 🇺🇸 美国 高级会员👑⚡",
+    "rate": 79.056,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4508,
+    "name": "Telegram 🇺🇸 美国高级会员 👑 ｜90天",
+    "category": "Telegram 🇺🇸 美国 高级会员👑⚡",
+    "rate": 104.25599999999999,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4509,
+    "name": "Telegram 🇺🇸 美国高级会员 👑 ｜120天",
+    "category": "Telegram 🇺🇸 美国 高级会员👑⚡",
+    "rate": 130.65599999999998,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4510,
+    "name": "Telegram 🇬🇧 英国高级会员 👑 ｜7天",
+    "category": "Telegram 🇬🇧 英国 高级会员👑⚡",
+    "rate": 22.656,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4511,
+    "name": "Telegram 🇬🇧 英国高级会员 👑 ｜14天",
+    "category": "Telegram 🇬🇧 英国 高级会员👑⚡",
+    "rate": 31.055999999999997,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4512,
+    "name": "Telegram 🇬🇧 英国高级会员 👑 ｜30天",
+    "category": "Telegram 🇬🇧 英国 高级会员👑⚡",
+    "rate": 43.056000000000004,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4513,
+    "name": "Telegram 🇬🇧 英国高级会员 👑 ｜60天",
+    "category": "Telegram 🇬🇧 英国 高级会员👑⚡",
+    "rate": 79.056,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4514,
+    "name": "Telegram 🇬🇧 英国高级会员 👑 ｜90天",
+    "category": "Telegram 🇬🇧 英国 高级会员👑⚡",
+    "rate": 104.25599999999999,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4515,
+    "name": "elegram 🇬🇧 英国高级会员 👑 ｜120天",
+    "category": "Telegram 🇬🇧 英国 高级会员👑⚡",
+    "rate": 130.65599999999998,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4442,
+    "name": "Telegram 🇷🇺 俄罗斯高级会员 👑 ｜7天",
+    "category": "Telegram 🇷🇺俄罗斯高级会员👑⚡",
+    "rate": 22.656,
+    "min": 500,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4443,
+    "name": "Telegram 🇷🇺 俄罗斯高级会员 👑 ｜14天",
+    "category": "Telegram 🇷🇺俄罗斯高级会员👑⚡",
+    "rate": 31.055999999999997,
+    "min": 500,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4444,
+    "name": "Telegram 🇷🇺 俄罗斯高级会员 👑 ｜30天",
+    "category": "Telegram 🇷🇺俄罗斯高级会员👑⚡",
+    "rate": 43.056000000000004,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4445,
+    "name": "Telegram 🇷🇺 俄罗斯高级会员 👑 ｜60天",
+    "category": "Telegram 🇷🇺俄罗斯高级会员👑⚡",
+    "rate": 79.056,
+    "min": 500,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4446,
+    "name": "Telegram 🇷🇺 俄罗斯高级会员 👑 ｜90天",
+    "category": "Telegram 🇷🇺俄罗斯高级会员👑⚡",
+    "rate": 104.25599999999999,
+    "min": 500,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4447,
+    "name": "Telegram 🇷🇺 俄罗斯高级会员 👑 ｜120天",
+    "category": "Telegram 🇷🇺俄罗斯高级会员👑⚡",
+    "rate": 130.65599999999998,
+    "min": 500,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4457,
+    "name": "Telegram 🇰🇿 哈萨克斯坦高级会员 👑 ｜7天",
+    "category": "Telegram  🇰🇿 哈萨克斯坦 高级会员 👑⚡",
+    "rate": 22.656,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4458,
+    "name": "Telegram 🇰🇿 哈萨克斯坦高级会员 👑 ｜14天",
+    "category": "Telegram  🇰🇿 哈萨克斯坦 高级会员 👑⚡",
+    "rate": 31.055999999999997,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4459,
+    "name": "Telegram 🇰🇿 哈萨克斯坦高级会员 👑 ｜30天",
+    "category": "Telegram  🇰🇿 哈萨克斯坦 高级会员 👑⚡",
+    "rate": 43.056000000000004,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4460,
+    "name": "Telegram 🇰🇿 哈萨克斯坦高级会员 👑 ｜60天",
+    "category": "Telegram  🇰🇿 哈萨克斯坦 高级会员 👑⚡",
+    "rate": 79.056,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4461,
+    "name": "Telegram 🇰🇿 哈萨克斯坦高级会员 👑 ｜90天",
+    "category": "Telegram  🇰🇿 哈萨克斯坦 高级会员 👑⚡",
+    "rate": 104.25599999999999,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4462,
+    "name": "Telegram 🇰🇿 哈萨克斯坦高级会员 👑 ｜120天",
+    "category": "Telegram  🇰🇿 哈萨克斯坦 高级会员 👑⚡",
+    "rate": 130.65599999999998,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4467,
+    "name": "Telegram 🇮🇱 以色列 高级会员👑｜7天",
+    "category": "Telegram 🇮🇱 以色列 高级会员👑⚡",
+    "rate": 22.656,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4468,
+    "name": "Telegram 🇮🇱 以色列 高级会员👑｜14天",
+    "category": "Telegram 🇮🇱 以色列 高级会员👑⚡",
+    "rate": 31.055999999999997,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4469,
+    "name": "Telegram 🇮🇱 以色列 高级会员👑｜30天",
+    "category": "Telegram 🇮🇱 以色列 高级会员👑⚡",
+    "rate": 43.056000000000004,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4470,
+    "name": "Telegram 🇮🇱 以色列 高级会员👑｜60天",
+    "category": "Telegram 🇮🇱 以色列 高级会员👑⚡",
+    "rate": 79.056,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4471,
+    "name": "Telegram 🇮🇱 以色列 高级会员👑｜90天",
+    "category": "Telegram 🇮🇱 以色列 高级会员👑⚡",
+    "rate": 104.25599999999999,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4472,
+    "name": "Telegram 🇮🇱 以色列 高级会员👑｜120天",
+    "category": "Telegram 🇮🇱 以色列 高级会员👑⚡",
+    "rate": 130.65599999999998,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4423,
+    "name": "Telegram｜粉丝｜Ai 模型｜通过搜索关键词加入｜30天不掉",
+    "category": "Telegram｜粉丝｜Ai 模型｜通过搜索关键词加入",
+    "rate": 6.696,
+    "min": 100,
+    "max": 100000,
+    "type": "Mentions Hashtag",
+    "custom_id": null
+  },
+  {
+    "service": 4424,
+    "name": "Telegram｜粉丝｜Ai 模型｜通过搜索关键词加入｜90天不掉",
+    "category": "Telegram｜粉丝｜Ai 模型｜通过搜索关键词加入",
+    "rate": 7.176,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4425,
+    "name": "Telegram｜粉丝｜Ai 模型｜通过搜索关键词加入｜90天不掉",
+    "category": "Telegram｜粉丝｜Ai 模型｜通过搜索关键词加入",
+    "rate": 8.856,
+    "min": 100,
+    "max": 100000,
+    "type": "Mentions Hashtag",
+    "custom_id": null
+  },
+  {
+    "service": 4409,
+    "name": "Telegram Ai 模型 智能炒群 3天",
+    "category": "Telegram  Ai 模型 智能吵群",
+    "rate": 142.65599999999998,
+    "min": 10,
+    "max": 6000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4410,
+    "name": "Telegram Ai 模型 智能炒群 7天",
+    "category": "Telegram  Ai 模型 智能吵群",
+    "rate": 286.656,
+    "min": 10,
+    "max": 6000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4411,
+    "name": "Telegram Ai 模型 智能炒群 15天",
+    "category": "Telegram  Ai 模型 智能吵群",
+    "rate": 644.256,
+    "min": 10,
+    "max": 6000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4412,
+    "name": "Telegram Ai 模型 智能炒群 30天",
+    "category": "Telegram  Ai 模型 智能吵群",
+    "rate": 1162.656,
+    "min": 10,
+    "max": 6000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4434,
+    "name": "Telegram｜频道粉丝 + 30天粉丝自动浏览帖子｜30天不掉",
+    "category": "Telegram｜频道粉丝 + 粉丝自动浏览帖子",
+    "rate": 50.256,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4435,
+    "name": "Telegram｜频道粉丝 + 60天粉丝自动浏览帖子｜60天不掉",
+    "category": "Telegram｜频道粉丝 + 粉丝自动浏览帖子",
+    "rate": 99.45599999999999,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4436,
+    "name": "Telegram｜频道粉丝 + 90天粉丝自动浏览帖子｜90天不掉",
+    "category": "Telegram｜频道粉丝 + 粉丝自动浏览帖子",
+    "rate": 148.65599999999998,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4399,
+    "name": "Telegram｜启动机器人｜全球混合｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 3.576,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4426,
+    "name": "Telegram｜启动机器人｜全球混合｜Ai 模型｜通过关键词搜索加入｜#标签",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 4.416,
+    "min": 100,
+    "max": 100000,
+    "type": "Mentions Hashtag",
+    "custom_id": null
+  },
+  {
+    "service": 4400,
+    "name": "Telegram｜启动机器人｜中国｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 4.416,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4401,
+    "name": "Telegram｜启动机器人｜美国｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 4.416,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4402,
+    "name": "Telegram｜启动机器人｜印度｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 4.416,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4403,
+    "name": "Telegram｜启动机器人｜土耳其｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 4.416,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4404,
+    "name": "Telegram｜启动机器人｜阿拉伯｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 4.416,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4405,
+    "name": "Telegram｜启动机器人｜以色列｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 4.416,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4406,
+    "name": "Telegram｜启动机器人｜乌兹别克｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 4.416,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4407,
+    "name": "Telegram｜启动机器人｜乌克兰｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 4.032,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4408,
+    "name": "Telegram｜启动机器人｜俄罗斯｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram｜普通号｜启动机器人｜Ai 模型｜通过搜索关键词加入",
+    "rate": 4.416,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4350,
+    "name": "Telegram｜特惠｜5万/天｜高掉落 无售后 💧",
+    "category": "Telegram‐群/频道‐特价僵尸粉",
+    "rate": 0.84,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4326,
+    "name": "Telegram‐90天不掉‐➀",
+    "category": "Telegram‐群/频道‐特价僵尸粉",
+    "rate": 3.948,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4327,
+    "name": "Telegram‐30天售后补充 ‐ 高掉落 - 非即时补充",
+    "category": "Telegram‐群/频道‐特价僵尸粉",
+    "rate": 1.176,
+    "min": 1000,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4322,
+    "name": "Telegram｜30天不掉➎💧",
+    "category": "Telegram‐群/频道‐特价僵尸粉",
+    "rate": 2.4119999999999995,
+    "min": 100,
+    "max": 2500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4271,
+    "name": "Telegram｜60天不掉➎",
+    "category": "Telegram‐群/频道‐特价僵尸粉",
+    "rate": 2.292,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4272,
+    "name": "Telegram｜90天不掉➎",
+    "category": "Telegram‐群/频道‐特价僵尸粉",
+    "rate": 3.528,
+    "min": 10,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4260,
+    "name": "Telegram｜高掉落｜30天售后｜启用补充按钮",
+    "category": "Telegram‐群/频道‐特价僵尸粉",
+    "rate": 1.044,
+    "min": 1,
+    "max": 30000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4206,
+    "name": "Telegram｜高级会员粉丝💎｜ 14天售后",
+    "category": "Telegram 💎高级会员服务 廉价服务",
+    "rate": 17.208,
+    "min": 100,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4208,
+    "name": "Telegram｜高级会员粉丝💎｜ 5天售后",
+    "category": "Telegram 💎高级会员服务 廉价服务",
+    "rate": 16.176,
+    "min": 100,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4209,
+    "name": "Telegram｜高级会员粉丝💎｜ 7天不掉",
+    "category": "Telegram 💎高级会员服务 廉价服务",
+    "rate": 36.132,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4207,
+    "name": "Telegram｜高级会员粉丝💎｜14天不掉",
+    "category": "Telegram 💎高级会员服务 廉价服务",
+    "rate": 73.128,
+    "min": 50,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4561,
+    "name": "Telegram 🌍 高级会员｜启动机器人👑📈｜90-180天",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 12.815999999999999,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4364,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜1个月-12个月｜全球混合",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 35.976,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4365,
+    "name": "Telegram｜高级会员💎｜机器人对话｜1个月-12个月｜全球混合🆕💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 9.0,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4140,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜1个月｜全球混合",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 28.56,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4236,
+    "name": "Telegram｜高级会员💎｜机器人对话｜1个月｜全球混合🆕💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 9.456,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3821,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜3个月｜全球混合",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 93.45599999999999,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4223,
+    "name": "Telegram｜高级会员💎｜机器人对话｜3个月｜全球混合🆕💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 9.456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4227,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜3个月｜以色列",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 93.45599999999999,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4228,
+    "name": "Telegram｜高级会员💎｜机器人对话｜3个月｜以色列🆕💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 9.456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3802,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜3个月｜中国",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 93.45599999999999,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4224,
+    "name": "Telegram｜高级会员💎｜机器人对话｜3个月｜中国🆕💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 9.456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4211,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜3个月｜印度",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 93.45599999999999,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4225,
+    "name": "Telegram｜高级会员💎｜机器人对话｜3个月｜印度🆕💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 9.456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4247,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜1个月｜俄罗斯",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 37.536,
+    "min": 100,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4214,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜6个月｜俄罗斯",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 93.45599999999999,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4237,
+    "name": "Telegram｜高级会员💎｜机器人对话｜6个月｜俄罗斯🆕💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 9.456,
+    "min": 50,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4221,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜3个月｜乌克兰",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 93.45599999999999,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4226,
+    "name": "Telegram｜高级会员💎｜机器人对话｜3个月｜乌克兰🆕💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 9.456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4059,
+    "name": "Telegram 混合国家 高级会员启动机器人 1个月",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 38.244,
+    "min": 100,
+    "max": 15000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4070,
+    "name": "Telegram 混合国家 高级会员启动机器人 1个月 💧🚫",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 47.711999999999996,
+    "min": 100,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3844,
+    "name": "Telegram 混合国家 高级会员启动机器人 1个月 💧🚫",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 52.572,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3801,
+    "name": "Telegram 🇨🇳[中国] 高级会员启动机器人 3-12个月 可查统计数据 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 89.18399999999998,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3822,
+    "name": "Telegram 混合国家 高级会员 启动机器人 3-12个月 通过全局搜索窗口 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 102.6,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4060,
+    "name": "Telegram 混合国家 高级会员启动机器人 1个月 💧🚫",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 143.376,
+    "min": 50,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3880,
+    "name": "Telegram 混合国家 高级会员启动机器人 1个月 💧🚫",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 57.35999999999999,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3878,
+    "name": "Telegram 混合国家 高级会员启动机器人 1个月 🚫",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 48.516,
+    "min": 100,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3803,
+    "name": "Telegram 🇮🇱[以色列] 高级会员启动机器人 3-12个月 可查统计数据 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 80.268,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3804,
+    "name": "Telegram 🇮🇱[以色列] 高级会员启动机器人 3-12个月 通过全局搜索窗口 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 94.71600000000001,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3805,
+    "name": "Telegram 🇷🇺[俄罗斯] 高级会员启动机器人 3-12个月 可查统计数据 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 80.268,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3806,
+    "name": "Telegram 🇷🇺[俄罗斯] 高级会员启动机器人 3-12个月 通过全局搜索窗口 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 94.71600000000001,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3807,
+    "name": "Telegram 🇺🇿[乌兹别克斯坦] 高级会员启动机器人 3-12个月 可查统计数据 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 80.268,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3808,
+    "name": "Telegram 🇺🇿[乌兹别克斯坦] 高级会员启动机器人 3-12个月 通过全局搜索窗口 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 94.71600000000001,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3809,
+    "name": "Telegram us[美国] 高级会员启动机器人 3-12个月 可查统计数据 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 89.18399999999998,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3810,
+    "name": "Telegram us[美国] 高级会员启动机器人 3-12个月 通过全局搜索窗口 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 94.71600000000001,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3811,
+    "name": "Telegram 🇮🇳[印度] 高级会员启动机器人 3-12个月 可查统计数据 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 80.268,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3812,
+    "name": "Telegram 🇮🇳[印度] 高级会员启动机器人 3-12个月 通过全局搜索窗口 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 284.124,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3815,
+    "name": "Telegram 🇹🇷[土耳其] 高级会员启动机器人 3-12个月 可查统计数据 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 80.268,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3816,
+    "name": "Telegram 🇹🇷[土耳其] 高级会员启动机器人 3-12个月 通过全局搜索窗口 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 94.71600000000001,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3817,
+    "name": "Telegram 🇹🇷[意大利] 高级会员启动机器人 3-12个月 可查统计数据 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 44.59199999999999,
+    "min": 10,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3818,
+    "name": "Telegram 🇹🇷[意大利] 高级会员启动机器人 3-12个月 通过全局搜索窗口 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 47.364,
+    "min": 10,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3819,
+    "name": "Telegram 🇸🇦[阿拉伯] 高级会员启动机器人 3-12个月 可查统计数据 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 80.268,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3820,
+    "name": "Telegram 🇸🇦[阿拉伯] 高级会员启动机器人 3-12个月 通过全局搜索窗口 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 94.71600000000001,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3891,
+    "name": "Telegram 全球混合 高级会员启动机器人 3-12个月 通过全局搜索窗口 💧",
+    "category": "Telegram 🌍 高级会员｜启动机器人👑📈｜优化全局排名",
+    "rate": 107.02799999999999,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4562,
+    "name": "Telegram 🌍 90-180天 高级会员｜启动机器人➕3天自动重启｜👑📈",
+    "category": "Telegram 🌍 高级会员｜启动机器人➕重复启动｜优化排名👑📈",
+    "rate": 27.215999999999998,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4563,
+    "name": "Telegram 🌍 90-180天 高级会员｜启动机器人➕5天自动重启｜👑📈",
+    "category": "Telegram 🌍 高级会员｜启动机器人➕重复启动｜优化排名👑📈",
+    "rate": 36.336,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4564,
+    "name": "Telegram 🌍 90-180天 高级会员｜启动机器人➕7天自动重启｜👑📈",
+    "category": "Telegram 🌍 高级会员｜启动机器人➕重复启动｜优化排名👑📈",
+    "rate": 39.456,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4565,
+    "name": "Telegram 🌍 90-180天 高级会员｜启动机器人➕14天自动重启｜👑📈",
+    "category": "Telegram 🌍 高级会员｜启动机器人➕重复启动｜优化排名👑📈",
+    "rate": 63.456,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4389,
+    "name": "Telegram｜高级会员💎｜启动机器人｜全球混合｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram 🌍 高级会员｜启动机器人｜Ai 模型｜通过搜索关键词加入｜优化排名👑📈",
+    "rate": 43.056000000000004,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4390,
+    "name": "Telegram｜高级会员💎｜启动机器人｜中国｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram 🌍 高级会员｜启动机器人｜Ai 模型｜通过搜索关键词加入｜优化排名👑📈",
+    "rate": 43.895999999999994,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4391,
+    "name": "Telegram｜高级会员💎｜启动机器人｜美国｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram 🌍 高级会员｜启动机器人｜Ai 模型｜通过搜索关键词加入｜优化排名👑📈",
+    "rate": 43.895999999999994,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4392,
+    "name": "Telegram｜高级会员💎｜启动机器人｜印度｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram 🌍 高级会员｜启动机器人｜Ai 模型｜通过搜索关键词加入｜优化排名👑📈",
+    "rate": 43.895999999999994,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4393,
+    "name": "Telegram｜高级会员💎｜启动机器人｜土耳其｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram 🌍 高级会员｜启动机器人｜Ai 模型｜通过搜索关键词加入｜优化排名👑📈",
+    "rate": 43.895999999999994,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4394,
+    "name": "Telegram｜高级会员💎｜启动机器人｜阿拉伯｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram 🌍 高级会员｜启动机器人｜Ai 模型｜通过搜索关键词加入｜优化排名👑📈",
+    "rate": 43.895999999999994,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4395,
+    "name": "Telegram｜高级会员💎｜启动机器人｜以色列｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram 🌍 高级会员｜启动机器人｜Ai 模型｜通过搜索关键词加入｜优化排名👑📈",
+    "rate": 43.895999999999994,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4396,
+    "name": "Telegram｜高级会员💎｜启动机器人｜乌兹别克｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram 🌍 高级会员｜启动机器人｜Ai 模型｜通过搜索关键词加入｜优化排名👑📈",
+    "rate": 43.895999999999994,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4397,
+    "name": "Telegram｜高级会员💎｜启动机器人｜乌克兰｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram 🌍 高级会员｜启动机器人｜Ai 模型｜通过搜索关键词加入｜优化排名👑📈",
+    "rate": 43.895999999999994,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4398,
+    "name": "Telegram｜高级会员💎｜启动机器人｜俄罗斯｜Ai 模型｜通过关键词搜索加入",
+    "category": "Telegram 🌍 高级会员｜启动机器人｜Ai 模型｜通过搜索关键词加入｜优化排名👑📈",
+    "rate": 43.895999999999994,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4239,
+    "name": "Telegram｜启动机器人｜高质量｜中国｜优化排名 🆕",
+    "category": "启动 Telegram 机器人",
+    "rate": 9.456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4240,
+    "name": "Telegram｜机器人对话｜高质量｜中国｜优化排名 🆕",
+    "category": "启动 Telegram 机器人",
+    "rate": 0.9456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4241,
+    "name": "Telegram｜启动机器人｜高质量｜以色列｜优化排名 🆕",
+    "category": "启动 Telegram 机器人",
+    "rate": 9.456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4242,
+    "name": "Telegram｜机器人对话｜高质量｜以色列｜优化排名 🆕",
+    "category": "启动 Telegram 机器人",
+    "rate": 0.9456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 612,
+    "name": "🇨🇳[中国] Telegram 启动机器人 [可使用推荐链接]",
+    "category": "启动 Telegram 机器人",
+    "rate": 1.704,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4155,
+    "name": "Telegram 随机国家 启动机器人 [可使用推荐链接]",
+    "category": "启动 Telegram 机器人",
+    "rate": 5.976,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 621,
+    "name": "Telegram 随机国家 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 1.728,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4076,
+    "name": "Telegram 随机国家 启动机器人💧 速度慢",
+    "category": "启动 Telegram 机器人",
+    "rate": 2.928,
+    "min": 20,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 613,
+    "name": "🇺🇸[美国] Telegram 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 1.728,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 614,
+    "name": "🇺🇦[乌克兰] Telegram 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 1.728,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 615,
+    "name": "🇩🇪[德国] Telegram 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 1.728,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 617,
+    "name": "🇧🇷[巴西] Telegram 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 1.728,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 618,
+    "name": "🇷🇺[俄罗斯] Telegram 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 1.728,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 619,
+    "name": "🇮🇳[印度] Telegram 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 1.728,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 616,
+    "name": "🇮🇱[以色列] Telegram 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 1.728,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 620,
+    "name": "🇸🇦[阿拉伯语] Telegram 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 1.728,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4079,
+    "name": "🇮🇱 [以色列] Telegram 启动机器人 速度慢💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 2.928,
+    "min": 20,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4081,
+    "name": "🇮🇳[印度] Telegram 启动机器人💧 速度慢",
+    "category": "启动 Telegram 机器人",
+    "rate": 2.928,
+    "min": 20,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4082,
+    "name": "🇷🇺[俄罗斯] Telegram 启动机器人💧 速度慢",
+    "category": "启动 Telegram 机器人",
+    "rate": 2.928,
+    "min": 20,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4083,
+    "name": "🇺🇸[美国] Telegram 启动机器人 💧 速度慢",
+    "category": "启动 Telegram 机器人",
+    "rate": 2.928,
+    "min": 20,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4078,
+    "name": "🇨🇳[中国] Telegram 启动机器人💧速度慢",
+    "category": "启动 Telegram 机器人",
+    "rate": 5.844,
+    "min": 20,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4080,
+    "name": "🇸🇦[阿拉伯] Telegram 启动机器人 💧 速度慢",
+    "category": "启动 Telegram 机器人",
+    "rate": 5.844,
+    "min": 20,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4137,
+    "name": "Telegram 随机国家 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 8.771999999999998,
+    "min": 500,
+    "max": 30000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4138,
+    "name": "Telegram 随机国家 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 6.311999999999999,
+    "min": 100,
+    "max": 90000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4139,
+    "name": "🇨🇳[中国] Telegram 启动机器人💧",
+    "category": "启动 Telegram 机器人",
+    "rate": 8.676,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4311,
+    "name": "Telegram｜高级会员💎｜机器人对话｜3个月｜中国｜优化排名",
+    "category": "Telegram 中国",
+    "rate": 9.456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4298,
+    "name": "Telegram｜3万/天｜中文或英文粉丝｜1月售后",
+    "category": "Telegram 中国",
+    "rate": 9.011999999999999,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4301,
+    "name": "Telegram｜3万/天｜中文或英文粉丝｜高质量｜3月售后",
+    "category": "Telegram 中国",
+    "rate": 8.832,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4299,
+    "name": "Telegram｜3万/天｜中文粉丝｜1月售后",
+    "category": "Telegram 中国",
+    "rate": 13.511999999999999,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4302,
+    "name": "Telegram｜3万/天｜中文粉丝｜高质量｜3月售后",
+    "category": "Telegram 中国",
+    "rate": 6.156,
+    "min": 500,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4300,
+    "name": "Telegram｜3万/天｜中文粉丝｜1月售后",
+    "category": "Telegram 中国",
+    "rate": 15.312,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4313,
+    "name": "Telegram｜高级会员粉丝💎｜ 高质量｜1个月｜随机国家",
+    "category": "Telegram 中国",
+    "rate": 130.65599999999998,
+    "min": 100,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4314,
+    "name": "Telegram｜高级会员粉丝💎｜ 高质量｜1个月｜中国",
+    "category": "Telegram 中国",
+    "rate": 57.599999999999994,
+    "min": 100,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4312,
+    "name": "Telegram｜高级会员粉丝💎｜ 高质量｜1个月｜随机国家",
+    "category": "Telegram 中国",
+    "rate": 57.599999999999994,
+    "min": 500,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4304,
+    "name": "Telegram｜启动机器人｜中国",
+    "category": "Telegram 中国",
+    "rate": 1.704,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4303,
+    "name": "Telegram｜启动机器人｜中国",
+    "category": "Telegram 中国",
+    "rate": 3.516,
+    "min": 15,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4305,
+    "name": "Telegram｜启动机器人｜中国",
+    "category": "Telegram 中国",
+    "rate": 8.915999999999999,
+    "min": 100,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4306,
+    "name": "Telegram｜启动机器人｜高质量｜中国｜优化排名",
+    "category": "Telegram 中国",
+    "rate": 9.456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4307,
+    "name": "Telegram｜机器人对话｜高质量｜中国｜优化排名",
+    "category": "Telegram 中国",
+    "rate": 0.9456,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4308,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜1个月｜全球混合｜优化排名",
+    "category": "Telegram 中国",
+    "rate": 28.56,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4309,
+    "name": "Telegram｜高级会员💎｜机器人对话｜1个月｜全球混合｜优化排名",
+    "category": "Telegram 中国",
+    "rate": 9.456,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4310,
+    "name": "Telegram｜高级会员💎｜启动机器人｜高质量｜3个月｜中国｜优化排名",
+    "category": "Telegram 中国",
+    "rate": 93.45599999999999,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4293,
+    "name": "Telegram｜高级会员💎｜启动机器人｜1个月｜俄罗斯",
+    "category": "Telegram 俄罗斯",
+    "rate": 68.316,
+    "min": 50,
+    "max": 30000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4294,
+    "name": "Telegram｜高级会员💎｜启动机器人 + 对话｜1个月｜俄罗斯",
+    "category": "Telegram 俄罗斯",
+    "rate": 117.108,
+    "min": 50,
+    "max": 40000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4295,
+    "name": "Telegram｜高级会员粉丝💎｜1个月｜俄罗斯",
+    "category": "Telegram 俄罗斯",
+    "rate": 195.18,
+    "min": 50,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4296,
+    "name": "Telegram｜启动机器人｜俄罗斯",
+    "category": "Telegram 俄罗斯",
+    "rate": 19.523999999999997,
+    "min": 50,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4297,
+    "name": "Telegram｜2万/天｜俄罗斯粉丝｜3个月售后",
+    "category": "Telegram 俄罗斯",
+    "rate": 10.547999999999998,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 501,
+    "name": "telegram｜指定群克隆强拉真人 （少量接单）",
+    "category": "Telegram 指定群成员拉活人",
+    "rate": 360.0,
+    "min": 50000,
+    "max": 50000,
+    "type": "Invites from Groups",
+    "custom_id": null
+  },
+  {
+    "service": 737,
+    "name": "Teleram 协议/拉人/炒群/群发/私发 软件 软件1000元/月",
+    "category": "Telegram 指定群成员拉活人",
+    "rate": 1200.0,
+    "min": 1,
+    "max": 1,
+    "type": "Package",
+    "custom_id": null
+  },
+  {
+    "service": 768,
+    "name": "Telegram 克隆偷人下单必看❗️❗️❗️",
+    "category": "Telegram 指定群成员拉活人",
+    "rate": 1200000.0,
+    "min": 10000,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3524,
+    "name": "Telegram 群组在线成员 一个月在线 100%在线 不掉落",
+    "category": "Telegram 在线成员 ⭐⭐⭐",
+    "rate": 252.0,
+    "min": 200,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3787,
+    "name": "Telegram 群组在线成员 一个月在线 仅限英文群可订购",
+    "category": "Telegram 在线成员 ⭐⭐⭐",
+    "rate": 60.0,
+    "min": 500,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4249,
+    "name": "Telegram 群组在线成员 20天在线 0%-60%随机在线 高级会员粉丝💎 无售后",
+    "category": "Telegram 在线成员 ⭐⭐⭐",
+    "rate": 72.0,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4250,
+    "name": "Telegram 群组在线成员 一个月在线 0%-60%随机在线 高级会员粉丝💎 无售后",
+    "category": "Telegram 在线成员 ⭐⭐⭐",
+    "rate": 118.8,
+    "min": 10,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4430,
+    "name": "消耗官方ad广告展示次数 - [群/频道/机器人 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 2.664,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4501,
+    "name": "消耗官方ad广告展示次数 - [频道 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 2.256,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4335,
+    "name": "消耗官方ad广告展示次数 - [群/频道/机器人 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 5.015999999999999,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4258,
+    "name": "消耗官方ad广告展示次数 - [随机国家 ] - [高质量]- [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 2.664,
+    "min": 100,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4502,
+    "name": "消耗官方ad广告展示次数 - [随机国家 ] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 2.376,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4366,
+    "name": "消耗官方ad广告展示次数 - [中国] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 4.656,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4377,
+    "name": "消耗官方ad广告展示次数 - [群/频道]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 3.816,
+    "min": 10,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4367,
+    "name": "消耗官方ad广告展示次数 - [印度] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 9.096,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4368,
+    "name": "消耗官方ad广告展示次数 - [英国] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 9.096,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4369,
+    "name": "消耗官方ad广告展示次数 - [以色列] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 9.096,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4370,
+    "name": "消耗官方ad广告展示次数 - [俄罗斯] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 9.096,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4371,
+    "name": "消耗官方ad广告展示次数 - [乌兹别克斯坦] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 9.096,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4372,
+    "name": "消耗官方ad广告展示次数 - [乌克兰] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 9.084,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4373,
+    "name": "消耗官方ad广告展示次数 - [土耳其] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 9.096,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4374,
+    "name": "消耗官方ad广告展示次数 - [阿拉伯] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 9.084,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4375,
+    "name": "消耗官方ad广告展示次数 - [德国] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 9.096,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4376,
+    "name": "消耗官方ad广告展示次数 - [随机国家 ]- [廉价] - [全局搜索 ]",
+    "category": "Telegram 消耗官方ad广告次数",
+    "rate": 5.7,
+    "min": 10,
+    "max": 1000000,
+    "type": "Mentions Hashtag",
+    "custom_id": null
+  },
+  {
+    "service": 3543,
+    "name": "Telegram 英文昵称 3-5千每天 高掉落 无补充",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 3.768,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 544,
+    "name": "群主号需美国+1/英国+44手机号码 » 在线僵尸粉» 主动进群/频道",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 3.828,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 769,
+    "name": "Telegram 英文昵称 10万每天 会掉落 无补充 +1 +98手机号码快速",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 3.828,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 785,
+    "name": "Telegram 英文昵称 10万每天 随机昵称 会掉落 无补充 +1 +98手机号码快速",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 3.828,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 513,
+    "name": "Telegram 英文昵称 启动速度慢",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 4.524,
+    "min": 500,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3492,
+    "name": "TG 群/频道粉丝 ① 低掉落 无补充",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 5.124,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 516,
+    "name": "⑫Telegram 英文昵称 极速 适合大频道 20K/天 最大300K 取消按钮",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 4.368,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 1372,
+    "name": "Telegram ｜群/频道成员｜10K/天 ｜中东真实用户｜",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 4.176,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 512,
+    "name": "②Telegram 英文昵称 快速启动 高掉落",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 3.48,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 514,
+    "name": "Telegram 英文昵称 启动速度慢",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 3.48,
+    "min": 500,
+    "max": 300000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 764,
+    "name": "Telegram 低掉落成员 英文 ⛔",
+    "category": "Telegram 廉价粉 会掉落 无补充⭐",
+    "rate": 3.396,
+    "min": 500,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4559,
+    "name": "指定刷一条帖子浏览量 🆕⚡",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.09,
+    "min": 100,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 756,
+    "name": "指定刷一条帖子浏览量",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.06,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 519,
+    "name": "Telegram 指定浏览1条帖子 🆕超快",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.048,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3785,
+    "name": "指定刷一条帖子浏览量 🆕",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.396,
+    "min": 10,
+    "max": 180000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3473,
+    "name": "Telegram 自动浏览 历史帖子/未来帖子",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.072,
+    "min": 10,
+    "max": 100000,
+    "type": "Subscriptions",
+    "custom_id": null
+  },
+  {
+    "service": 4328,
+    "name": "Telegram‐帖子浏览量‐➀",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.012,
+    "min": 10,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4212,
+    "name": "Telegram｜ 1条帖子浏览量｜特惠",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.0396,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3859,
+    "name": "指定刷一条帖子浏览量 🆕",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.084,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4132,
+    "name": "刷频道最后5条帖子｜新服务",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.264,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4133,
+    "name": "刷频道最后10条帖子｜新服务",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.444,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4134,
+    "name": "刷频道最后20条帖子｜新服务",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.792,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4135,
+    "name": "刷频道最后30条帖子｜新服务",
+    "category": "Telegram  帖子浏览量",
+    "rate": 1.584,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4136,
+    "name": "刷频道最后50条帖子｜新服务",
+    "category": "Telegram  帖子浏览量",
+    "rate": 2.196,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 526,
+    "name": "✅新s1 ｜刷频道最后10条帖子 ｜即时启动",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.612,
+    "min": 10,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 527,
+    "name": "✅新s1 ｜刷频道最后20条帖子 ｜即时启动",
+    "category": "Telegram  帖子浏览量",
+    "rate": 1.14,
+    "min": 10,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 528,
+    "name": "✅新s1｜刷频道最后30条帖子｜即时启动",
+    "category": "Telegram  帖子浏览量",
+    "rate": 1.656,
+    "min": 10,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 529,
+    "name": "✅新s1｜刷频道最后50条帖子｜即时启动",
+    "category": "Telegram  帖子浏览量",
+    "rate": 2.172,
+    "min": 10,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 530,
+    "name": "✅新s1｜刷频道最后100条帖子｜即时启动",
+    "category": "Telegram  帖子浏览量",
+    "rate": 4.176,
+    "min": 10,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3764,
+    "name": "✅新s1｜刷频道最后200条帖子｜即时启动",
+    "category": "Telegram  帖子浏览量",
+    "rate": 6.9479999999999995,
+    "min": 10,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3765,
+    "name": "✅新s1｜刷频道最后500条帖子｜即时启动",
+    "category": "Telegram  帖子浏览量",
+    "rate": 13.031999999999998,
+    "min": 10,
+    "max": 10000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 524,
+    "name": "ID 147 超级快速浏览电报最后一条帖子 价格高 速度快",
+    "category": "Telegram  帖子浏览量",
+    "rate": 0.888,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4141,
+    "name": "Telegram 💎高级会员 频道帖子浏览量 💧",
+    "category": "Telegram 💎高级会员 频道帖子浏览量 优化全局排名 新服务",
+    "rate": 0.876,
+    "min": 50,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4142,
+    "name": "Telegram 💎高级会员 频道帖子浏览量 最后5条",
+    "category": "Telegram 💎高级会员 频道帖子浏览量 优化全局排名 新服务",
+    "rate": 4.344,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4143,
+    "name": "Telegram 💎高级会员 频道帖子浏览量 最后20条",
+    "category": "Telegram 💎高级会员 频道帖子浏览量 优化全局排名 新服务",
+    "rate": 16.5,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4144,
+    "name": "Telegram 💎高级会员 频道帖子浏览量 最后50条",
+    "category": "Telegram 💎高级会员 频道帖子浏览量 优化全局排名 新服务",
+    "rate": 33.864,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4145,
+    "name": "Telegram 💎高级会员 频道帖子浏览量 最后100条",
+    "category": "Telegram 💎高级会员 频道帖子浏览量 优化全局排名 新服务",
+    "rate": 59.903999999999996,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4560,
+    "name": "Telegram 自动浏览量 新帖子/旧帖子⭐⚡",
+    "category": "Telegram 自动浏览未来频道帖子  🆕",
+    "rate": 0.09,
+    "min": 10,
+    "max": 500000,
+    "type": "Subscriptions",
+    "custom_id": null
+  },
+  {
+    "service": 3849,
+    "name": "Telegram 自定义浏览频道帖子 刷历史帖子/未来帖子",
+    "category": "Telegram 自动浏览未来频道帖子  🆕",
+    "rate": 0.0744,
+    "min": 10,
+    "max": 300000,
+    "type": "Subscriptions",
+    "custom_id": null
+  },
+  {
+    "service": 4128,
+    "name": "自动浏览频道未来帖子｜包3天｜每天限100帖子",
+    "category": "Telegram 自动浏览未来频道帖子  🆕",
+    "rate": 105.15599999999999,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4129,
+    "name": "自动浏览频道未来帖子｜包7天｜每天限100帖子",
+    "category": "Telegram 自动浏览未来频道帖子  🆕",
+    "rate": 262.896,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4130,
+    "name": "自动浏览频道未来帖子｜包15天｜每天限100帖子",
+    "category": "Telegram 自动浏览未来频道帖子  🆕",
+    "rate": 567.7679999999999,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4131,
+    "name": "自动浏览频道未来帖子｜包30天｜每天限100帖子",
+    "category": "Telegram 自动浏览未来频道帖子  🆕",
+    "rate": 1082.952,
+    "min": 100,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 549,
+    "name": "自动浏览频道未来5条帖子",
+    "category": "Telegram 自动浏览未来频道帖子  🆕",
+    "rate": 0.792,
+    "min": 100,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 550,
+    "name": "自动浏览频道未来10条帖子",
+    "category": "Telegram 自动浏览未来频道帖子  🆕",
+    "rate": 1.572,
+    "min": 100,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 551,
+    "name": "自动浏览频道未来20条帖子",
+    "category": "Telegram 自动浏览未来频道帖子  🆕",
+    "rate": 3.1319999999999997,
+    "min": 100,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4429,
+    "name": "Telegram ｜Ai模型 ｜帖子评论",
+    "category": "Telegram ｜Ai模型 ｜帖子评论",
+    "rate": 26.291999999999998,
+    "min": 10,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3531,
+    "name": "Telegram 自定义[ 👍 ❤️ 🔥 🎉 😁]表情+ Views",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 20,
+    "max": 500000,
+    "type": "Subscriptions",
+    "custom_id": null
+  },
+  {
+    "service": 784,
+    "name": "帖子混合积极表情 （👍🤩🎉🔥❤️🥰👏🏻） 速度快",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 50,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4075,
+    "name": "帖子 混合负面表情（👎 😱 💩 😢 🤮） 特价 速度慢",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 1.8359999999999999,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3768,
+    "name": "帖子 混合积极表情 [👌 😍 ❤️ 🤡 👍 🐳] + 免费浏览量 速度稍慢",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.588,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3769,
+    "name": "帖子 混合负面表情（👎 😱 💩 😢 🤮）",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3772,
+    "name": "帖子点 🐳",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3773,
+    "name": "帖子点 ❤️",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3771,
+    "name": "帖子点 😍",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3774,
+    "name": "帖子点 💯",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3770,
+    "name": "帖子点赞👌",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3775,
+    "name": "帖子点 🤣",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3776,
+    "name": "帖子点 🤭",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3777,
+    "name": "帖子点 👻",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3778,
+    "name": "帖子点 👍",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.36,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3780,
+    "name": "帖子点 ❤️",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3779,
+    "name": "帖子点 👎",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3782,
+    "name": "帖子点🎉",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3781,
+    "name": "帖子点🔥",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3783,
+    "name": "帖子点🤩",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3784,
+    "name": "帖子点 🙏",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.624,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3593,
+    "name": "帖子点 💯",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 555,
+    "name": "帖子点赞👍",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 556,
+    "name": "帖子点踩👎",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 557,
+    "name": "帖子❤️表情",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 15,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 558,
+    "name": "帖子🔥表情",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 559,
+    "name": "帖子🎉表情",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 560,
+    "name": "帖子🤩表情",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 561,
+    "name": "帖子😱表情",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 562,
+    "name": "帖子😁表情",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 565,
+    "name": "帖子😢表情",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 566,
+    "name": "帖子💩表情",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 567,
+    "name": "帖子🤮表情",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 563,
+    "name": "帖子混合负面表情 （👎😁😢💩🤮🤔🤯🤬）",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.876,
+    "min": 50,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3587,
+    "name": "帖子 混合积极表情 [👌 😍 ❤️ 🤡 👍 🐳]",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 50,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3588,
+    "name": "帖子 混合负面表情（👎 😱 💩 😢 🤮）",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 50,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3589,
+    "name": "帖子点赞👌",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3590,
+    "name": "帖子点 😍",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3591,
+    "name": "帖子点 🐳",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3592,
+    "name": "帖子点 ♥️",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 15,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3594,
+    "name": "帖子点 🤣",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3595,
+    "name": "帖子点 🕊",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3596,
+    "name": "帖子点 🤭",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3597,
+    "name": "帖子点 🤡",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3598,
+    "name": "帖子点 👍",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3599,
+    "name": "帖子点 👎",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3600,
+    "name": "帖子点 ❤️",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3601,
+    "name": "帖子点🔥",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3602,
+    "name": "帖子点🎉",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3603,
+    "name": "帖子点🤩",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3604,
+    "name": "帖子点 🙏",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3605,
+    "name": "帖子点 🤬",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 0.888,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3606,
+    "name": "自动刷未来10个帖子（ 👍 ❤️ 🔥 🎉 😁）",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 7.02,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3607,
+    "name": "自动刷未来10个帖子 （👎 😱 💩 😢 🤮）",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 7.02,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3608,
+    "name": "自动刷未来30个帖子（ 👍 ❤️ 🔥 🎉 😁）",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 21.036,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 568,
+    "name": "自动刷未来50个帖子｜点赞👍",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 34.728,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3609,
+    "name": "自动刷未来50个帖子👍",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 35.052,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3610,
+    "name": "自动刷未来50个帖子👎",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 35.052,
+    "min": 10,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3611,
+    "name": "自动刷未来50个帖子（👍 ❤️ 🔥 🎉 😁）",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 35.052,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3612,
+    "name": "自动刷未来50个帖子 (👎 😱 💩 😢 🤮)",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 35.052,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3613,
+    "name": "自动刷未来50个帖子❤️",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 35.052,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3614,
+    "name": "自动刷未来50个帖子🔥",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 35.052,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3615,
+    "name": "自动刷未来500个帖子（👍 ❤️ 🔥 🎉 😁）",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 347.268,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3616,
+    "name": "自动刷未来500个帖子 （👎 😱 💩 😢 🤮)",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 350.424,
+    "min": 20,
+    "max": 2000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 576,
+    "name": "频道帖子印度语言随机评论",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 13.68,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 574,
+    "name": "频道帖子俄语随机评论",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 13.68,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 575,
+    "name": "频道帖子阿拉伯语随机评论",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 13.68,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 572,
+    "name": "频道帖子英文随机评论",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 13.68,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 573,
+    "name": "频道帖子 自定义评论",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 104.46,
+    "min": 10,
+    "max": 10000,
+    "type": "Custom Comments",
+    "custom_id": null
+  },
+  {
+    "service": 577,
+    "name": "ID-113 电报投票",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 2.184,
+    "min": 10,
+    "max": 300000,
+    "type": "Poll",
+    "custom_id": null
+  },
+  {
+    "service": 4164,
+    "name": "电报投票 新",
+    "category": "Telegram电报 ｜投票｜帖子评论｜帖子表情 👍🤩🎉🔥❤️🥰👏🏻",
+    "rate": 1.8719999999999999,
+    "min": 10,
+    "max": 80000,
+    "type": "Poll",
+    "custom_id": null
+  },
+  {
+    "service": 4259,
+    "name": "帖子表情⭐️⭐️ ｜需先启用付费回应",
+    "category": "Telegram ｜帖子表情⭐️⭐️ ｜优化全局排名｜需先启用付费回应",
+    "rate": 138.912,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 578,
+    "name": "Telegram 帖子转发 （机器人转发）",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.264,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 579,
+    "name": "Telegram 随机国家 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.36,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 580,
+    "name": "🇨🇳[中国]Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.36,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 581,
+    "name": "🇹🇷[土耳其] Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.36,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 582,
+    "name": "🇩🇪[德国]Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.36,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 583,
+    "name": "🇮🇱[以色列]Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.36,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 584,
+    "name": "🇧🇷[巴西] Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.36,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 585,
+    "name": "🇺🇸[美国]Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.36,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 586,
+    "name": "🇷🇺[俄罗斯]Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.36,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 587,
+    "name": "🇮🇳[印度] Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.36,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 588,
+    "name": "🇸🇦[阿拉伯语] Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 0.36,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 589,
+    "name": "30 个未来的帖子转发 （机器人转发）",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 13.068,
+    "min": 10,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 590,
+    "name": "50 个未来的帖子转发 （机器人转发）",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 26.124,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 591,
+    "name": "50个未来的 🇨🇳[中国]Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 26.124,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 592,
+    "name": "50个未来的 🇺🇸[美国]Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 26.124,
+    "min": 100,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 593,
+    "name": "50个未来的 🇷🇺[俄罗斯]Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 26.124,
+    "min": 100,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 594,
+    "name": "50个未来的 🇮🇳[印度] Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 26.124,
+    "min": 100,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 595,
+    "name": "50个未来的🇮🇳[印度] Telegram 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 26.124,
+    "min": 100,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 596,
+    "name": "30个未来的Telegram 随机国家 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 13.068,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 597,
+    "name": "50个未来的Telegram 随机国家 帖子转发",
+    "category": "Telegram 频道帖子转发（可增加全局排名/官方排名）",
+    "rate": 26.124,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 598,
+    "name": "Telegram 随机国家频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.876,
+    "min": 10,
+    "max": 100000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 599,
+    "name": "🇨🇳[中国] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.45599999999999996,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 602,
+    "name": "🇮🇱[以色列] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.444,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 603,
+    "name": "🇧🇷[巴西] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.444,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 604,
+    "name": "🇺🇦[乌克兰] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.444,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 605,
+    "name": "🇰🇿[哈萨克斯坦] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.444,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 606,
+    "name": "🇺🇿[乌兹别克斯坦] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.444,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 607,
+    "name": "🇩🇪[德国] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.444,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 608,
+    "name": "🇷🇺[俄罗斯] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.444,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 609,
+    "name": "🇮🇳[印度] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.444,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 610,
+    "name": "🇸🇦[阿拉伯语] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.444,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 611,
+    "name": "🇹🇷[土耳其] Telegram 频道帖子真实浏览量",
+    "category": "Telegram 频道帖子真实浏览量（可增加全局排名/官方排名）",
+    "rate": 0.444,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4550,
+    "name": "Twitter｜X 机器人粉丝｜速度30K/天｜无售后",
+    "category": "Twitter｜X 粉丝 机器人粉丝",
+    "rate": 4.26,
+    "min": 50,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4551,
+    "name": "Twitter｜X 机器人粉丝｜30K/天｜15天补充按钮♻️",
+    "category": "Twitter｜X 粉丝 机器人粉丝",
+    "rate": 8.411999999999999,
+    "min": 50,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4552,
+    "name": "Twitter｜X 机器人粉丝｜30K/天｜30天补充按钮♻️",
+    "category": "Twitter｜X 粉丝 机器人粉丝",
+    "rate": 10.031999999999998,
+    "min": 50,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4499,
+    "name": "Twitter｜X 机器人粉丝｜500-2000/天｜低掉落｜30天售后♻️",
+    "category": "Twitter｜X 粉丝 机器人粉丝",
+    "rate": 61.116,
+    "min": 10,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4351,
+    "name": "Twitter｜X 机器人粉丝｜速度10K/天｜超高掉落｜无售后",
+    "category": "Twitter｜X 粉丝 机器人粉丝",
+    "rate": 9.996,
+    "min": 100,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4352,
+    "name": "Twitter｜X 机器人粉丝｜速度10K/天｜超高掉落｜30售后♻️",
+    "category": "Twitter｜X 粉丝 机器人粉丝",
+    "rate": 54.047999999999995,
+    "min": 100,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3579,
+    "name": "Twitter 粉丝- 加密货币相关 - 500/天 -♻️ 30天补充按钮",
+    "category": "Twitter｜X 粉丝 加密货币粉丝",
+    "rate": 78.0,
+    "min": 10,
+    "max": 3000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4105,
+    "name": "Twitter｜X 加密货币粉丝 1k/天 🛑 无售后",
+    "category": "Twitter｜X 粉丝 加密货币粉丝",
+    "rate": 62.268,
+    "min": 10,
+    "max": 3000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4106,
+    "name": "Twitter｜X 加密货币粉丝 1k/天 🛑 30天补充♻️",
+    "category": "Twitter｜X 粉丝 加密货币粉丝",
+    "rate": 78.71999999999998,
+    "min": 10,
+    "max": 3000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4268,
+    "name": "Twitter - 推文点赞｜10K/天｜30天售后",
+    "category": "Twitter 点赞/投票评论",
+    "rate": 10.476,
+    "min": 50,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4275,
+    "name": "推特投票 10万/天 不掉",
+    "category": "Twitter 点赞/投票评论",
+    "rate": 30.348,
+    "min": 10,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4265,
+    "name": "推特投票 50k/天 不掉",
+    "category": "Twitter 点赞/投票评论",
+    "rate": 27.779999999999998,
+    "min": 10,
+    "max": 500001,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 636,
+    "name": "s2推特投票 10k/天 30天售后",
+    "category": "Twitter 点赞/投票评论",
+    "rate": 11.04,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 638,
+    "name": "ID142 Twitter 随机评论 (阿拉伯用户)",
+    "category": "Twitter 点赞/投票评论",
+    "rate": 276.61199999999997,
+    "min": 10,
+    "max": 250,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3737,
+    "name": "s3推特投票 20k/天",
+    "category": "Twitter 点赞/投票评论",
+    "rate": 39.57599999999999,
+    "min": 10,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 775,
+    "name": "Discord - 🟢在线成员下单前必看❗️❗️❗️",
+    "category": "Discord 🟢Online成员（有验证拦截不要买，邀请链接必须永久）",
+    "rate": 1199998.8,
+    "min": 1000,
+    "max": 1000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4121,
+    "name": "Twitter 推特视频浏览量",
+    "category": "Twitter X 推特印象/ [浏览量 ｜Bookmark ]",
+    "rate": 0.096,
+    "min": 100,
+    "max": 2147483647,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4554,
+    "name": "TikTok 关注 高质量 10k-20k/天 高质量 30天补充♻️",
+    "category": "TikTok 关注",
+    "rate": 11.484,
+    "min": 100,
+    "max": 80000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4119,
+    "name": "Twitter - View推文浏览量",
+    "category": "Twitter X 推特印象/ [浏览量 ｜Bookmark ]",
+    "rate": 0.048,
+    "min": 500,
+    "max": 99999,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4111,
+    "name": "Twitter 推文Bookmarks｜立即开始｜无售后",
+    "category": "Twitter X 推特印象/ [浏览量 ｜Bookmark ]",
+    "rate": 13.464,
+    "min": 10,
+    "max": 600,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4266,
+    "name": "Twitter x 推特印象",
+    "category": "Twitter X 推特印象/ [浏览量 ｜Bookmark ]",
+    "rate": 1.608,
+    "min": 100,
+    "max": 50000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4120,
+    "name": "Twitter - View推文浏览量",
+    "category": "Twitter X 推特印象/ [浏览量 ｜Bookmark ]",
+    "rate": 0.048,
+    "min": 500,
+    "max": 99999,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4122,
+    "name": "Twitter - Space (听众未登录Twitter)｜停留15分钟｜立即开始",
+    "category": "Twitter Space听众(未登录状态)",
+    "rate": 1.392,
+    "min": 50,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3527,
+    "name": "Twitter - Space (听众未登录Twitter)｜停留15分钟｜立即开始",
+    "category": "Twitter Space听众(未登录状态)",
+    "rate": 2.004,
+    "min": 50,
+    "max": 10001,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3528,
+    "name": "Twitter - Space (听众未登录Twitter)｜停留30分钟｜立即开始",
+    "category": "Twitter Space听众(未登录状态)",
+    "rate": 4.104,
+    "min": 50,
+    "max": 10001,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3530,
+    "name": "Twitter - Space (听众未登录Twitter)｜停留60分钟｜立即开始",
+    "category": "Twitter Space听众(未登录状态)",
+    "rate": 8.208,
+    "min": 50,
+    "max": 10001,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4441,
+    "name": "TikTok 关注 1-2k/天 无售后",
+    "category": "TikTok 关注",
+    "rate": 8.256,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4440,
+    "name": "TikTok 关注 1-2k/天 无售后",
+    "category": "TikTok 关注",
+    "rate": 7.608,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4439,
+    "name": "TikTok 关注 20k/天 无售后",
+    "category": "TikTok 关注",
+    "rate": 9.78,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4438,
+    "name": "TikTok 关注 30k/天 无售后",
+    "category": "TikTok 关注",
+    "rate": 10.476,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4336,
+    "name": "TikTok 关注 - 速度缓慢 - 低掉落无补充 - 25.12.7更新",
+    "category": "TikTok 关注",
+    "rate": 7.848,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4337,
+    "name": "TikTok 关注 - 速度慢 - 低掉落无补充 - 25.12.7更新",
+    "category": "TikTok 关注",
+    "rate": 7.404,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4338,
+    "name": "TikTok 关注 - 速度慢 - 低掉落 -7天售后 - 25.12.7更新",
+    "category": "TikTok 关注",
+    "rate": 9.528,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4339,
+    "name": "TikTok 关注 - 速度慢 - 低掉落 -15天售后 - 25.12.7更新",
+    "category": "TikTok 关注",
+    "rate": 11.556000000000001,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4342,
+    "name": "TikTok 关注 - 速度快70K/天 -高仿用户 -无补充 - 25.12.7更新",
+    "category": "TikTok 关注",
+    "rate": 8.496,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4343,
+    "name": "TikTok 关注 - 速度快80K/天 -高仿用户 -10天售后 - 25.12.7更新",
+    "category": "TikTok 关注",
+    "rate": 11.952,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4330,
+    "name": "TikTok 关注 ‐ 速度‐10万/ 天 ‐ 低掉落无补充 ‐ 25.11.9更新",
+    "category": "TikTok 关注",
+    "rate": 8.784,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4503,
+    "name": "TikTok 关注 高质量 1k-5k/天 30天售后",
+    "category": "TikTok 关注",
+    "rate": 55.116,
+    "min": 100,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4196,
+    "name": "TikTok 关注 ｜速度：10k/ 天 ｜30天售后",
+    "category": "TikTok 关注",
+    "rate": 27.791999999999998,
+    "min": 10,
+    "max": 30000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4167,
+    "name": "TikTok 关注 ｜速度：10k/ 天 ｜30天售后",
+    "category": "TikTok 关注",
+    "rate": 26.58,
+    "min": 10,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4493,
+    "name": "TikTok 视频浏览量 10万/天 无补充",
+    "category": "TikTok 视频浏览量 ⚡",
+    "rate": 0.36,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4494,
+    "name": "TikTok 视频浏览量 10万/天 30天补充♻️",
+    "category": "TikTok 视频浏览量 ⚡",
+    "rate": 0.48,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4486,
+    "name": "TikTok - 视频点赞｜3-5k/天｜0-1H开始｜30售后",
+    "category": "TikTok 点赞",
+    "rate": 3.564,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4487,
+    "name": "TikTok - 视频点赞｜20K-30k/天｜0-1H开始｜30售后",
+    "category": "TikTok 点赞",
+    "rate": 3.792,
+    "min": 10,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4282,
+    "name": "TikTok - 视频点赞｜10k/天｜0-1H开始｜30售后 25.8.17更新",
+    "category": "TikTok 点赞",
+    "rate": 1.068,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4253,
+    "name": "TikTok - 视频点赞｜10k/天｜0-1H开始｜30售后",
+    "category": "TikTok 点赞",
+    "rate": 2.472,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4092,
+    "name": "TikTok - 视频点赞｜10k/天｜0-1H开始｜30售后",
+    "category": "TikTok 点赞",
+    "rate": 2.688,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3871,
+    "name": "TikTok - 视频点赞｜3-5k/天｜0-1H开始｜30天补充按钮",
+    "category": "TikTok 点赞",
+    "rate": 2.5319999999999996,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4154,
+    "name": "TikTok - 视频点赞｜10k/天｜0-1H开始｜30天补充按钮",
+    "category": "TikTok 点赞",
+    "rate": 2.5799999999999996,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 773,
+    "name": "Discord 下单必看❗️❗️❗️",
+    "category": "Discord 离线成员",
+    "rate": 11999998.799999999,
+    "min": 1000,
+    "max": 1000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4437,
+    "name": "YouTube订阅 300-400/天，30天售后",
+    "category": "YouTube 订阅 Subscribers",
+    "rate": 178.65599999999998,
+    "min": 50,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 736,
+    "name": "YouTube订阅者 3 基本无掉落 如果有掉落会自动补充 1-2K/天",
+    "category": "YouTube 订阅 Subscribers",
+    "rate": 347.30400000000003,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 645,
+    "name": "ID190｜⚽️Youtube 关注｜ 最大100K｜速度 50天｜30天售后｜美国用户｜0-6H 小时启动",
+    "category": "YouTube 订阅 Subscribers",
+    "rate": 332.20799999999997,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 733,
+    "name": "YouTube 订阅者 快速 掉落无补充",
+    "category": "YouTube 订阅 Subscribers",
+    "rate": 332.73599999999993,
+    "min": 50,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4556,
+    "name": "YouTube 视频浏览量View | 真实自然流量 | 10k-50K/天 |私密",
+    "category": "YouTube  观看视频 Views",
+    "rate": 5.867999999999999,
+    "min": 50,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4555,
+    "name": "YouTube 视频浏览量View | 真实自然流量 | 10k-50K/天 | 30天补充按钮",
+    "category": "YouTube  观看视频 Views",
+    "rate": 6.119999999999999,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4286,
+    "name": "YouTube 视频浏览量View | 真实自然流量 | 10k-50K/天 | 不掉落 25.08.17",
+    "category": "YouTube  观看视频 Views",
+    "rate": 6.396,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3915,
+    "name": "YouTube 视频浏览量View | 真实自然流量 | 10k-50K/天 | 不掉落| 🆕",
+    "category": "YouTube  观看视频 Views",
+    "rate": 6.396,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4251,
+    "name": "YouTube 视频浏览量View | 本地流量 | 10k-50K/天 | 不掉落| 🆕",
+    "category": "YouTube  观看视频 Views",
+    "rate": 6.96,
+    "min": 100,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4252,
+    "name": "YouTube 视频观看｜速度：5K / 天 ｜不掉落｜外部资源",
+    "category": "YouTube  观看视频 Views",
+    "rate": 6.119999999999999,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3920,
+    "name": "YouTube 观看视频 View | 10k-50K/天 | 不掉落",
+    "category": "YouTube  观看视频 Views",
+    "rate": 6.396,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3867,
+    "name": "Youtube - 视频观看｜50-100K/天｜不掉落",
+    "category": "YouTube  观看视频 Views",
+    "rate": 6.288,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 649,
+    "name": "T2»Youtube评论点赞 »不掉落» 3K/天» 最大50K",
+    "category": "YouTube  观看视频 Views",
+    "rate": 12.0,
+    "min": 10,
+    "max": 1000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3922,
+    "name": "You Tube｜使用大于15 分钟视频｜不掉落｜ 10k-50k/天｜30天售后 ♻️🔥",
+    "category": "YouTube  高保留率观看 View  优化排名",
+    "rate": 69.996,
+    "min": 1000,
+    "max": 32000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4162,
+    "name": "You Tube｜使用大于60 分钟视频｜不掉落｜ 10k-50k/天｜30天售后 ♻️🔥",
+    "category": "YouTube  高保留率观看 View  优化排名",
+    "rate": 222.06,
+    "min": 100,
+    "max": 4000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4488,
+    "name": "Youtube - 视频点赞｜10k/天 无补充",
+    "category": "YouTube 视频点赞  Likes",
+    "rate": 18.432,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4489,
+    "name": "Youtube - 视频点赞｜10k/天 30天补充♻️",
+    "category": "YouTube 视频点赞  Likes",
+    "rate": 22.236,
+    "min": 10,
+    "max": 20000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4287,
+    "name": "Youtube - 视频点赞｜⚡️快速｜开始0-1H｜30天售后 25.08.17更新",
+    "category": "YouTube 视频点赞  Likes",
+    "rate": 1.8719999999999999,
+    "min": 10,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4202,
+    "name": "Youtube - 视频点赞｜⚡️快速｜开始0-1H｜30天售后",
+    "category": "YouTube 视频点赞  Likes",
+    "rate": 1.8719999999999999,
+    "min": 10,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3868,
+    "name": "Youtube - 视频点赞｜⚡️快速｜开始0-1H｜5-15%掉落｜30天补充按钮",
+    "category": "YouTube 视频点赞  Likes",
+    "rate": 1.8359999999999999,
+    "min": 10,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4557,
+    "name": "Instagram 粉丝｜高质量｜10万/天｜30天补充按钮♻️",
+    "category": "Instagram 关注",
+    "rate": 3.7439999999999998,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4558,
+    "name": "Instagram 粉丝｜高质量｜10万/天｜365天补充按钮♻️",
+    "category": "Instagram 关注",
+    "rate": 4.848,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4490,
+    "name": "Instagram 粉丝｜高质量｜10万/天｜无补充",
+    "category": "Instagram 关注",
+    "rate": 3.9839999999999995,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4491,
+    "name": "Instagram 粉丝｜高质量｜10万/天｜30天售后",
+    "category": "Instagram 关注",
+    "rate": 6.444,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4492,
+    "name": "Instagram 粉丝｜高质量｜10万/天｜360天售后",
+    "category": "Instagram 关注",
+    "rate": 6.659999999999999,
+    "min": 10,
+    "max": 100000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4463,
+    "name": "Instagram 粉丝｜高质量｜50K/天｜无补充",
+    "category": "Instagram 关注 真实账号",
+    "rate": 3.972,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4464,
+    "name": "Instagram 粉丝｜高质量｜50K/天｜30天补充♻️",
+    "category": "Instagram 关注 真实账号",
+    "rate": 6.444,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4320,
+    "name": "Instagram 粉丝｜高质量｜30-50K/天｜一年售后｜",
+    "category": "Instagram 订阅关注 Followers  定向不同国家",
+    "rate": 5.063999999999999,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4283,
+    "name": "Instagram 粉丝｜高质量｜30-50K/天｜90天售后｜ 25.08.17更新",
+    "category": "Instagram 订阅关注 Followers  定向不同国家",
+    "rate": 8.892,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4289,
+    "name": "Instagram 粉丝｜高质量｜3-5K/天｜一年售后｜ 25.08.19更新",
+    "category": "Instagram 订阅关注 Followers  定向不同国家",
+    "rate": 4.98,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4273,
+    "name": "Instagram 粉丝 稳定老账号 一年售后",
+    "category": "Instagram 订阅关注 Followers  定向不同国家",
+    "rate": 5.0280000000000005,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4200,
+    "name": "Instagram 粉丝｜高质量｜30-50K/天｜30天售后｜ 🆕",
+    "category": "Instagram 订阅关注 Followers  定向不同国家",
+    "rate": 3.9119999999999995,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4166,
+    "name": "Instagram 粉丝 低掉落 60天售后 🆕",
+    "category": "Instagram 订阅关注 Followers  定向不同国家",
+    "rate": 4.98,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3549,
+    "name": "Instagram 粉丝 掉落无补充 🆕新服务",
+    "category": "Instagram 订阅关注 Followers  定向不同国家",
+    "rate": 8.676,
+    "min": 10,
+    "max": 5000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3550,
+    "name": "Instagram 粉丝 低掉落 🆕一年售后",
+    "category": "Instagram 订阅关注 Followers  定向不同国家",
+    "rate": 5.292,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4193,
+    "name": "Instagram 韩国｜5K/天｜30天售后",
+    "category": "Instagram 订阅关注 Followers  定向不同国家",
+    "rate": 319.88399999999996,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4290,
+    "name": "Instagram 浏览量 | 100万/天 |特惠 25.8.19更新",
+    "category": "Instagram  观看/浏览量 Views",
+    "rate": 0.096,
+    "min": 100,
+    "max": 2147483647,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 659,
+    "name": "ID112 S3 Instagram 点赞",
+    "category": "Instagram 点赞 Likes",
+    "rate": 0.9959999999999999,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3954,
+    "name": "Instagram 浏览量 | 100万/天 |30天售后♻️",
+    "category": "Instagram  观看/浏览量 Views",
+    "rate": 0.096,
+    "min": 100,
+    "max": 2147483647,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4315,
+    "name": "Instagram 点赞 | 100K/天|30天售后♻️ 25.9.17更新",
+    "category": "Instagram 点赞 Likes",
+    "rate": 0.36,
+    "min": 10,
+    "max": 3000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4288,
+    "name": "Instagram 点赞 | 100K/天|30天售后 25.8.19更新",
+    "category": "Instagram 点赞 Likes",
+    "rate": 0.36,
+    "min": 10,
+    "max": 3000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4284,
+    "name": "Instagram 点赞 | 100K/天|30天售后 25.8.17更新",
+    "category": "Instagram 点赞 Likes",
+    "rate": 0.36,
+    "min": 10,
+    "max": 3000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 658,
+    "name": "ID111 S2 Instagram 点赞",
+    "category": "Instagram 点赞 Likes",
+    "rate": 26.724,
+    "min": 50,
+    "max": 350000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 657,
+    "name": "ID110 S1 Instagram 点赞",
+    "category": "Instagram 点赞 Likes",
+    "rate": 0.372,
+    "min": 10,
+    "max": 5000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 660,
+    "name": "ID108 S4 Instagram 点赞",
+    "category": "Instagram 点赞 Likes",
+    "rate": 10.728,
+    "min": 10,
+    "max": 30000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4205,
+    "name": "Instagram 点赞 | 100K/天|30天售后",
+    "category": "Instagram 点赞 Likes",
+    "rate": 7.776,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4163,
+    "name": "Instagram 帖子点赞 | 50K/天|𝗣𝗼𝘀𝘁/𝗣𝗵𝗼𝘁𝗼| 高质量|1年售后",
+    "category": "Instagram 点赞 Likes",
+    "rate": 0.36,
+    "min": 10,
+    "max": 3000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4203,
+    "name": "Instagram 帖子点赞 | 100K/天|印度",
+    "category": "Instagram 点赞 Likes",
+    "rate": 3.2279999999999998,
+    "min": 10,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4292,
+    "name": "Instagram 随机评论｜最大：50K ｜速度：10K/ 天 ｜25.8.19更新",
+    "category": "Instagram 评论 Comments",
+    "rate": 21.828,
+    "min": 10,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4291,
+    "name": "Instagram 自定义评论｜最大：50K ｜速度：10K/ 天 ｜25.8.19更新",
+    "category": "Instagram 评论 Comments",
+    "rate": 21.828,
+    "min": 15,
+    "max": 100000,
+    "type": "Custom Comments",
+    "custom_id": null
+  },
+  {
+    "service": 4198,
+    "name": "Instagram 自定义评论｜最大：50K ｜速度：10K/ 天 ｜稳定｜ 🆕",
+    "category": "Instagram 评论 Comments",
+    "rate": 72.216,
+    "min": 10,
+    "max": 10000,
+    "type": "Custom Comments",
+    "custom_id": null
+  },
+  {
+    "service": 653,
+    "name": "ID211｜Instagram 自定义评论｜最大：50K ｜速度：10K/ 天 ｜开始时间：0 - 6 小时 ｜",
+    "category": "Instagram 评论 Comments",
+    "rate": 60.959999999999994,
+    "min": 5,
+    "max": 100000,
+    "type": "Custom Comments",
+    "custom_id": null
+  },
+  {
+    "service": 654,
+    "name": "ID212｜Instagram 随机评论｜最大：50K ｜速度：10K/ 天 ｜开始时间：0 - 6 小时",
+    "category": "Instagram 评论 Comments",
+    "rate": 55.524,
+    "min": 5,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3990,
+    "name": "Instagram ｜Story 观看/浏览量 ｜25.8.19更新",
+    "category": "Instagram   Story 故事浏览量 Views",
+    "rate": 0.708,
+    "min": 50,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4003,
+    "name": "Facebook 个人资料粉丝 | 1K-5K/天 | 30天售后",
+    "category": "Facebook 公共主页关注+点赞",
+    "rate": 5.844,
+    "min": 50,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4256,
+    "name": "Facebook 个人资料粉丝 | 1K-5K/天 |一年售后",
+    "category": "Facebook 公共主页关注+点赞",
+    "rate": 5.364,
+    "min": 50,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4094,
+    "name": "Facebook 所以页面粉丝| 稳定|30K天|30天售后",
+    "category": "Facebook 公共主页关注+点赞",
+    "rate": 6.0360000000000005,
+    "min": 50,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4095,
+    "name": "Facebook 公共主页关注+点赞 |10K-20K/天| |30天售后",
+    "category": "Facebook 公共主页关注+点赞",
+    "rate": 9.276,
+    "min": 10,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 691,
+    "name": "① ｜Facebook - 🌍个人资料关注｜速度50-100K天",
+    "category": "Facebook 公共主页关注+点赞",
+    "rate": 25.38,
+    "min": 10,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 695,
+    "name": "⑦｜Facebook - 🇮🇩印度尼西亚资料关注｜速度1K-5K天",
+    "category": "Facebook 公共主页关注+点赞",
+    "rate": 35.352,
+    "min": 10,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4255,
+    "name": "Facebook | Page专页粉丝 | 1K-5K/天 | 一年售后",
+    "category": "Facebook 公共主页关注+点赞",
+    "rate": 5.364,
+    "min": 50,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4257,
+    "name": "Facebook - 帖子点赞👍｜速度10k/天｜不掉落[较高质量资料]",
+    "category": "Facebook 帖子点赞 Likes",
+    "rate": 3.2279999999999998,
+    "min": 50,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4201,
+    "name": "Facebook - 帖子点赞👍｜速度10k/天｜不掉落[较高质量资料]",
+    "category": "Facebook 帖子点赞 Likes",
+    "rate": 3.384,
+    "min": 20,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4179,
+    "name": "Facebook - 帖子点赞👍｜速度10k/天｜不掉落 30天售后",
+    "category": "Facebook 帖子点赞 Likes",
+    "rate": 3.384,
+    "min": 50,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3882,
+    "name": "Facebook - 帖子点赞👍｜速度10k/天｜不掉落[较高质量资料]",
+    "category": "Facebook 帖子点赞 Likes",
+    "rate": 3.408,
+    "min": 20,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4006,
+    "name": "Facebook 帖子|❤️ | 30K/天 |不掉落 | 30天售后",
+    "category": "Facebook 帖子表情 ❤️ 🥰 😄 😢 😡 😯",
+    "rate": 2.22,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4007,
+    "name": "Facebook 帖子|🥰 | 30K/天 |不掉落 | 30天售后",
+    "category": "Facebook 帖子表情 ❤️ 🥰 😄 😢 😡 😯",
+    "rate": 2.22,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4008,
+    "name": "Facebook 帖子|😂 | 30K/天 |不掉落 | 30天售后",
+    "category": "Facebook 帖子表情 ❤️ 🥰 😄 😢 😡 😯",
+    "rate": 2.22,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4009,
+    "name": "Facebook 帖子| 😲 | 30K/天 |不掉落 | 30天售后",
+    "category": "Facebook 帖子表情 ❤️ 🥰 😄 😢 😡 😯",
+    "rate": 2.22,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4010,
+    "name": "Facebook 帖子| 😢 | 30K/天 |不掉落 | 30天售后",
+    "category": "Facebook 帖子表情 ❤️ 🥰 😄 😢 😡 😯",
+    "rate": 2.22,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4011,
+    "name": "Facebook 帖子| 😡 | 30K/天 |不掉落 | 30天售后",
+    "category": "Facebook 帖子表情 ❤️ 🥰 😄 😢 😡 😯",
+    "rate": 2.22,
+    "min": 100,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4195,
+    "name": "Facebook 𝐅𝐫𝐢𝐞𝐧𝐝𝐬 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 |关于个人资料 |不掉落 |30天售后",
+    "category": "Facebook 𝐅𝐫𝐢𝐞𝐧𝐝𝐬 𝐑𝐞𝐪𝐮𝐞𝐬𝐭",
+    "rate": 13.331999999999999,
+    "min": 500,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4012,
+    "name": "Facebook 𝐅𝐫𝐢𝐞𝐧𝐝𝐬 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 |关于个人资料 |不掉落",
+    "category": "Facebook 𝐅𝐫𝐢𝐞𝐧𝐝𝐬 𝐑𝐞𝐪𝐮𝐞𝐬𝐭",
+    "rate": 41.62799999999999,
+    "min": 100,
+    "max": 5000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4180,
+    "name": "Facebook 群组成员 |速度3-5k/天 |30天售后",
+    "category": "Facebook 群组成员",
+    "rate": 6.311999999999999,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3881,
+    "name": "Facebook - 🌍Page专页点赞+粉丝｜速度10-20/天",
+    "category": "Facebook Page(专页)点赞｜粉丝",
+    "rate": 8.736,
+    "min": 10,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4063,
+    "name": "❗️❗️❗️评论购买前必看❗️❗️❗️",
+    "category": "Twitter｜ 自定义评论  Comments ｜推文评论｜必须允许评论｜禁止带链接",
+    "rate": 122819998.776,
+    "min": 1000,
+    "max": 1000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4064,
+    "name": "Twitter - 🇺🇸🪙评论 [自定义] [英文+50%加密货币]｜0-1H开始｜无售后｜🚫不要放中文",
+    "category": "Twitter｜ 自定义评论  Comments ｜推文评论｜必须允许评论｜禁止带链接",
+    "rate": 272.664,
+    "min": 3,
+    "max": 1000,
+    "type": "Custom Comments",
+    "custom_id": null
+  },
+  {
+    "service": 4065,
+    "name": "Twitter - 🇺🇸🪙评论 [随机] [英文+50%加密货币]｜0-1小时开始｜无售后",
+    "category": "Twitter｜ 自定义评论  Comments ｜推文评论｜必须允许评论｜禁止带链接",
+    "rate": 272.664,
+    "min": 3,
+    "max": 1000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4066,
+    "name": "Twitter - 🇺🇸🪙推文自定义评论+随机@艾特3人｜每条评论@3个用户｜0-1H开始",
+    "category": "Twitter｜ 自定义评论  Comments ｜推文评论｜必须允许评论｜禁止带链接",
+    "rate": 272.664,
+    "min": 5,
+    "max": 1000,
+    "type": "Custom Comments",
+    "custom_id": null
+  },
+  {
+    "service": 4067,
+    "name": "Twitter - 🇨🇳中文资料评论 [自定义] ｜0-1小时｜无售后",
+    "category": "Twitter｜ 自定义评论  Comments ｜推文评论｜必须允许评论｜禁止带链接",
+    "rate": 272.664,
+    "min": 3,
+    "max": 1000,
+    "type": "Custom Comments",
+    "custom_id": null
+  },
+  {
+    "service": 4184,
+    "name": "Facebook 主页赞 + 关注者| 30天售后",
+    "category": "Facebook 页面赞",
+    "rate": 8.892,
+    "min": 10,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4181,
+    "name": "Facebook - 页面点赞｜速度10-20/天｜美国｜一年售后",
+    "category": "Facebook 页面赞",
+    "rate": 35.952,
+    "min": 50,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 667,
+    "name": "｜TikTok视频浏览量｜最大：1亿｜速度：1000K/天｜开始时间：0-1小时｜",
+    "category": "TikTok 观看次数",
+    "rate": 0.6839999999999999,
+    "min": 100,
+    "max": 500000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 668,
+    "name": "ID185｜TikTok 直播观看次数｜最大：10K｜速度：20-30K/天｜开始时间：0-1小时｜",
+    "category": "TikTok 观看次数",
+    "rate": 11.831999999999999,
+    "min": 10,
+    "max": 10000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3761,
+    "name": "TikTok视频浏览量｜最大：1亿｜速度：1000K/天｜开始时间：0-1小时｜",
+    "category": "TikTok 观看次数",
+    "rate": 0.6839999999999999,
+    "min": 100,
+    "max": 200000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 3762,
+    "name": "ID185✅新｜TikTok 直播观看次数｜最大：10K｜速度：20-30K/天｜开始时间：0-1小时｜",
+    "category": "TikTok 观看次数",
+    "rate": 11.831999999999999,
+    "min": 10,
+    "max": 50000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4254,
+    "name": "Facebook Facebook 主页赞 + 关注者| 所有类型主页帖子分享| 30天售后",
+    "category": "Facebook 帖子分享",
+    "rate": 9.516,
+    "min": 100,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4356,
+    "name": "私有1僵尸粉1",
+    "category": "私有1专属",
+    "rate": 4.464,
+    "min": 500,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4357,
+    "name": "私有1僵尸粉2",
+    "category": "私有1专属",
+    "rate": 12.431999999999999,
+    "min": 10,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4358,
+    "name": "私有1僵尸粉3",
+    "category": "私有1专属",
+    "rate": 11.496,
+    "min": 10,
+    "max": 500000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4359,
+    "name": "私有1僵尸粉4",
+    "category": "私有1专属",
+    "rate": 10.464,
+    "min": 10,
+    "max": 100000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4531,
+    "name": "Threads 粉丝👥 3k-10k/天 无补充",
+    "category": "Threads",
+    "rate": 34.884,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4532,
+    "name": "Threads 粉丝👥 3k-10k/天 30天补充",
+    "category": "Threads",
+    "rate": 116.172,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4533,
+    "name": "Threads 帖子点赞❤️ 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 23.255999999999997,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4534,
+    "name": "Threads 帖子点赞❤️ 3K-5k/天 30补充",
+    "category": "Threads",
+    "rate": 42.288000000000004,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4535,
+    "name": "Threads 帖子转发🔁 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 23.255999999999997,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4536,
+    "name": "Threads 帖子转发🔁 3K-5k/天 30补充",
+    "category": "Threads",
+    "rate": 46.51199999999999,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4537,
+    "name": "Threads 帖子引用🗨️ 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 23.255999999999997,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4538,
+    "name": "Threads 帖子引用🗨️ 3K-5k/天 30补充",
+    "category": "Threads",
+    "rate": 46.51199999999999,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4539,
+    "name": "Threads 帖子分享📤 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 58.09199999999999,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4540,
+    "name": "Threads 帖子分享📤 3K-5k/天 30补充",
+    "category": "Threads",
+    "rate": 116.172,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4541,
+    "name": "Threads 帖子评论💬 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 1166.1599999999999,
+    "min": 1,
+    "max": 1000000,
+    "type": "Custom Comments",
+    "custom_id": null
+  },
+  {
+    "service": 4542,
+    "name": "Threads 帖子评论💬 3K-5k/天 30补充",
+    "category": "Threads",
+    "rate": 2323.404,
+    "min": 1,
+    "max": 1000000,
+    "type": "Custom Comments",
+    "custom_id": null
+  },
+  {
+    "service": 4543,
+    "name": "Threads 帖子评论点赞💬❤️ 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 58.09199999999999,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4544,
+    "name": "Threads 帖子评论回复💬💬 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 1749.396,
+    "min": 1,
+    "max": 1000000,
+    "type": "Custom Comments",
+    "custom_id": null
+  },
+  {
+    "service": 4545,
+    "name": "Threads 帖子评论转发💬🔁 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 58.09199999999999,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4546,
+    "name": "Threads 帖子评论引用💬🗨️ 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 58.09199999999999,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4547,
+    "name": "Threads 帖子评论分享💬📤 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 58.09199999999999,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  },
+  {
+    "service": 4548,
+    "name": "Threads Feed ➕增长服务 3K-5k/天 无补充",
+    "category": "Threads",
+    "rate": 34.884,
+    "min": 10,
+    "max": 1000000,
+    "type": "Default",
+    "custom_id": null
+  }
+]
