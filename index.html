@@ -650,11 +650,18 @@
                 const data = await res.json();
                 if (!res.ok) throw new Error(data.error || '下单失败');
 
+                // 先关闭抽屉弹窗，待抽屉滑出收起后再弹出 Toast
                 closeOrderDrawer();
-                showToast('🎉 下单提交成功！费用已从您的余额中扣除。');
+                setTimeout(() => {
+                    showToast('🎉 下单提交成功！费用已从您的余额中扣除。');
+                }, 250);
+
                 fetchUserInfo();
             } catch (err) {
-                showToast('下单失败: ' + err.message, 'error');
+                closeOrderDrawer();
+                setTimeout(() => {
+                    showToast('下单失败: ' + err.message, 'error');
+                }, 250);
             }
         }
 
