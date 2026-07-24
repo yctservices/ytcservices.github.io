@@ -189,6 +189,7 @@
         let categories = [];
         let activeCategory = '';
         let selectedProduct = null;
+        let user = null; // Declare as global variable to prevent scoping ReferenceError
 
         logDebug("Script parsed. Checking Telegram SDK...");
         const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
@@ -203,7 +204,7 @@
         window.addEventListener('DOMContentLoaded', () => {
             logDebug("DOMContentLoaded event triggered");
             // Apply User Info from Telegram
-            let user = (tg && tg.initDataUnsafe) ? tg.initDataUnsafe.user : null;
+            user = (tg && tg.initDataUnsafe) ? tg.initDataUnsafe.user : null;
             
             // 备用解析方案 1：从原始 tg.initData 查询串中解析 user
             if (!user && tg && tg.initData) {
