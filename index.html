@@ -57,13 +57,18 @@
                     <p id="user-id-display" class="text-[10px] text-slate-400 font-mono">ID: 未关联</p>
                 </div>
             </div>
-            <!-- Wallet Balance Badge -->
-            <div class="flex items-center space-x-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-3 py-1.5 rounded-full shadow-md">
-                <i data-lucide="wallet" class="w-3.5 h-3.5"></i>
-                <span class="text-xs font-bold font-mono">¥ <span id="header-user-balance">0.00</span></span>
-                <button onclick="switchTab('recharge')" class="bg-white/20 hover:bg-white/30 text-white text-[10px] px-2 py-0.5 rounded-full font-medium transition-all active:scale-95">
-                    +充值
+            <!-- Wallet Balance Badge & Currency Toggle -->
+            <div class="flex items-center space-x-1.5">
+                <button onclick="toggleCurrencyPref()" id="currency-toggle-btn" class="bg-slate-100 hover:bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-1.5 rounded-full border border-slate-200 active:scale-95 transition-all">
+                    🔀 双币
                 </button>
+                <div class="flex items-center space-x-1.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-2.5 py-1.5 rounded-full shadow-md">
+                    <i data-lucide="wallet" class="w-3.5 h-3.5 shrink-0"></i>
+                    <span class="text-xs font-bold font-mono"><span id="header-user-balance">¥ 0.00</span></span>
+                    <button onclick="switchTab('recharge')" class="bg-white/20 hover:bg-white/30 text-white text-[10px] px-2 py-0.5 rounded-full font-medium transition-all active:scale-95 shrink-0">
+                        +充值
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -371,6 +376,39 @@
         let allOrders = [];
         let activeOrderFilter = 'ALL';
 
+        let effectiveRate = 7.30;
+        let currencyPref = 'DUAL'; // DUAL, CNY, USDT
+
+        function formatPrice(priceCny) {
+            const priceUsdt = (priceCny / effectiveRate).toFixed(2);
+            if (currencyPref === 'CNY') {
+                return `¥ ${priceCny.toFixed(2)}`;
+            } else if (currencyPref === 'USDT') {
+                return `$ ${priceUsdt} USDT`;
+            } else {
+                return `¥ ${priceCny.toFixed(2)} (≈$ ${priceUsdt})`;
+            }
+        }
+
+        function toggleCurrencyPref() {
+            window.hasUserToggledCurrency = true;
+            const nextMap = { 'DUAL': 'CNY', 'CNY': 'USDT', 'USDT': 'DUAL' };
+            currencyPref = nextMap[currencyPref] || 'DUAL';
+            updateCurrencyToggleBtn();
+            renderServices();
+            renderOrders();
+            fetchUserInfo();
+            showToast(`已切换为 ${currencyPref} 币种模式`);
+        }
+
+        function updateCurrencyToggleBtn() {
+            const btn = document.getElementById('currency-toggle-btn');
+            if (btn) {
+                const labels = { 'DUAL': '🔀 双币', 'CNY': '🔀 人民币', 'USDT': '🔀 USDT' };
+                btn.innerText = labels[currencyPref] || '🔀 双币';
+            }
+        }
+
         const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
         if (tg) {
             tg.ready();
@@ -420,10 +458,15 @@
                 });
                 if (res.ok) {
                     const data = await res.json();
-                    const balFormatted = data.balance.toFixed(2);
-                    document.getElementById('header-user-balance').innerText = balFormatted;
-                    document.getElementById('recharge-page-balance').innerText = balFormatted;
-                    document.getElementById('profile-total-spent').innerText = data.total_spent.toFixed(2);
+                    if (data.effective_rate) effectiveRate = data.effective_rate;
+                    if (data.currency_pref && !window.hasUserToggledCurrency) {
+                        currencyPref = data.currency_pref;
+                        updateCurrencyToggleBtn();
+                    }
+
+                    document.getElementById('header-user-balance').innerText = formatPrice(data.balance);
+                    document.getElementById('recharge-page-balance').innerText = `${data.balance.toFixed(2)} (≈ $ ${data.balance_usdt.toFixed(2)} USDT)`;
+                    document.getElementById('profile-total-spent').innerText = formatPrice(data.total_spent);
                     document.getElementById('profile-order-count').innerText = data.order_count;
                 }
             } catch (e) {}
@@ -489,7 +532,7 @@
                         <p class="text-[10px] text-slate-400">起购: ${s.min} | 限购: ${s.max}</p>
                     </div>
                     <div class="text-right">
-                        <span class="text-indigo-600 font-extrabold text-sm block">¥${s.rate.toFixed(2)}</span>
+                        <span class="text-indigo-600 font-extrabold text-xs block font-mono">${formatPrice(s.rate)}</span>
                         <button onclick='openOrderDrawer(${JSON.stringify(s)})' class="mt-1.5 bg-indigo-600 text-white text-[11px] font-bold px-3 py-1.5 rounded-xl shadow-sm active:scale-95 transition-all">
                             选购
                         </button>
@@ -503,7 +546,7 @@
         function openOrderDrawer(product) {
             selectedProduct = product;
             document.getElementById('drawer-product-name').innerText = product.name;
-            document.getElementById('drawer-product-rate').innerText = `¥${product.rate.toFixed(2)}`;
+            document.getElementById('drawer-product-rate').innerText = formatPrice(product.rate);
             document.getElementById('drawer-product-min').innerText = product.min;
             document.getElementById('drawer-product-max').innerText = product.max;
 
@@ -513,7 +556,7 @@
             qtyInput.placeholder = `范围: ${product.min} - ${product.max}`;
             qtyInput.value = '';
             document.getElementById('order-link').value = '';
-            document.getElementById('order-total-price').innerText = '¥0.00';
+            document.getElementById('order-total-price').innerText = formatPrice(0);
 
             const drawer = document.getElementById('order-drawer');
             drawer.classList.remove('hidden');
@@ -592,7 +635,7 @@
             const qty = parseInt(document.getElementById('order-quantity').value) || 0;
             const isPackage = selectedProduct.type.toLowerCase() === 'package';
             const total = isPackage ? (selectedProduct.rate * qty) : ((selectedProduct.rate / 1000.0) * qty);
-            document.getElementById('order-total-price').innerText = `¥${total.toFixed(2)}`;
+            document.getElementById('order-total-price').innerText = formatPrice(total);
         }
 
         // Global Toast Component Handler (Solution B: 0% Domain Display)
@@ -714,7 +757,7 @@
                     <p class="text-[11px] text-slate-500 font-mono truncate">链接: ${o.link}</p>
                     <div class="flex justify-between items-center text-[11px] pt-1">
                         <span class="text-slate-400">数量: ${o.quantity}</span>
-                        <span class="text-indigo-600 font-extrabold">扣款: ¥${o.charge.toFixed(2)}</span>
+                        <span class="text-indigo-600 font-extrabold font-mono">扣款: ${formatPrice(o.charge)}</span>
                     </div>
                 `;
                 container.appendChild(card);
