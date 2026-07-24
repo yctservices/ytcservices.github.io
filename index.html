@@ -438,6 +438,7 @@
                 }
 
                 const orderPayload = {
+                    init_data: (tg && tg.initData) ? tg.initData : '',
                     user_id: user ? user.id : null,
                     service_id: selectedProduct.service,
                     link: link,
