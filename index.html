@@ -437,19 +437,15 @@
                     return;
                 }
 
-                // Helper to encode string to base64url safely for Telegram start param
-                let cleanLink = link.trim();
-                let b64link = "";
-                try {
-                    b64link = btoa(unescape(encodeURIComponent(cleanLink)))
-                        .replace(/\+/g, '-')
-                        .replace(/\//g, '_')
-                        .replace(/=+$/, '');
-                } catch(e) {
-                    b64link = cleanLink.replace(/[^a-zA-Z0-9_-]/g, '');
+                // Clean link and strictly enforce Telegram's 64-character start param limit!
+                let cleanLink = link.trim().replace(/^https?:\/\/(t\.me\/)?/, '').replace(/^@/, '');
+                let safeLink = cleanLink.replace(/[^a-zA-Z0-9_-]/g, '_');
+
+                let startParam = `ord_${selectedProduct.service}_${qty}_${safeLink}`;
+                if (startParam.length > 64) {
+                    startParam = startParam.slice(0, 64);
                 }
 
-                const startParam = `ord_${selectedProduct.service}_${qty}_${b64link}`;
                 const targetBot = "yctyinliubot";
                 const deepLink = `https://t.me/${targetBot}?start=${startParam}`;
 
