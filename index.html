@@ -170,17 +170,21 @@
         let activeCategory = '';
         let selectedProduct = null;
 
-        // Initialize Telegram WebApp SDK
-        const tg = window.Telegram.WebApp;
-        tg.ready();
-        tg.expand(); // Expand full height
+        // Initialize Telegram WebApp SDK safely
+        const tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
+        if (tg) {
+            tg.ready();
+            tg.expand(); // Expand full height
+        } else {
+            console.warn("Telegram WebApp SDK not found or failed to load");
+        }
 
         window.addEventListener('DOMContentLoaded', () => {
             // Apply User Info from Telegram
-            let user = tg.initDataUnsafe?.user;
+            let user = (tg && tg.initDataUnsafe) ? tg.initDataUnsafe.user : null;
             
             // 备用解析方案 1：从原始 tg.initData 查询串中解析 user
-            if (!user && tg.initData) {
+            if (!user && tg && tg.initData) {
                 try {
                     const params = new URLSearchParams(tg.initData);
                     const userRaw = params.get('user');
@@ -387,6 +391,10 @@
 
         function submitOrder() {
             try {
+                if (!tg) {
+                    alert("错误：未能加载 Telegram WebApp 官方组件库，请退出并重新加载网页。");
+                    return;
+                }
                 if (!selectedProduct) {
                     tg.showAlert("错误：未选择商品数据");
                     return;
