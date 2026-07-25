@@ -128,71 +128,30 @@
                 </h3>
 
                 <!-- Quick Amount Grid & Custom Input -->
-                <div>
-                    <label class="block text-[11px] font-bold text-slate-600 mb-1.5">选择或自定义输入充值面额 (USDT):</label>
-                    <div class="grid grid-cols-3 gap-2 mb-2">
-                        <button onclick="selectRechargeAmount(10)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 10 USDT</button>
-                        <button onclick="selectRechargeAmount(50)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 50 USDT</button>
-                        <button onclick="selectRechargeAmount(100)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 100 USDT</button>
-                        <button onclick="selectRechargeAmount(200)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 200 USDT</button>
-                        <button onclick="selectRechargeAmount(500)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 500 USDT</button>
-                        <button onclick="selectRechargeAmount(1000)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 1000 USDT</button>
+                <div class="space-y-3">
+                    <label class="block text-[11px] font-bold text-slate-600">选择或自定义输入充值面额 (USDT):</label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <button onclick="selectRechargeAmount(10)" class="recharge-amt-btn bg-indigo-600 text-white border border-indigo-200 text-xs font-bold font-mono py-2.5 rounded-xl active:scale-95 transition-all">💵 10 USDT</button>
+                        <button onclick="selectRechargeAmount(50)" class="recharge-amt-btn bg-slate-50 hover:bg-indigo-50 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2.5 rounded-xl active:scale-95 transition-all">💵 50 USDT</button>
+                        <button onclick="selectRechargeAmount(100)" class="recharge-amt-btn bg-slate-50 hover:bg-indigo-50 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2.5 rounded-xl active:scale-95 transition-all">💵 100 USDT</button>
+                        <button onclick="selectRechargeAmount(200)" class="recharge-amt-btn bg-slate-50 hover:bg-indigo-50 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2.5 rounded-xl active:scale-95 transition-all">💵 200 USDT</button>
+                        <button onclick="selectRechargeAmount(500)" class="recharge-amt-btn bg-slate-50 hover:bg-indigo-50 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2.5 rounded-xl active:scale-95 transition-all">💵 500 USDT</button>
+                        <button onclick="selectRechargeAmount(1000)" class="recharge-amt-btn bg-slate-50 hover:bg-indigo-50 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2.5 rounded-xl active:scale-95 transition-all">💵 1000 USDT</button>
                     </div>
-                    <div class="flex items-center space-x-2">
-                        <input type="number" id="custom-recharge-amount" placeholder="或输入自定义 USDT 金额 (如 35)..." class="bg-slate-50 border border-slate-200 text-slate-800 text-xs rounded-xl p-2.5 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono">
-                        <button onclick="submitCustomRechargeAmount()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-3.5 py-2.5 rounded-xl shrink-0 active:scale-95 transition-all">
-                            生成账单
-                        </button>
+                    <div>
+                        <input type="number" id="custom-recharge-amount" placeholder="或输入自定义 USDT 金额 (如 35)..." class="bg-slate-50 border border-slate-200 text-slate-800 text-xs rounded-xl p-3 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono">
                     </div>
                 </div>
 
-                <!-- USDT Content -->
-                <div id="pay-content-usdt" class="space-y-3 pt-1">
-                    <!-- Feature Amount Box -->
-                    <div class="bg-emerald-50/80 border border-emerald-200/80 p-3 rounded-xl flex items-center justify-between">
-                        <div>
-                            <p class="text-[10px] text-emerald-600 font-medium">🏷️ 精准特征转账金额 (请按此实发):</p>
-                            <p id="usdt-expected-amount" class="text-lg font-extrabold font-mono text-emerald-700">10.000 USDT</p>
-                        </div>
-                        <button onclick="copyExpectedAmount()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs px-2.5 py-1.5 rounded-lg shrink-0 active:scale-95 transition-all">
-                            复制金额
-                        </button>
+                <!-- Direct Jump Action Card -->
+                <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 space-y-3 text-center mt-2">
+                    <div class="space-y-1">
+                        <p class="text-xs text-slate-600 font-medium">当前结算汇率: <span class="font-extrabold text-emerald-600">1 USDT ≈ ¥<span id="recharge-rate-display">7.30</span></span></p>
+                        <p class="text-[11px] text-slate-400">选择面额后点击下方按钮，将自动跳转唤起官方收银台 Bot (@yctpaymentbot) 进行结算。</p>
                     </div>
-
-                    <!-- QR Code Card -->
-                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/80 text-center space-y-2">
-                        <div class="inline-block p-2 bg-white rounded-2xl border border-slate-200/80 shadow-sm relative group">
-                            <img id="usdt-qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=TYx892K1mN3bV7cX9pL2qW4eR6tY1uI3oP" alt="USDT TRC20 收款二维码" class="w-36 h-36 rounded-xl mx-auto block object-contain">
-                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                <div class="w-7 h-7 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shadow-md border-2 border-white">₮</div>
-                            </div>
-                        </div>
-                        <p class="text-[11px] text-slate-500 font-medium">📱 扫码直接转账 (支持欧易/币安/TP/Trust Wallet)</p>
-                    </div>
-
-                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/80 space-y-2">
-                        <p class="text-[11px] text-slate-500 flex justify-between">
-                            <span>USDT 专属收款地址 (TRC-20):</span>
-                            <span class="text-emerald-600 font-bold">汇率 1 USDT ≈ ¥<span id="recharge-rate-display">7.30</span></span>
-                        </p>
-                        <div class="flex items-center space-x-2">
-                            <input type="text" readonly id="usdt-address" value="TYx892K1mN3bV7cX9pL2qW4eR6tY1uI3oP" class="bg-white border border-slate-200 text-slate-700 text-xs font-mono rounded-lg px-2.5 py-1.5 w-full focus:outline-none">
-                            <button onclick="copyUsdtAddress()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs px-3 py-1.5 rounded-lg shrink-0 active:scale-95 transition-all">
-                                复制地址
-                            </button>
-                        </div>
-                    </div>
-                    <div class="text-[10px] text-slate-400 space-y-1 bg-amber-50/60 p-2.5 rounded-xl border border-amber-200/60 text-amber-700">
-                        <p>⚠️ 提醒：请务必发送上方<b>精准特征数额</b>（带小数），以便收银中台秒级识别对账。</p>
-                        <p>转账完成后，中台链上监听到账将自动秒级为你充值入账！</p>
-                    </div>
-
-                    <!-- Cashier Bot Link Button (Aligned with Telegram Bot) -->
-                    <div id="usdt-cashier-btn-box" class="pt-1">
-                        <a id="usdt-cashier-btn" href="https://t.me/yctpaymentbot" target="_blank" class="block w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold text-xs py-3 rounded-xl shadow-lg text-center active:scale-95 transition-all">
-                            ➡️ 前往收银台支付 (获取地址池专属地址)
-                        </a>
-                    </div>
+                    <button onclick="goToCashierBot()" class="w-full bg-gradient-to-r from-emerald-500 via-teal-600 to-indigo-600 hover:from-emerald-600 hover:to-indigo-700 text-white font-extrabold text-sm py-3.5 rounded-xl shadow-lg active:scale-95 transition-all flex items-center justify-center space-x-2">
+                        <span>➡️ 立即前往收银台支付</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -498,13 +457,42 @@
             }
         }
 
-        async function fetchRechargeInfo() {
-            selectRechargeAmount(10);
+        let selectedRechargeAmount = 10;
+
+        function selectRechargeAmount(amt) {
+            selectedRechargeAmount = amt;
+            document.querySelectorAll('.recharge-amt-btn').forEach(btn => {
+                btn.classList.remove('bg-indigo-600', 'text-white');
+                btn.classList.add('bg-slate-50', 'text-slate-700');
+            });
+            if (window.event && window.event.currentTarget) {
+                window.event.currentTarget.classList.remove('bg-slate-50', 'text-slate-700');
+                window.event.currentTarget.classList.add('bg-indigo-600', 'text-white');
+            }
+            showToast(`已选择 ${amt} USDT 面额`);
         }
 
-        async function selectRechargeAmount(amt) {
+        async function fetchRechargeInfo() {
             try {
-                showToast(`正在创建 ${amt} USDT 专属收银单...`);
+                const res = await fetch('/api/recharge_info');
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data.effective_rate) {
+                        const rateElem = document.getElementById('recharge-rate-display');
+                        if (rateElem) rateElem.innerText = parseFloat(data.effective_rate).toFixed(2);
+                    }
+                }
+            } catch (e) {}
+        }
+
+        async function goToCashierBot() {
+            let amt = selectedRechargeAmount;
+            const customInput = document.getElementById('custom-recharge-amount');
+            if (customInput && customInput.value && parseFloat(customInput.value) > 0) {
+                amt = parseFloat(customInput.value);
+            }
+            try {
+                showToast(`正在拉起 ${amt} USDT 专属收银单...`);
                 const payload = { amount: amt, user_id: user ? user.id : 0 };
                 const res = await fetch('/api/create_recharge_order', {
                     method: 'POST',
@@ -513,34 +501,17 @@
                 });
                 if (res.ok) {
                     const data = await res.json();
-                    if (data.expected_amount) {
-                        const amtElem = document.getElementById('usdt-expected-amount');
-                        if (amtElem) amtElem.innerText = `${parseFloat(data.expected_amount).toFixed(3)} USDT`;
-                    }
-                    const addrElem = document.getElementById('usdt-address');
-                    const qrElem = document.getElementById('usdt-qr-code');
-                    const cashierBtn = document.getElementById('usdt-cashier-btn');
-                    
-                    if (data.cashier_url && cashierBtn) {
-                        cashierBtn.href = data.cashier_url;
-                    }
-                    
-                    if (data.trc20_address && data.trc20_address.trim() !== '') {
-                        if (addrElem) addrElem.value = data.trc20_address;
-                        if (qrElem) qrElem.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(data.trc20_address)}`;
+                    const cashierUrl = data.cashier_url || `https://t.me/yctpaymentbot?start=pay_${data.order_id}`;
+                    if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.openTelegramLink) {
+                        window.Telegram.WebApp.openTelegramLink(cashierUrl);
                     } else {
-                        if (addrElem) addrElem.value = '请点击下方按钮前往收银台获取动态地址';
-                        if (qrElem) qrElem.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(data.cashier_url || 'https://t.me/yctpaymentbot')}`;
+                        window.open(cashierUrl, '_blank');
                     }
-                    
-                    if (data.effective_rate) {
-                        const rateElem = document.getElementById('recharge-rate-display');
-                        if (rateElem) rateElem.innerText = parseFloat(data.effective_rate).toFixed(2);
-                    }
-                    showToast(`收银单生成成功！请点击下方按钮前往收银台`);
+                } else {
+                    showToast('创建收银单失败');
                 }
             } catch (e) {
-                showToast('创建充值账单异常');
+                showToast('唤起收银台失败');
             }
         }
 
