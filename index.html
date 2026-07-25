@@ -62,10 +62,12 @@
                 <button onclick="toggleCurrencyPref()" id="currency-toggle-btn" class="bg-slate-100 hover:bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-1.5 rounded-full border border-slate-200 active:scale-95 transition-all">
                     🔀 双币
                 </button>
-                <div class="flex items-center space-x-1.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-2.5 py-1.5 rounded-full shadow-md">
+                <div class="flex items-center space-x-1.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-2.5 py-1.5 rounded-2xl shadow-md shrink-0">
                     <i data-lucide="wallet" class="w-3.5 h-3.5 shrink-0"></i>
-                    <span class="text-xs font-bold font-mono"><span id="header-user-balance">¥ 0.00</span></span>
-                    <button onclick="switchTab('recharge')" class="bg-white/20 hover:bg-white/30 text-white text-[10px] px-2 py-0.5 rounded-full font-medium transition-all active:scale-95 shrink-0">
+                    <div id="header-user-balance" class="flex flex-col items-start min-w-[60px]">
+                        <span class="font-extrabold font-mono text-xs whitespace-nowrap leading-none">¥ 0.00</span>
+                    </div>
+                    <button onclick="switchTab('recharge')" class="bg-white/20 hover:bg-white/30 text-white text-[10px] px-2 py-1 rounded-full font-medium transition-all active:scale-95 shrink-0 ml-0.5">
                         +充值
                     </button>
                 </div>
@@ -109,7 +111,9 @@
             <div class="bg-gradient-to-tr from-indigo-600 via-indigo-700 to-purple-700 text-white rounded-2xl p-5 shadow-lg relative overflow-hidden">
                 <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
                 <p class="text-xs text-indigo-200 font-medium mb-1">当前账户可用余额</p>
-                <h2 class="text-3xl font-extrabold font-mono tracking-tight">¥ <span id="recharge-page-balance">0.00</span></h2>
+                <div id="recharge-page-balance-container">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold font-mono tracking-tight" id="recharge-page-balance">¥ 0.00</h2>
+                </div>
                 <div class="mt-4 pt-3 border-t border-white/15 flex justify-between items-center text-[11px] text-indigo-200">
                     <span>充值实时秒级入账</span>
                     <span class="flex items-center"><i data-lucide="shield-check" class="w-3.5 h-3.5 mr-1"></i> 加密通道防护</span>
@@ -118,57 +122,64 @@
 
             <!-- Payment Options -->
             <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 space-y-4">
-                <h3 class="text-xs font-bold text-slate-700 flex items-center">
-                    <i data-lucide="credit-card" class="w-4 h-4 text-indigo-500 mr-1.5"></i> 选择充值通道
+                <h3 class="text-xs font-bold text-slate-700 flex items-center justify-between">
+                    <span class="flex items-center"><i data-lucide="credit-card" class="w-4 h-4 text-indigo-500 mr-1.5"></i> USDT-TRC20 自动充值</span>
+                    <span class="text-[10px] bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded-md font-bold">精准特征额秒级入账</span>
                 </h3>
-                <div class="grid grid-cols-2 gap-2.5">
-                    <button onclick="selectPayMethod('usdt')" id="pay-btn-usdt" class="pay-method-btn border-2 border-indigo-600 bg-indigo-50/50 p-3 rounded-xl flex items-center space-x-2.5 text-left transition-all">
-                        <div class="w-7 h-7 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0">₮</div>
-                        <div>
-                            <p class="text-xs font-bold text-slate-800">USDT-TRC20</p>
-                            <p class="text-[9px] text-slate-400">链上自动入账</p>
-                        </div>
-                    </button>
-                    <button onclick="selectPayMethod('card')" id="pay-btn-card" class="pay-method-btn border border-slate-200 p-3 rounded-xl flex items-center space-x-2.5 text-left transition-all">
-                        <div class="w-7 h-7 rounded-lg bg-purple-500 text-white flex items-center justify-center shrink-0">
-                            <i data-lucide="ticket" class="w-4 h-4"></i>
-                        </div>
-                        <div>
-                            <p class="text-xs font-bold text-slate-800">卡密兑换</p>
-                            <p class="text-[9px] text-slate-400">官方卡卷兑换</p>
-                        </div>
-                    </button>
+
+                <!-- Quick Amount Grid -->
+                <div>
+                    <label class="block text-[11px] font-bold text-slate-600 mb-1.5">快捷选择充值面额 (USDT):</label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <button onclick="selectRechargeAmount(10)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 10 USDT</button>
+                        <button onclick="selectRechargeAmount(50)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 50 USDT</button>
+                        <button onclick="selectRechargeAmount(100)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 100 USDT</button>
+                        <button onclick="selectRechargeAmount(200)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 200 USDT</button>
+                        <button onclick="selectRechargeAmount(500)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 500 USDT</button>
+                        <button onclick="selectRechargeAmount(1000)" class="bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border border-slate-200 text-slate-700 text-xs font-bold font-mono py-2 rounded-xl active:scale-95 transition-all">💵 1000 USDT</button>
+                    </div>
                 </div>
 
-                <!-- Channel 1: USDT Content -->
-                <div id="pay-content-usdt" class="space-y-3 pt-2">
+                <!-- USDT Content -->
+                <div id="pay-content-usdt" class="space-y-3 pt-1">
+                    <!-- Feature Amount Box -->
+                    <div class="bg-emerald-50/80 border border-emerald-200/80 p-3 rounded-xl flex items-center justify-between">
+                        <div>
+                            <p class="text-[10px] text-emerald-600 font-medium">🏷️ 精准特征转账金额 (请按此实发):</p>
+                            <p id="usdt-expected-amount" class="text-lg font-extrabold font-mono text-emerald-700">10.000 USDT</p>
+                        </div>
+                        <button onclick="copyExpectedAmount()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs px-2.5 py-1.5 rounded-lg shrink-0 active:scale-95 transition-all">
+                            复制金额
+                        </button>
+                    </div>
+
+                    <!-- QR Code Card -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200/80 text-center space-y-2">
+                        <div class="inline-block p-2 bg-white rounded-2xl border border-slate-200/80 shadow-sm relative group">
+                            <img id="usdt-qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=TYx892K1mN3bV7cX9pL2qW4eR6tY1uI3oP" alt="USDT TRC20 收款二维码" class="w-36 h-36 rounded-xl mx-auto block object-contain">
+                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                <div class="w-7 h-7 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shadow-md border-2 border-white">₮</div>
+                            </div>
+                        </div>
+                        <p class="text-[11px] text-slate-500 font-medium">📱 扫码直接转账 (支持欧易/币安/TP/Trust Wallet)</p>
+                    </div>
+
                     <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/80 space-y-2">
                         <p class="text-[11px] text-slate-500 flex justify-between">
                             <span>USDT 专属收款地址 (TRC-20):</span>
-                            <span class="text-emerald-600 font-bold">汇率 1 USDT ≈ ¥7.20</span>
+                            <span class="text-emerald-600 font-bold">汇率 1 USDT ≈ ¥<span id="recharge-rate-display">7.30</span></span>
                         </p>
                         <div class="flex items-center space-x-2">
                             <input type="text" readonly id="usdt-address" value="TYx892K1mN3bV7cX9pL2qW4eR6tY1uI3oP" class="bg-white border border-slate-200 text-slate-700 text-xs font-mono rounded-lg px-2.5 py-1.5 w-full focus:outline-none">
                             <button onclick="copyUsdtAddress()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs px-3 py-1.5 rounded-lg shrink-0 active:scale-95 transition-all">
-                                复制
+                                复制地址
                             </button>
                         </div>
                     </div>
                     <div class="text-[10px] text-slate-400 space-y-1 bg-amber-50/60 p-2.5 rounded-xl border border-amber-200/60 text-amber-700">
-                        <p>⚠️ 提醒：请勿向上述地址充值任何非 TRC20-USDT 资产。</p>
-                        <p>转账完成后，请联系官方客服或在机器人中提交 Hash 即可秒级到账。</p>
+                        <p>⚠️ 提醒：请务必发送上方<b>精准特征数额</b>（带小数），以便收银中台秒级识别对账。</p>
+                        <p>转账完成后，中台链上监听到账将自动秒级为你充值入账！</p>
                     </div>
-                </div>
-
-                <!-- Channel 2: Card Key Content -->
-                <div id="pay-content-card" class="hidden space-y-3 pt-2">
-                    <div class="space-y-2">
-                        <label class="text-[11px] text-slate-500">输入官方兑换卡密:</label>
-                        <input type="text" id="card-key-input" placeholder="请粘贴您的卡密兑换码..." class="w-full bg-slate-50 border border-slate-200 text-slate-800 text-xs rounded-xl p-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono">
-                    </div>
-                    <button onclick="submitCardKey()" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold text-xs py-2.5 rounded-xl shadow-md active:scale-95 transition-all">
-                        兑换并立即入账
-                    </button>
                 </div>
             </div>
         </section>
@@ -177,16 +188,16 @@
         <section id="view-orders" class="tab-view hidden space-y-4">
             <!-- Filter Pills -->
             <div class="flex items-center space-x-1.5 overflow-x-auto no-scrollbar pb-1">
-                <button onclick="filterOrders('ALL')" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-bold bg-indigo-600 text-white shrink-0 active:scale-95 transition-all">
+                <button onclick="filterOrders('ALL')" id="filter-btn-all" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-bold bg-indigo-600 text-white shrink-0 active:scale-95 transition-all">
                     全部订单
                 </button>
-                <button onclick="filterOrders('Pending')" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200 shrink-0 active:scale-95 transition-all">
+                <button onclick="filterOrders('Pending')" id="filter-btn-pending" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200 shrink-0 active:scale-95 transition-all">
                     待处理
                 </button>
-                <button onclick="filterOrders('Processing')" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200 shrink-0 active:scale-95 transition-all">
+                <button onclick="filterOrders('Processing')" id="filter-btn-processing" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200 shrink-0 active:scale-95 transition-all">
                     进行中
                 </button>
-                <button onclick="filterOrders('Completed')" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200 shrink-0 active:scale-95 transition-all">
+                <button onclick="filterOrders('Completed')" id="filter-btn-completed" class="order-filter-btn px-3 py-1.5 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200 shrink-0 active:scale-95 transition-all">
                     已完成
                 </button>
             </div>
@@ -379,14 +390,37 @@
         let effectiveRate = 7.30;
         let currencyPref = 'DUAL'; // DUAL, CNY, USDT
 
-        function formatPrice(priceCny) {
+        function formatPriceHTML(priceCny, align = 'end') {
             const priceUsdt = (priceCny / effectiveRate).toFixed(2);
+            const alignClass = align === 'start' ? 'items-start text-left' : (align === 'center' ? 'items-center text-center' : 'items-end text-right');
+            
             if (currencyPref === 'CNY') {
-                return `¥ ${priceCny.toFixed(2)}`;
+                return `<div class="flex flex-col ${alignClass}"><span class="text-indigo-600 font-extrabold text-xs sm:text-sm font-mono whitespace-nowrap">¥${priceCny.toFixed(2)}</span></div>`;
             } else if (currencyPref === 'USDT') {
-                return `$ ${priceUsdt} USDT`;
+                return `<div class="flex flex-col ${alignClass}"><span class="text-indigo-600 font-extrabold text-xs sm:text-sm font-mono whitespace-nowrap">$${priceUsdt} <span class="text-[10px]">USDT</span></span></div>`;
             } else {
-                return `¥ ${priceCny.toFixed(2)} (≈$ ${priceUsdt})`;
+                return `
+                    <div class="flex flex-col ${alignClass} leading-tight">
+                        <span class="text-indigo-600 font-extrabold text-xs sm:text-sm font-mono whitespace-nowrap">¥${priceCny.toFixed(2)}</span>
+                        <span class="text-[9px] text-slate-400 font-mono whitespace-nowrap">≈ $${priceUsdt} USDT</span>
+                    </div>
+                `;
+            }
+        }
+
+        function formatHeaderBalanceHTML(balanceCny) {
+            const balanceUsdt = (balanceCny / effectiveRate).toFixed(2);
+            if (currencyPref === 'CNY') {
+                return `<span class="font-extrabold font-mono text-xs whitespace-nowrap">¥${balanceCny.toFixed(2)}</span>`;
+            } else if (currencyPref === 'USDT') {
+                return `<span class="font-extrabold font-mono text-xs whitespace-nowrap">$${balanceUsdt}</span>`;
+            } else {
+                return `
+                    <div class="flex flex-col items-start leading-none space-y-0.5">
+                        <span class="font-extrabold font-mono text-xs whitespace-nowrap leading-none">¥${balanceCny.toFixed(2)}</span>
+                        <span class="text-[9px] font-mono opacity-80 whitespace-nowrap leading-none">≈ $${balanceUsdt}</span>
+                    </div>
+                `;
             }
         }
 
@@ -423,6 +457,7 @@
             }
 
             fetchUserInfo();
+            fetchUserOrders();
             loadServicesData();
             
             try {
@@ -444,7 +479,71 @@
             activeNav.classList.add('text-indigo-600', 'font-bold');
 
             if (tabName === 'orders') fetchUserOrders();
-            if (tabName === 'recharge' || tabName === 'profile') fetchUserInfo();
+            if (tabName === 'recharge' || tabName === 'profile') {
+                fetchUserInfo();
+                fetchRechargeInfo();
+            }
+        }
+
+        async function fetchRechargeInfo() {
+            selectRechargeAmount(10);
+        }
+
+        async function selectRechargeAmount(amt) {
+            try {
+                showToast(`正在创建 ${amt} USDT 专属收银单...`);
+                const payload = { amount: amt, user_id: user ? user.id : 0 };
+                const res = await fetch('/api/create_recharge_order', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data.expected_amount) {
+                        const amtElem = document.getElementById('usdt-expected-amount');
+                        if (amtElem) amtElem.innerText = `${parseFloat(data.expected_amount).toFixed(3)} USDT`;
+                    }
+                    if (data.trc20_address) {
+                        const addrElem = document.getElementById('usdt-address');
+                        const qrElem = document.getElementById('usdt-qr-code');
+                        if (addrElem) addrElem.value = data.trc20_address;
+                        if (qrElem) qrElem.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(data.trc20_address)}`;
+                    }
+                    if (data.effective_rate) {
+                        const rateElem = document.getElementById('recharge-rate-display');
+                        if (rateElem) rateElem.innerText = parseFloat(data.effective_rate).toFixed(2);
+                    }
+                    showToast(`收银单生成成功！请转账 ${parseFloat(data.expected_amount).toFixed(3)} USDT`);
+                }
+            } catch (e) {
+                showToast('创建充值账单异常');
+            }
+        }
+
+        function copyExpectedAmount() {
+            const txt = document.getElementById('usdt-expected-amount').innerText.replace(' USDT', '').trim();
+            navigator.clipboard.writeText(txt).then(() => {
+                showToast(`精准转账金额 ${txt} USDT 已复制！`);
+            }).catch(() => {
+                showToast('复制失败');
+            });
+        }
+
+        function formatRechargeCardBalanceHTML(balanceCny) {
+            const balanceUsdt = (balanceCny / effectiveRate).toFixed(2);
+            if (currencyPref === 'CNY') {
+                return `<h2 class="text-2xl sm:text-3xl font-extrabold font-mono tracking-tight">¥${balanceCny.toFixed(2)}</h2>`;
+            } else if (currencyPref === 'USDT') {
+                return `<h2 class="text-2xl sm:text-3xl font-extrabold font-mono tracking-tight">$${balanceUsdt} <span class="text-xs font-sans opacity-80">USDT</span></h2>`;
+            } else {
+                return `
+                    <div class="space-y-0.5">
+                        <h2 class="text-2xl sm:text-3xl font-extrabold font-mono tracking-tight">¥${balanceCny.toFixed(2)}</h2>
+                        <p class="text-xs text-indigo-200 font-mono opacity-90">≈ $${balanceUsdt} USDT</p>
+                    </div>
+                `;
+            }
         }
 
         // Fetch User Real-time Info & Balance
@@ -458,15 +557,19 @@
                 });
                 if (res.ok) {
                     const data = await res.json();
-                    if (data.effective_rate) effectiveRate = data.effective_rate;
+                    if (data.effective_rate) {
+                        effectiveRate = data.effective_rate;
+                        const rateElem = document.getElementById('recharge-rate-display');
+                        if (rateElem) rateElem.innerText = effectiveRate.toFixed(2);
+                    }
                     if (data.currency_pref && !window.hasUserToggledCurrency) {
                         currencyPref = data.currency_pref;
                         updateCurrencyToggleBtn();
                     }
 
-                    document.getElementById('header-user-balance').innerText = formatPrice(data.balance);
-                    document.getElementById('recharge-page-balance').innerText = `${data.balance.toFixed(2)} (≈ $ ${data.balance_usdt.toFixed(2)} USDT)`;
-                    document.getElementById('profile-total-spent').innerText = formatPrice(data.total_spent);
+                    document.getElementById('header-user-balance').innerHTML = formatHeaderBalanceHTML(data.balance);
+                    document.getElementById('recharge-page-balance-container').innerHTML = formatRechargeCardBalanceHTML(data.balance);
+                    document.getElementById('profile-total-spent').innerHTML = formatPriceHTML(data.total_spent, 'start');
                     document.getElementById('profile-order-count').innerText = data.order_count;
                 }
             } catch (e) {}
@@ -522,18 +625,17 @@
             }
 
             filtered.forEach(s => {
-                const priceUnit = s.type.toLowerCase() === 'package' ? '个' : 'k';
                 const card = document.createElement('div');
-                card.className = "bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between";
+                card.className = "bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm flex items-center justify-between gap-2";
                 card.innerHTML = `
-                    <div class="space-y-1 max-w-[70%]">
+                    <div class="space-y-1 max-w-[62%]">
                         <span class="text-[9px] bg-slate-100 text-slate-500 font-mono px-2 py-0.5 rounded-md inline-block">ID: ${s.custom_id || s.service}</span>
                         <h4 class="text-xs font-bold text-slate-800 line-clamp-2">${s.name}</h4>
                         <p class="text-[10px] text-slate-400">起购: ${s.min} | 限购: ${s.max}</p>
                     </div>
-                    <div class="text-right">
-                        <span class="text-indigo-600 font-extrabold text-xs block font-mono">${formatPrice(s.rate)}</span>
-                        <button onclick='openOrderDrawer(${JSON.stringify(s)})' class="mt-1.5 bg-indigo-600 text-white text-[11px] font-bold px-3 py-1.5 rounded-xl shadow-sm active:scale-95 transition-all">
+                    <div class="flex flex-col items-end justify-between space-y-2 shrink-0">
+                        ${formatPriceHTML(s.rate, 'end')}
+                        <button onclick='openOrderDrawer(${JSON.stringify(s)})' class="bg-indigo-600 hover:bg-indigo-700 text-white text-[11px] font-bold px-3.5 py-1.5 rounded-xl shadow-sm active:scale-95 transition-all">
                             选购
                         </button>
                     </div>
@@ -546,7 +648,7 @@
         function openOrderDrawer(product) {
             selectedProduct = product;
             document.getElementById('drawer-product-name').innerText = product.name;
-            document.getElementById('drawer-product-rate').innerText = formatPrice(product.rate);
+            document.getElementById('drawer-product-rate').innerHTML = formatPriceHTML(product.rate, 'end');
             document.getElementById('drawer-product-min').innerText = product.min;
             document.getElementById('drawer-product-max').innerText = product.max;
 
@@ -556,7 +658,7 @@
             qtyInput.placeholder = `范围: ${product.min} - ${product.max}`;
             qtyInput.value = '';
             document.getElementById('order-link').value = '';
-            document.getElementById('order-total-price').innerText = formatPrice(0);
+            document.getElementById('order-total-price').innerHTML = formatPriceHTML(0, 'end');
 
             const drawer = document.getElementById('order-drawer');
             drawer.classList.remove('hidden');
@@ -630,12 +732,23 @@
             document.getElementById('instruction-modal').classList.add('hidden');
         }
 
+        function formatPrice(priceCny) {
+            const priceUsdt = (priceCny / effectiveRate).toFixed(2);
+            if (currencyPref === 'CNY') {
+                return `¥ ${priceCny.toFixed(2)}`;
+            } else if (currencyPref === 'USDT') {
+                return `$ ${priceUsdt} USDT`;
+            } else {
+                return `¥ ${priceCny.toFixed(2)} (≈ $ ${priceUsdt} USDT)`;
+            }
+        }
+
         function calculateTotal() {
             if (!selectedProduct) return;
             const qty = parseInt(document.getElementById('order-quantity').value) || 0;
             const isPackage = selectedProduct.type.toLowerCase() === 'package';
             const total = isPackage ? (selectedProduct.rate * qty) : ((selectedProduct.rate / 1000.0) * qty);
-            document.getElementById('order-total-price').innerText = formatPrice(total);
+            document.getElementById('order-total-price').innerHTML = formatPriceHTML(total, 'end');
         }
 
         // Global Toast Component Handler (Solution B: 0% Domain Display)
@@ -700,6 +813,7 @@
                 }, 250);
 
                 fetchUserInfo();
+                fetchUserOrders();
             } catch (err) {
                 closeOrderDrawer();
                 setTimeout(() => {
@@ -712,7 +826,8 @@
         async function fetchUserOrders() {
             const container = document.getElementById('orders-container');
             try {
-                const payload = { init_data: tg ? tg.initData : '', user_id: user ? user.id : null };
+                const uid = (user && user.id) ? user.id : (tg && tg.initDataUnsafe && tg.initDataUnsafe.user ? tg.initDataUnsafe.user.id : null);
+                const payload = { init_data: (tg && tg.initData) ? tg.initData : '', user_id: uid };
                 const res = await fetch('/api/web_app_orders', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -722,6 +837,8 @@
                     const data = await res.json();
                     allOrders = data.orders || [];
                     renderOrders();
+                } else {
+                    container.innerHTML = `<div class="text-center py-10 text-slate-400 text-xs">暂无历史订单数据</div>`;
                 }
             } catch (e) {
                 container.innerHTML = `<div class="text-center py-10 text-slate-400 text-xs">暂无历史订单数据</div>`;
@@ -730,6 +847,13 @@
 
         function filterOrders(status) {
             activeOrderFilter = status;
+            document.querySelectorAll('.order-filter-btn').forEach(btn => {
+                btn.className = 'order-filter-btn px-3 py-1.5 rounded-full text-xs font-medium bg-white text-slate-600 border border-slate-200 shrink-0 active:scale-95 transition-all';
+            });
+            const activeBtn = document.getElementById(`filter-btn-${status.toLowerCase()}`);
+            if (activeBtn) {
+                activeBtn.className = 'order-filter-btn px-3 py-1.5 rounded-full text-xs font-bold bg-indigo-600 text-white shrink-0 active:scale-95 transition-all';
+            }
             renderOrders();
         }
 
@@ -744,20 +868,28 @@
             }
 
             filtered.forEach(o => {
-                const badgeColor = o.status === 'Completed' ? 'bg-emerald-50 text-emerald-600 border-emerald-200' : 
-                                  (o.status === 'Processing' ? 'bg-blue-50 text-blue-600 border-blue-200' : 'bg-amber-50 text-amber-600 border-amber-200');
+                const isCompleted = o.status === 'Completed' || o.status === '已完成';
+                const isProcessing = o.status === 'Processing' || o.status === '进行中';
+                const badgeColor = isCompleted ? 'bg-emerald-50 text-emerald-600 border-emerald-200' : 
+                                  (isProcessing ? 'bg-blue-50 text-blue-600 border-blue-200' : 'bg-amber-50 text-amber-600 border-amber-200');
+                const statusMap = { 'Pending': '待处理', 'Processing': '进行中', 'Completed': '已完成' };
+                const statusText = statusMap[o.status] || o.status;
+
                 const card = document.createElement('div');
                 card.className = "bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm space-y-2";
                 card.innerHTML = `
                     <div class="flex justify-between items-center pb-2 border-b border-slate-100">
                         <span class="text-[10px] font-mono text-slate-400">单号: #${o.smm_order_id || o.id}</span>
-                        <span class="text-[10px] font-bold border px-2 py-0.5 rounded-md ${badgeColor}">${o.status}</span>
+                        <span class="text-[10px] font-bold border px-2 py-0.5 rounded-md ${badgeColor}">${statusText}</span>
                     </div>
                     <h4 class="text-xs font-bold text-slate-800">${o.service_name}</h4>
                     <p class="text-[11px] text-slate-500 font-mono truncate">链接: ${o.link}</p>
                     <div class="flex justify-between items-center text-[11px] pt-1">
                         <span class="text-slate-400">数量: ${o.quantity}</span>
-                        <span class="text-indigo-600 font-extrabold font-mono">扣款: ${formatPrice(o.charge)}</span>
+                        <div class="flex items-center space-x-1">
+                            <span class="text-slate-500 font-medium">扣款:</span>
+                            ${formatPriceHTML(o.charge, 'end')}
+                        </div>
                     </div>
                 `;
                 container.appendChild(card);
@@ -775,8 +907,17 @@
         }
 
         function copyUsdtAddress() {
-            navigator.clipboard.writeText(document.getElementById('usdt-address').value);
-            showToast('USDT 收款地址已复制到剪贴板！');
+            const addr = document.getElementById('usdt-address').value;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(addr);
+            } else {
+                const el = document.getElementById('usdt-address');
+                if (el) {
+                    el.select();
+                    document.execCommand('copy');
+                }
+            }
+            showToast('📋 USDT 收款地址已复制到剪贴板！');
         }
 
         function submitCardKey() {
