@@ -186,6 +186,13 @@
                         <p>⚠️ 提醒：请务必发送上方<b>精准特征数额</b>（带小数），以便收银中台秒级识别对账。</p>
                         <p>转账完成后，中台链上监听到账将自动秒级为你充值入账！</p>
                     </div>
+
+                    <!-- Cashier Bot Link Button (Aligned with Telegram Bot) -->
+                    <div id="usdt-cashier-btn-box" class="pt-1">
+                        <a id="usdt-cashier-btn" href="https://t.me/yctpaymentbot" target="_blank" class="block w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold text-xs py-3 rounded-xl shadow-lg text-center active:scale-95 transition-all">
+                            ➡️ 前往收银台支付 (获取地址池专属地址)
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -510,17 +517,27 @@
                         const amtElem = document.getElementById('usdt-expected-amount');
                         if (amtElem) amtElem.innerText = `${parseFloat(data.expected_amount).toFixed(3)} USDT`;
                     }
-                    if (data.trc20_address) {
-                        const addrElem = document.getElementById('usdt-address');
-                        const qrElem = document.getElementById('usdt-qr-code');
+                    const addrElem = document.getElementById('usdt-address');
+                    const qrElem = document.getElementById('usdt-qr-code');
+                    const cashierBtn = document.getElementById('usdt-cashier-btn');
+                    
+                    if (data.cashier_url && cashierBtn) {
+                        cashierBtn.href = data.cashier_url;
+                    }
+                    
+                    if (data.trc20_address && data.trc20_address.trim() !== '') {
                         if (addrElem) addrElem.value = data.trc20_address;
                         if (qrElem) qrElem.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(data.trc20_address)}`;
+                    } else {
+                        if (addrElem) addrElem.value = '请点击下方按钮前往收银台获取动态地址';
+                        if (qrElem) qrElem.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(data.cashier_url || 'https://t.me/yctpaymentbot')}`;
                     }
+                    
                     if (data.effective_rate) {
                         const rateElem = document.getElementById('recharge-rate-display');
                         if (rateElem) rateElem.innerText = parseFloat(data.effective_rate).toFixed(2);
                     }
-                    showToast(`收银单生成成功！请转账 ${parseFloat(data.expected_amount).toFixed(3)} USDT`);
+                    showToast(`收银单生成成功！请点击下方按钮前往收银台`);
                 }
             } catch (e) {
                 showToast('创建充值账单异常');
